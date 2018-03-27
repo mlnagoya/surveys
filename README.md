@@ -12,4 +12,4 @@
 * 議論はある？
 * 次に読むべきタイトルは？
 
-の観点で行います。（http://mooooooooooriiiiii.hatenablog.com/entry/2017/04/16/222905）
+の観点で行います。（ http://mooooooooooriiiiii.hatenablog.com/entry/2017/04/16/222905 ）
