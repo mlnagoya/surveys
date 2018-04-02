@@ -12,4 +12,9 @@
 * 議論はある？
 * 次に読むべきタイトルは？
 
-の観点で行います。（ http://mooooooooooriiiiii.hatenablog.com/entry/2017/04/16/222905 ）
+の観点で行います。
+
+### 参考
+
++ [高速で論文がバリバリ読める落合先生のフォーマットがいい感じだったのでメモ - 書架とラフレンツェ](http://lafrenze.hatenablog.com/entry/2015/08/04/120205)
++ [パワポ版の落合先生流論文要旨のテンプレートを作ったので配布する - 一人ぼっちのライフハック生活](http://mooooooooooriiiiii.hatenablog.com/entry/2017/04/16/222905)
