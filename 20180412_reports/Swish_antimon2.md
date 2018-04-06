@@ -12,7 +12,7 @@ https://arxiv.org/pdf/1710.05941.pdf
 ## どんなもの？
 
 + ReLU に変わる新しいアクティベーション関数 **Swish** の紹介。
-+ $f(x) = x \cdot {\rm sigmoid}(\beta x)$ というシンプルな式。
++ f(x) = x ⋅ sigmoid(βx) というシンプルな式。
 + ImageNet で ReLU を Swish に置き換えたら、正解率が 0.9% 向上した。
 + Swish 用に最適化されたハイパーパラメータ設定により、さらなる効果が期待できる。
 
@@ -30,10 +30,10 @@ https://arxiv.org/pdf/1710.05941.pdf
 
 ## 技術や手法の肝は？
 
-+ 数式が単純（$f(x) = x \cdot \sigma(\beta x)$）
-    + $\beta = 0$ ⇒ $f(x) = \frac{x}{2}$
-    + $\beta \rightarrow \infty$ ⇒ ReLU に漸近
-+ $f^\prime(x) = \beta f(x) + \sigma(\beta x)(1 − \beta f(x))$
++ 数式が単純（f(x) = x ⋅ σ(βx)）
+    + β = 0 ⇒ f(x) = x/2
+    + β → ∞ ⇒ ReLU に漸近
++ f′(x) = βf(x) + σ(βx)(1 − βf(x))
 + （ReLU と異なり）**非単調** で **滑らかな関数**
 
 ---
