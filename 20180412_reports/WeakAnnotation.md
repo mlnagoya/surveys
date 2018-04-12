@@ -3,9 +3,9 @@ Employing Weak Annotations for Medical Image Analysis Problems
 
 Submitted on 2017/08/21
 by Martin Rajchl a, Lisa M. Koch a, Christian Ledig a, Jonathan Passerat-Palmbach a, Kazunari Misawa b, Kensaku Mori c, Daniel Rueckert a
-a Dept. of Computing, Imperial College London, UK
-b Aichi Cancer Center, Nagoya, JP
-c Dept. of Media Science, Nagoya University, JP
+* a. Dept. of Computing, Imperial College London, UK
+* b. Aichi Cancer Center, Nagoya, JP
+* c. Dept. of Media Science, Nagoya University, JP
 
 Subjects: Computer Vision and Pattern Recognition (cs.CV)
 
