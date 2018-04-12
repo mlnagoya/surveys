@@ -12,6 +12,9 @@ Alain Rakotomamonjy (Normandie Universite)
 論文のリンク先URL : 
 http://papers.nips.cc/paper/6963-joint-distribution-optimal-transportation-for-domain-adaptation.pdf
 
+このまとめの完全版へのリンク：
+https://sites.google.com/site/matsuikotaswebpage/notes
+
 （まとめ：@matsui_kota）
 
 ---
