@@ -3,7 +3,7 @@ Searching For Activation Functions
 
 2017/10/27 Prajit Ramachandran, Barret Zoph, Quoc V. Le (Google Brain)
 
-https://arxiv.org/pdf/1710.05941.pdf
+https://arxiv.org/abs/1710.05941
 
 （まとめ：[@antimon2](https://github.com/antimon2)）
 
@@ -34,7 +34,7 @@ https://arxiv.org/pdf/1710.05941.pdf
     + β = 0 ⇒ f(x) = x/2
     + β → ∞ ⇒ ReLU に漸近
 + f′(x) = βf(x) + σ(βx)(1 − βf(x))
-+ （ReLU と異なり）**非単調** で **滑らかな関数**
++ （ReLU や ELU などと異なり）**非単調** で **滑らかな関数**
 
 ---
 
