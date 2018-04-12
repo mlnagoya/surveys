@@ -9,5 +9,6 @@
 
 |発表者|論文|URL|
 |:-----|:-------|:--|
+|[antimon2](https://github.com/antimon2)|[Searching For Activation Functions](https://arxiv.org/pdf/1710.05941.pdf)|[Swish_antimon2.md](Swish_antimon2.md)|
 |…|…|…|
 
