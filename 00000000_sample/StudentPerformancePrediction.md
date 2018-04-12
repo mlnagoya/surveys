@@ -1,7 +1,11 @@
 Student performance prediction using data of multiple courses by recurrent neural network
 ===
 
-20xx/xx/xx 論文発表日付と著者および所属を書く
+2017/03/13 	
+F. Okubo	Kyushu University, Japan
+T. Yamashita	Chubu University, Japan
+A. Shimada	Kyushu University, Japan
+H. Ogata	Kyushu University, Japan
 
 https://dl.acm.org/citation.cfm?id=3029479
 
