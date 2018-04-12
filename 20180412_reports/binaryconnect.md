@@ -18,7 +18,7 @@ Courbariaux, Matthieu, Bengio, Yoshua, and David, Jean-Pierre.
 - BinaryConnect は正則化の効果がある
 - MNIST、CIFAR-10、SVHN のデータセットでほぼ SOTA 相当の精度
 - 計算量は約 1/3、メモリ使用量は 1/16 という見積もり
-  - (FPGA のような)専用ハードウェアを使えば早くなるよ
+  - (FPGA のような)専用ハードウェアを使えば速くなるよ
 
 
 ## どうやって有効だと検証した？
@@ -47,7 +47,7 @@ Courbariaux, Matthieu, Bengio, Yoshua, and David, Jean-Pierre.
 
 - 感想
   - 確率的な方は推論時に実際の重みに戻しちゃうのはなんで
-  - で実際どれくらい早くなったの?
+  - で実際どれくらい速くなったの?
 
 
 ## 先行研究と比べて何がすごい？
