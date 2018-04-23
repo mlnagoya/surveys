@@ -16,7 +16,7 @@
 |[c0hama](https://github.com/cohama)|[BinaryConnect: Training Deep Neural Networks with binary weights during propagations](https://arxiv.org/abs/1511.00363)|[binaryconnect.md](binaryconnect.md)|
 |[nharu1san](https://github.com/nharu1san)|[Sequential Matching Network: A New Architecture for Multi-turn Response Selection in Retrieval-Based Chatbots](http://www.aclweb.org/anthology/P17-1046)|[SequentialMatchingNetwork_nharu1san.md](SequentialMatchingNetwork_nharu1san.md)|
 |[smogami](https://github.com/exoego)|[Employing Weak Annotations for Medical Image Analysis Problems](https://arxiv.org/abs/1708.06297)|[WeakAnnotation.md](WeakAnnotation.md)|
-|[KaazTech](https://github.com/kaaztech)|[Students’ Performance Prediction Using Data of Multiple Courses by Recurrent Neural Network](https://dl.acm.org/citation.cfm?id=3029479)|StudentPerformancePrediction.md|
+|[KaazTech](https://github.com/kaaztech)|[Students’ Performance Prediction Using Data of Multiple Courses by Recurrent Neural Network](https://dl.acm.org/citation.cfm?id=3029479)|[StudentPerformancePrediction.md](StudentPerformancePrediction.md)|
 |[miwa](https://github.com/Hiro30)|[Using Grouped Linear Prediction and Accelerated Reinforcement Learning for Online Content Caching](https://arxiv.org/abs/1803.04675)|[GLM_RLMS.md](GLM_RLMS.md)|
 |[BrickLego](https://github.com/brick05)|[Dynamic Routing Between Capsules](https://papers.nips.cc/paper/6975-dynamic-routing-between-capsules.pdf)|[Dynamic+Routing+Between+Capsules.md](Dynamic+Routing+Between+Capsules.md)|
 |SSS3|[Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization](https://arxiv.org/abs/1610.02391)| |
