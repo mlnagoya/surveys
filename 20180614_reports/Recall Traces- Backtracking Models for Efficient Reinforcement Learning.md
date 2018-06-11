@@ -71,3 +71,9 @@ Yoshua Bengio *1
 ## 次に読むべき論文は？
 - Goal GAN(Automatic Goal Generation for Reinforcement Learning Agents)
   [https://arxiv.org/pdf/1705.06366.pdf](https://arxiv.org/pdf/1705.06366.pdf)
+
+
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^{!!2} \leq
+\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
