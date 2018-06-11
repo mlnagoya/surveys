@@ -22,8 +22,8 @@ Yoshua Bengio *1
 
 ---
 ## どんなもの？・手法
-- 強化学習において高い報酬が得られる状態は少なく，これを優先的に学習する方がベター
-- 価値の高い状態からそこに到る（状態、行動）対（これをRecall Tracesと呼ぶ）を予測し学習の改善・パフォーマンスの向上を示した
+- 強化学習において高い報酬が得られる状態は少なく，これを優先的に学習する
+- 価値の高い状態からそこに到る（状態、行動）対（これをRecall Tracesと呼ぶ）を予測し、学習の改善・パフォーマンスの向上を実現した
 
 
 ---
@@ -43,14 +43,14 @@ Yoshua Bengio *1
 ---
 
 ## 技術や手法の肝は？
-###Backtracking Model
+### Backtracking Model
 - φによってパラメーター化された一つ前の(s,a)のタプルによる同時確率分布の密度推定
 
 ### 価値の高い状態を作る（２つのメソッドを利用）
 - 最も価値の高い状態であるバッファβの値を利用する
 - Goal GAN(*GANを利用してゴールである状態gを生成する方法)を利用する
 
-###Backtracking Modelを使ったポリシーの改善
+### Backtracking Modelを使ったポリシーの改善
 #### Training Backtracking Model
 - use a maximum likelihood training loss for training of the backtracking model B on the top k% of the agent’s trajectories stored in the state buffer β
 - agent trajectories t に対して確率的確勾配降下法を利用
