@@ -1,4 +1,4 @@
-論文のタイトルを書く
+Face Image Generation System using Attributes Information with DCGANs
 ===
 
 2018/02/27 佐川 友里香， 萩原 将文     所属：慶應義塾大学大学院
@@ -28,7 +28,7 @@ https://www.jstage.jst.go.jp/article/jjske/advpub/0/advpub_TJSKE-D-17-00085/_pdf
 
 ## 技術や手法の肝は？
 
-・DCGANの生成器を直列に２つ繋げて、それぞれの生成器が入力画像と再構築画像が類似するように学習すること
+DCGANの生成器を直列に２つ繋げて、それぞれの生成器が入力画像と再構築画像が類似するように学習すること
 ---
 
 ## 議論はある？
