@@ -94,7 +94,7 @@ CIFAR-10 and CIFAR-100 datasets
 
 + CLRに対する理論的な掘り下げを試みた論文
 	+ [EXPLORING LOSS FUNCTION TOPOLOGY WITH
-CYCLICAL LEARNING RATES] (https://openreview.net/pdf?id=H1PMaa1Yg)
+CYCLICAL LEARNING RATES](https://openreview.net/pdf?id=H1PMaa1Yg)
 
 
 
