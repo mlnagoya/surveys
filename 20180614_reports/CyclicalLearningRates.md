@@ -29,7 +29,7 @@ CIFAR-10 and CIFAR-100 datasets
 
 ### 背景
 + Learngin Rate: Loss Lに対し、最適なモデルパラメータ θを探すときの「変更度合」(ε)を探すパラメータ
-![2](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 10.45.55.png)
+![2](https://i.imgur.com/UGOAVRu.png)
 + 伝統的な手法：大きい目な値から学習を開始し、徐々に減らしていくのがよいとされる
 
 ### より凝ったやり方：Adaptive learning rates
@@ -43,7 +43,7 @@ CIFAR-10 and CIFAR-100 datasets
 ## 技術や手法の肝は？
 ### CLRによるLRの変え方
 + 極めてシンプル
-![2](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 11.58.53.png)
+![2](https://i.imgur.com/heysTKg.png)
 + stepsizeは 2〜10 * (1 epochのstep数)
 + これをtriangelとしてが、他の形も試している（結果は大体同じとのこと）：
 
@@ -57,8 +57,8 @@ CIFAR-10 and CIFAR-100 datasets
 + Minimum, Maximumは、データセットとモデル両方に依存するので、その都度決める必要あり
 + 数epoch分、LRを増やしながら学習かける。その間、精度を図り続ける
 + 精度の上がり始めがMinimum, 上がるが止まる場所がMaximum　とすればうまくいく
-![3](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 12.55.54.png)
-![4](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 12.57.38.png)
+![3](https://i.imgur.com/wp3Mb0g.png)
+![4](https://i.imgur.com/BN4LO5l.png)
 
 ### 手法の効果
 「CLRを使うと、学習が早い。しかも精度が高い」
@@ -68,19 +68,19 @@ CIFAR-10 and CIFAR-100 datasets
 ## どうやって有効だと検証した？
 + 従来手法のLR (fixed や exp)と比較した場合：
 	+ 	CIFAR-10 と書いてあるのは Caffeのサンプル
-![5](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 13.15.27.png)
-![6](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 13.24.02.png)
+![5](https://i.imgur.com/RgYe0fi.png)
+![6](https://i.imgur.com/V28Arm7.png)
 
 + 他のアーキテクチャー
 
-![7](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 13.26.42.png)
-![8](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 13.26.50.png)
+![7](https://i.imgur.com/JDfkrZY.png)
+![8](https://i.imgur.com/DVG6i3U.png)
 
 ----
 
 ## 議論はある？
 + Adaptive な手法にも組み合わせてみた
-![8](./CyclicalLearningRates_images/Screen Shot 2018-06-12 at 13.32.12.png)
+![8](https://i.imgur.com/4N9XRk4.png)
 
 + 必ずしも精度が上回らないが、ほとんどの場合学習は早くなった => 「CLRを使う意味あり」
 
