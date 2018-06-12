@@ -68,18 +68,22 @@ CIFAR-10 and CIFAR-100 datasets
 ## どうやって有効だと検証した？
 + 従来手法のLR (fixed や exp)と比較した場合：
 	+ 	CIFAR-10 と書いてあるのは Caffeのサンプル
+	
 ![5](https://i.imgur.com/RgYe0fi.png)
+
 ![6](https://i.imgur.com/V28Arm7.png)
 
 + 他のアーキテクチャー
 
 ![7](https://i.imgur.com/JDfkrZY.png)
+
 ![8](https://i.imgur.com/DVG6i3U.png)
 
 ----
 
 ## 議論はある？
 + Adaptive な手法にも組み合わせてみた
+
 ![8](https://i.imgur.com/4N9XRk4.png)
 
 + 必ずしも精度が上回らないが、ほとんどの場合学習は早くなった => 「CLRを使う意味あり」
