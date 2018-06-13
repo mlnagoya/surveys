@@ -54,12 +54,11 @@ Yoshua Bengio *1
 #### Training Backtracking Model
 - use a maximum likelihood training loss for training of the backtracking model B on the top k% of the agent’s trajectories stored in the state buffer β
 - agent trajectories t に対して確率的確勾配降下法を利用
-![1](image1.png)
+![](https://i.imgur.com/lAgNYrs.png)
 #### Improving the Plocy from the Recall Traces
 - backtracking model　によって生成される　traces 〒 をエージェントによるimitation learning（模倣学習）の観測として使用する
-![2](image2.png)
-![3](image3.png)
-
+![](https://i.imgur.com/YxYPMjV.png)
+![](https://i.imgur.com/Zvzgupd.png)
 
 ---
 
