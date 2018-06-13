@@ -100,5 +100,6 @@ CIFAR-10 and CIFAR-100 datasets
 	+ [EXPLORING LOSS FUNCTION TOPOLOGY WITH
 CYCLICAL LEARNING RATES](https://openreview.net/pdf?id=H1PMaa1Yg)
 
-
++ cosine annealingという類似手法に関する論文
+	+ [SGDR: Stochastic Gradient Descent with Warm Restarts](https://arxiv.org/abs/1608.03983)
 
