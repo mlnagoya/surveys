@@ -26,6 +26,10 @@
 - Bivariate Gaussian loss functio: L-VO network で使われる損失関数（Bivariate Gaussian 分布に基づく）
 
 ![図2](fig_2.png)
+![式1 式2](eq_1_2.png)
+![式4](eq_4.png)
+![式5](eq_5.png)
+![式6](eq_6.png)
 
 ## どうやって有効だと検証した？
 - データセット: KITTI VO/SLAM benchmark を使った。このデータセットには 22 トリップのデータがあり、最初の 11 個はセンサデータと教師データが含まれ、残りはセンサデータのみが含まれる。
@@ -43,6 +47,10 @@
     - ORB-SLAM: 単眼カメラ
     - L-VO (3D Flow): 単眼カメラ, 完全深層学習（提案手法）
 
+![図3](fig_3.png)
+![表1](tab_1.png)
+![図6](fig_6.png)
+![図7](fig_7.png)
 
 ## 議論はある？
 - 深層学習を使った SLAM は大きな計算資源が必要となる点が批判されるが、5G の高速通信を利用した service-client mode を使うことで緩和されると信じている。
