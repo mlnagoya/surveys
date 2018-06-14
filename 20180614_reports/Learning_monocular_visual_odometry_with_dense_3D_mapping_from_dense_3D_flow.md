@@ -48,12 +48,12 @@
 
 ## 次に読むべきタイトルは？
 
-# Depth Net
+### Depth Net
 - [arxiv](https://arxiv.org/abs/1609.03677) C. Godard, O. Mac Aodha, and G. J. Brostow, "Unsupervised monocular depth estimation with left-right consistency", CVPR, 2017.
 
-# Depth Net の訓練済みモデルとして使ったもの
+### Depth Net の訓練済みモデルとして使ったもの
 - [arxiv](https://arxiv.org/abs/1612.02401) B. Ummenhofer, H. Zhou, J. Uhrig, N. Mayer, E. Ilg, A. Dosovitskiy, and T. Brox, "Demon: Depth and motion network for learning monocular stereo", CVPR, 2017
 
-# Flownet 2.0
+### Flownet 2.0
 - [arxiv](https://arxiv.org/abs/1612.01925) E. Ilg, N. Mayer, T. Saikia, M. Keuper, A. Dosovitskiy, and T. Brox, "Flownet 2.0: Evolution of optical flow estimation with deep networks", CVPR, 2017.
 .
