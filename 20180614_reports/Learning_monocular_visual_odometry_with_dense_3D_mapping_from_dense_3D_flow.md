@@ -23,7 +23,9 @@
 - Depth Net: 時刻 t と時刻 t+1 の画像から深度マップを求める DNN
 - 3D flow association layer: ２次元オプティカルフローと２つの深度マップから３次元オプティカルフローを求める DNN（訓練するパラメータがない単純な計算）
 - L-VO network: ３次元オプティカルフローを畳み込んで、６次元の姿勢ベクトル（並進・回転）を推定する DNN
-- . Bivariate Gaussian loss functio: L-VO network で使われる損失関数（Bivariate Gaussian 分布に基づく）
+- Bivariate Gaussian loss functio: L-VO network で使われる損失関数（Bivariate Gaussian 分布に基づく）
+
+![図2](fig_2.png)
 
 ## どうやって有効だと検証した？
 - データセット: KITTI VO/SLAM benchmark を使った。このデータセットには 22 トリップのデータがあり、最初の 11 個はセンサデータと教師データが含まれ、残りはセンサデータのみが含まれる。
