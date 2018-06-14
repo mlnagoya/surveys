@@ -15,7 +15,7 @@ Yoshua Bengio *1
 3 University of California, Berkeley 
 4 Google Brain
 
-[https://arxiv.org/pdf/1804.00379.pdf](https://arxiv.org/pdf/1804.00379.pdf)
+[https://arxiv.org/pdf/1804.00379.pdf](https://arxiv.org/pdf/1804.00379.pdf) 
 [https://www.youtube.com/watch?v=vSVRVuRTYB8](https://www.youtube.com/watch?v=vSVRVuRTYB8)
 
 （まとめ：@kmiwa）
