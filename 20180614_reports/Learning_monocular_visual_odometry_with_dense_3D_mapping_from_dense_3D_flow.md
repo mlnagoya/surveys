@@ -7,9 +7,9 @@
     - Tom Duckett *2
     - Rustam Stolkin *1
 - 所属
-    - Extreme Robotics Lab, University of Birmingham, Birmingham, UK, B15 2TT
-    - Lincoln Centre for Autonomous Systems (L-CAS), University of Lincoln, UK, LN6 7TS
-    - 3 Cambridge Research Lab, Toshiba Research Europe, Cambridge, UK, CB4 0GZ
+    - 1: Extreme Robotics Lab, University of Birmingham, Birmingham, UK, B15 2TT
+    - 2: Lincoln Centre for Autonomous Systems (L-CAS), University of Lincoln, UK, LN6 7TS
+    - 3: Cambridge Research Lab, Toshiba Research Europe, Cambridge, UK, CB4 0GZ
 
 ## どんなもの？
 - 全てを深層学習で記述した単眼カメラのための Visual SLAM
