@@ -5,7 +5,7 @@ Yiming Hu, Siyang Sun, Jianquan Li, Xingang Wang, Qingyi Gu
 
 [arXiv](https://arxiv.org/abs/1805.11394)
 
-2018/5/29 @cohama
+@cohama
 
 
 ## どんなもの？
