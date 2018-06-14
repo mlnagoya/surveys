@@ -52,7 +52,7 @@ Yoshua Bengio *1
 
 ### Backtracking Modelを使ったポリシーの改善
 #### Training Backtracking Model
-- use a maximum likelihood training loss for training of the backtracking model B on the top k% of the agent’s trajectories stored in the state buffer β
+- use a maximum likelihood training loss for training of the backtracking model Bφ on the top k% of the agent’s trajectories stored in the state buffer β
 - agent trajectories t に対して確率的確勾配降下法を利用
 ![](https://i.imgur.com/lAgNYrs.png)
 #### Improving the Plocy from the Recall Traces
