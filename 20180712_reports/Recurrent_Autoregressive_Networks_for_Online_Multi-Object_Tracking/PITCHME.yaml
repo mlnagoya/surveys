@@ -10,4 +10,4 @@ theme-override : assets/css/PITCHME.css
 highlight : atom-one-dark
 transition : none
 published : true
-footnote : "<a href='https://www.facebook.com/mlnagoya'>機械学習名古屋勉強会 研究会</a>""
+footnote : "<a href='https://www.facebook.com/mlnagoya'>機械学習名古屋勉強会 研究会</a>"
