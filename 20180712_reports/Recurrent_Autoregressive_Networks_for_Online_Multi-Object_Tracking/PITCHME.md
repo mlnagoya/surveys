@@ -1,4 +1,6 @@
-# Recurrent Autoregressive Networks for Online Multi-Object Tracking
+### Recurrent Autoregressive Networks for Online Multi-Object Tracking
+
+---
 
 ### Kuan Fang(1), Yu Xiang(2), Xiaocheng Li(1), Silvio Savarese(1)
 
@@ -12,13 +14,16 @@
 
 ---
 
-## Tips!
+## どんなもの？
 
-<br>
++ 対象： MOT(Multi-Object Tracking)問題
++ 物体軌跡を任意長の時系列として扱い、時系列手法
+	+ Autoregression (自己回帰モデル)
+	+ GRU (Gated Recurrent Unit, RNNの一種)
+ 
+ を組み合わせて、物体軌跡を生成
++ 名付けて 「Recurrent Autoregressive Network (RAN)」
 
-@fa[arrows gp-tip](Press F to go Fullscreen)
-
-@fa[microphone gp-tip](Press S for Speaker Notes)
 
 ---
 
