@@ -46,7 +46,7 @@
 + このモデルで、過去K FrameのX(見た目、位置)から次のFrameを推定して、実際のDetection結果と突き合わせる
 + 過去K Frameのことを「外部メモリ」と、GRUにあるhidden層を「内部メモリ」と作者は呼んでいる
 
----
++++
 
 #### Autogressionの各パラメータ（α,σ）はRNN(GRU)の出力
 
@@ -60,8 +60,7 @@
 + 出力としてhidden層のhを得る
 + このhに、Full Connect Layerをつないで 先程のAutogressionのパラメータを出す
 
-
----
++++
 
 #### 一枚の絵にすると
 
