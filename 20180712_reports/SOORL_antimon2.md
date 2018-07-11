@@ -56,6 +56,6 @@ https://arxiv.org/abs/1806.00175
 + [Mastering the game of Go with deep neural networks and tree search](https://www.nature.com/articles/nature16961) ([PDF](https://deepmind.com/documents/119/agz_unformatted_nature.pdf))
     + AlphaGo Zero の論文
 + [Efficient exploration
-through bayesian deep q-networks.](Efficient Exploration through Bayesian Deep Q-Networks)
+through bayesian deep q-networks.](https://arxiv.org/abs/1802.04412)
     + ベイズ線形回帰を介したDQN
 
