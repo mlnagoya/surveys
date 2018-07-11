@@ -38,7 +38,7 @@
 
 #### まず、自己Autoregression（自己回帰モデル)
 
-![1](assets/image/Screen Shot 2018-07-05 at 11.44.25.png)
+![1](assets/image/ScreenShot2018-07-05at11.44.25.png)
 
 + Xは、「見た目」や「位置」を表すベクトル。εは標準偏差σのホワイトノイズ
 + このモデルで、過去K FrameのX(見た目、位置)から次のFrameを推定して、実際のDetection結果と突き合わせる
@@ -61,7 +61,7 @@
 
 #### 一枚の絵にすると
 
-![2](assets/image/Screen Shot 2018-07-05 at 13.17.07.png)
+![2](assets/image/ScreenShot2018-07-05at13.17.07.png)
 
 
 + 「見た目」特徴：実験ではinception networkのperson classifierから取得
@@ -76,13 +76,13 @@
 
 + MOT Benchmarkとの比較でも、一部指標で今のstate-of-the-artに勝つ
 
-![2](assets/image/Screen Shot 2018-07-05 at 13.47.13.png)
+![2](assets/image/ScreenShot2018-07-05at13.47.13.png)
 
 
 + RNNの出力パラメータを見て、occlusionに強いことを確認
 25番の人に対する、見た目特徴 Autogressionパラメータの変化
 
-![3](assets/image/Screen Shot 2018-07-05 at 13.59.47.png)
+![3](assets/image/ScreenShot2018-07-05at13.59.47.png)
 
 ---
 
