@@ -1,10 +1,13 @@
 ## Recurrent Autoregressive Networks for Online Multi-Object Tracking
 
-##### まとめ：　陸　衛強 (ろく　わいけん) wkluk-hk@github
+##### まとめ：　陸　衛強 (ろく　わいけん) 
+##### https://github.com/wkluk-hk
 
 ---
 + Kuan Fang(1), Yu Xiang(2), Xiaocheng Li(1), Silvio Savarese(1)
+
 	1.Stanford University, 2.University of Washington
+
 + Submitted on 7 Nov 2017 (v1), last revised 4 Mar 2018 (this version, v2)
 + https://arxiv.org/abs/1711.02741
 
@@ -38,7 +41,7 @@
 
 #### まず、自己Autoregression（自己回帰モデル)
 
-![1](assets/image/ScreenShot2018-07-05at11.44.25.png)
+![1](20180712_reports/Recurrent_Autoregressive_Networks_for_Online_Multi-Object_Tracking/assets/image/ScreenShot2018-07-05at11.44.25.png)
 
 + Xは、「見た目」や「位置」を表すベクトル。εは標準偏差σのホワイトノイズ
 + このモデルで、過去K FrameのX(見た目、位置)から次のFrameを推定して、実際のDetection結果と突き合わせる
@@ -48,7 +51,7 @@
 
 #### Autogressionの各パラメータ（α,σ）はRNN(GRU)の出力
 
-![2](assets/image/ScreenShot2018-07-05at12.08.23.png)
+![2](20180712_reports/Recurrent_Autoregressive_Networks_for_Online_Multi-Object_Tracking/assets/image/ScreenShot2018-07-05at12.08.23.png)
 
 + internal memoryを持つRNN Unit (LSTMの簡単版？）
 + INとなるのは、やはり「見た目」や「位置」の時系列
@@ -61,7 +64,7 @@
 
 #### 一枚の絵にすると
 
-![2](assets/image/ScreenShot2018-07-05at13.17.07.png)
+![3](20180712_reports/Recurrent_Autoregressive_Networks_for_Online_Multi-Object_Tracking/assets/image/ScreenShot2018-07-05at13.17.07.png)
 
 
 + 「見た目」特徴：実験ではinception networkのperson classifierから取得
@@ -76,13 +79,13 @@
 
 + MOT Benchmarkとの比較でも、一部指標で今のstate-of-the-artに勝つ
 
-![2](assets/image/ScreenShot2018-07-05at13.47.13.png)
+![4](20180712_reports/Recurrent_Autoregressive_Networks_for_Online_Multi-Object_Tracking/assets/image/ScreenShot2018-07-05at13.47.13.png)
 
 
 + RNNの出力パラメータを見て、occlusionに強いことを確認
 25番の人に対する、見た目特徴 Autogressionパラメータの変化
 
-![3](assets/image/ScreenShot2018-07-05at13.59.47.png)
+![5](20180712_reports/Recurrent_Autoregressive_Networks_for_Online_Multi-Object_Tracking/assets/image/ScreenShot2018-07-05at13.59.47.png)
 
 ---
 
