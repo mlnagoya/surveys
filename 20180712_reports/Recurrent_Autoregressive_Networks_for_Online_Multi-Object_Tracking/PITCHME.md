@@ -1,6 +1,14 @@
-# Black
+# Recurrent Autoregressive Networks for Online Multi-Object Tracking
 
-### A GitPitch Presentation Template
+### Kuan Fang(1), Yu Xiang(2), Xiaocheng Li(1), Silvio Savarese(1)
+
+1.Stanford University, 2.University of Washington
+
+### Submitted on 7 Nov 2017 (v1), last revised 4 Mar 2018 (this version, v2)
+
+### https://arxiv.org/abs/1711.02741
+
+### まとめ：陸　衛強 (ろく　わいけん) wkluk-hk@github
 
 ---
 
