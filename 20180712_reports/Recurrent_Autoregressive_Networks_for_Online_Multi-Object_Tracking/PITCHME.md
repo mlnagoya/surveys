@@ -1,5 +1,6 @@
-#### Recurrent Autoregressive Networks for Online Multi-Object Tracking
-	まとめ：　陸　衛強 (ろく　わいけん) wkluk-hk@github
+## Recurrent Autoregressive Networks for Online Multi-Object Tracking
+
+##### まとめ：　陸　衛強 (ろく　わいけん) wkluk-hk@github
 
 ---
 + Kuan Fang(1), Yu Xiang(2), Xiaocheng Li(1), Silvio Savarese(1)
@@ -9,7 +10,7 @@
 
 ---
 
-## どんなもの？
+### どんなもの？
 
 + 対象： MOT(Multi-Object Tracking)問題
 + 物体軌跡を任意長の時系列として扱い、時系列手法
@@ -20,7 +21,7 @@
 + 名付けて 「Recurrent Autoregressive Network (RAN)」
 
 ---
-## 先行研究と比べてどこがすごい？
+### 先行研究と比べてどこがすごい？
 
 + MOTのよくあるアプローチ “tracking-by-detection” 
 + MOT = 「個別フレームの検出器」+ 「フレーム間検出結果同士をつなげるアルゴ」
@@ -33,9 +34,9 @@
 
 ---
 
-## 技術や手法の肝は？
+### 技術や手法の肝は？
 
-### まず、自己Autoregression（自己回帰モデル)
+#### まず、自己Autoregression（自己回帰モデル)
 
 ![1](assets/image/Screen Shot 2018-07-05 at 11.44.25.png)
 
@@ -45,9 +46,9 @@
 
 ---
 
-### Autogressionの各パラメータ（α,σ）はRNN(GRU)の出力
+#### Autogressionの各パラメータ（α,σ）はRNN(GRU)の出力
 
-![2](assets/image/Screen Shot 2018-07-05 at 12.08.23.png)
+![2](assets/image/ScreenShot2018-07-05at12.08.23.png)
 
 + internal memoryを持つRNN Unit (LSTMの簡単版？）
 + INとなるのは、やはり「見た目」や「位置」の時系列
@@ -58,7 +59,7 @@
 
 ---
 
-### 一枚の絵にすると
+#### 一枚の絵にすると
 
 ![2](assets/image/Screen Shot 2018-07-05 at 13.17.07.png)
 
