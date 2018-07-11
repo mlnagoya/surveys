@@ -43,12 +43,11 @@
 ![1](20180712_reports/Recurrent_Autoregressive_Networks_for_Online_Multi-Object_Tracking/assets/image/ScreenShot2018-07-05at11.44.25.png)
 
 + Xは、「見た目」や「位置」を表すベクトル。εは標準偏差σのホワイトノイズ
-+ このモデルで、過去K FrameのX(見た目、位置)から次のFrameを推定して、実際のDetection結果と突き合わせる
-+ 過去K Frameのことを「外部メモリ」と、GRUにあるhidden層を「内部メモリ」と作者は呼んでいる
-
++ このモデルで、過去K FrameのXから次のFrameを推定して、実際のDetection結果と突き合わせる
++ ここのαとσはどうやって決めるか？
 +++
 
-#### Autogressionの各パラメータ（α,σ）はRNN(GRU)の出力
+#### Autogressionパラメータ（α,σ）はRNN(GRU)の出力
 
 ![2](20180712_reports/Recurrent_Autoregressive_Networks_for_Online_Multi-Object_Tracking/assets/image/ScreenShot2018-07-05at12.08.23.png)
 
@@ -67,7 +66,6 @@
 ![3](20180712_reports/Recurrent_Autoregressive_Networks_for_Online_Multi-Object_Tracking/assets/image/ScreenShot2018-07-05at13.17.07.png)
 
 +「見た目」特徴：実験ではinception networkのperson classifierから取得
-
 
 ---
 
