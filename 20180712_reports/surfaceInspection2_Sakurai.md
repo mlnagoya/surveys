@@ -33,19 +33,19 @@ https://ieeexplore.ieee.org/document/7966162/
 ---
 
 ## 実験の結果
-* Fig.5 …1回目のエポックでFine-tuned Network が一気に99.95％の高精度に
-* Fig.6 …ImageNetとDAGM がいかに異なる画像イメージであるかを説明 
+* 1回目のエポックでFine-tuned Network が一気に99.95％の高精度に
+* ImageNetとDAGM がいかに異なる画像イメージであるかを説明 
 
 ---
 ## でもなぜ転移学習が有効？
 
-* Fig.7,8 …Fine-tuned でどのような表現(入力)で出力の最大化を引き出すのか？　明確な特徴がない。
-* Fig.9 … Randomly Initialized Network と比較。下層に近づくほど学習率は結局同じ。
+* Fine-tuned でどのような表現(入力)で出力の最大化を引き出すのか？　明確な特徴がない。
+* Randomly Initialized Network と比較。下層に近づくほど学習率は結局同じ。
 　
 ---
 ## でもなぜ転移学習が有効（その２）？
-* Fig.10　… 最後の結合層の入力で、Frozen Network　に比べてFine-tuned は不要な情報が消されている。
-* Fig.11　… 下層へ行くほど無駄な情報が消されて情報の希薄性が明確になることがわかった。
+* 最後の結合層の入力で、Frozen Network　に比べてFine-tuned は不要な情報が消されている。
+* 下層へ行くほど無駄な情報が消されて情報の希薄性が明確になることがわかった。
 
 ---
 ## 結論
