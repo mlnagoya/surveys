@@ -42,7 +42,7 @@
 - dilation で高解像度化し、stride を廃止
 
 ![図2](figure_2.jpg)
-![図4](figure_2.jpg)
+![図4](figure_4.jpg)
 
 ### Gated Feature Map
 - 前の時刻の RNN の隠れ層からソフトアテンションを構築し、フィーチャーマップをマスク
