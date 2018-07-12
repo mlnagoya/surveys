@@ -30,10 +30,10 @@ Deep Unordered Composition Rivals Syntactic Methods for Text Classification
 
 ## どうやって有効だと検証した？
 ![表1](https://i.imgur.com/FZYUs8R.png)
-+ 感情分析
-  + SST
-  + RT
-  + IMDB
++ 極性分析
+  + SST(Stanford Sentiment Treebank)
+  + RT(Rotten Tomatoes movie reviews)
+  + IMDB(IMDb movie review)
 + QAタスク
   + Iyyerらの行った歴史に関するQAタスクを実施
   + QANTAと呼ばれるRecNNと比較し、Wikipediaのデータを加えた学習時に上回った
@@ -48,4 +48,5 @@ Deep Unordered Composition Rivals Syntactic Methods for Text Classification
 ---
 
 ## 次に読むべき論文は？
-
++ [Deep Recursive Neural Networks for Compositionality in Language](https://www.cs.cornell.edu/~oirsoy/files/nips14drsv.pdf)
+  + 比較対象の一つであるDeep Recursive Neural Network(DeRecNN)について
