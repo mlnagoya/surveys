@@ -21,5 +21,4 @@
 |[cohama](https://github.com/cohama)|[cuDNN: Efficient Primitives for Deep Learning](https://arxiv.org/abs/1410.0759)|[cuDNN.md](cuDNN.md)| |
 |[hissanova](https://github.com/hissanova)|[Synthesizing Audio with Generative Adversarial Networks](https://arxiv.org/abs/1802.04208)|[waveGan.md](waveGan.md)| |
 |denpa_92|[Dank Learning: Generating Memes Using Deep Neural Networks](https://arxiv.org/abs/1806.04510)|[Dank\_Learning\_Generating\_Memes\_Using\_Deep\_Neural\_Networks.md](Dank_Learning_Generating_Memes_Using_Deep_Neural_Networks.md)| |
-|…|…|…|…|
 
