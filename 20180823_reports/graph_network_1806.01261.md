@@ -1,6 +1,8 @@
 # タイトル
 [Relational inductive biases, deep learning, and graph networks](https://arxiv.org/abs/1806.01261)
 
+(まとめ @n-kats)
+
 著者
 * Peter W. Battaglia
 * Jessica B. Hamrick
