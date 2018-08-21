@@ -1,13 +1,11 @@
-# Non-local RoIs for Instance Segmentation
+## Non-local RoIs for Instance Segmentation
 
 ##### まとめ：　陸　衛強 (ろく　わいけん) 
 ##### https://github.com/wkluk-hk
 
 ---
-+Shou-Yao Roy Tseng[1], Hwann-Tzong Chen[1], Shao-Heng Tai[2], Tyng-Luh Liu[3]
-
-	1.National Tsing Hua University, 2.Umbo Computer Vision, 3.Academia Sinica
-
++ Shou-Yao Roy Tseng[1], Hwann-Tzong Chen[1], Shao-Heng Tai[2], Tyng-Luh Liu[3]
+	+ 1.National Tsing Hua University, 2.Umbo Computer Vision, 3.Academia Sinica
 + Submitted on 14 Jul 2018
 + https://arxiv.org/abs/1807.05361
 
@@ -23,17 +21,17 @@
 
 + 先行研究：Faster R-CNN or Mask R-CNN
 	+ 2 stage方式の object detecion
-		+ stage 1: object region proposalsでN個のROIを出す (region of interest)
-		+ stage 2: ROIごとに 分類/B-BOXの回帰/Segmentation
+		+ stage 1: object region proposalsでN個のRoIを出す (region of interest)
+		+ stage 2: RoIごとに 分類/B-BOXの回帰/Segmentation
 	
-![1](assets/image/Screen Shot 2018-08-20 at 14.59.00.png)
+![1](20180823_reports//Non-local_RoIs_for_Instance_Segmentation/assets/image/Screen_Shot_2018-08-20_at_14.59.00.png)
 
 
 
 +++
 
-+ stage2はROI別で処理されるが、segmentation問題において重要なハズの離れた他のROI情報は、stage 2のnetworkにほぼ伝わってこない
-+ Non-local ROI BlockでROI同士をつなげるアーキを提案してそれを改善した
++ stage2はRoI別で処理されるが、segmentation問題において重要なハズの離れた他のRoI情報は、stage 2のnetworkにほぼ伝わってこない
++ Non-local RoI BlockでRoI同士をつなげるアーキを提案してそれを改善した
 + Robust Vision Challengeの[Instance Segmentation Leaderboard](http://www.robustvision.net/leaderboard.php?benchmark=instance)や[Kitti](http://www.cvlibs.net/datasets/kitti/eval_instance_seg.php?benchmark=instanceSeg2015)で現在２位
 
 ---
@@ -42,36 +40,36 @@
 
 Mask R-CNNの Stage1 と Stage2の間に以下のBlockを挟むだけ
 
-#### Non-Local ROI Block（数式)
+#### Non-Local RoI Block（数式)
 
-![2](assets/image/Screen Shot 2018-08-20 at 15.02.42.png)
+![2](20180823_reports//Non-local_RoIs_for_Instance_Segmentation/assets/image/Screen_Shot_2018-08-20_at_15.02.42.png)
 
-+ i や jは、ROIを表す(Mask R-CNNのstage1の出力、全部N個)
-+ xは、ROIが持っているfeature vector. shapeは(D , H , W) 
-+ g(x_j) は、ROIが他ROIへ与える影響を表すvector関数 (BP学習対象)
-+ f(x_i,x_j)は、２つのROIの関連性を表すscalar関数 (BP学習対象)
++ i や jは、RoIを表す(Mask R-CNNのstage1の出力、全部N個)
++ xは、RoIが持っているfeature vector. shapeは(D , H , W) 
++ g(x_j) は、RoIが他RoIへ与える影響を表すvector関数 (BP学習対象)
++ f(x_i,x_j)は、２つのRoIの関連性を表すscalar関数 (BP学習対象)
 + C(X)は正規化項 (scalar関数)
-+ yは、全ROIから受ける入力の合計
++ yは、全RoIから受ける入力の合計
 	+ xにくっつけて、先のMask R-CNNのstage2( segmentation/分類/枠の回帰とか)　に渡す
 
 +++
 
 #### 絵にした場合
 
-![3](assets/image/Screen Shot 2018-08-20 at 15.16.10.png)
+![3](20180823_reports//Non-local_RoIs_for_Instance_Segmentation/assets/image/Screen_Shot_2018-08-20_at_15.16.10.png)
 
 +++
 
 
 #### 実際のf(x_i,x_j)、g(x_j)、C(X)の関数定義
 
-![2](assets/image/Screen Shot 2018-08-20 at 15.02.42.png)
+![2](20180823_reports//Non-local_RoIs_for_Instance_Segmentation/assets/image/Screen_Shot_2018-08-20_at_15.02.42.png)
 
 + Non-Local Connectionの元ネタとなった論文で、いろいろな関数定義が試されている。結果的に、何を使っても対して変わらないらしい
 
 + ここでは、f(x_i,x_j)とC(X)は、いわゆるsoftmax関数を使う
 
-![3](assets/image/Screen Shot 2018-08-20 at 15.22.19.png)
+![3](20180823_reports//Non-local_RoIs_for_Instance_Segmentation/assets/image/Screen_Shot_2018-08-20_at_15.22.19.png)
 
 + φ と  ψは、 1-by-1 2D convolution (チャネル数をDからD_fに落とすだけ)
 
@@ -79,7 +77,7 @@ Mask R-CNNの Stage1 と Stage2の間に以下のBlockを挟むだけ
 
 +++ 絵にした場合
 
-![4](assets/image/Screen Shot 2018-08-21 at 9.52.43.png)
+![4](20180823_reports//Non-local_RoIs_for_Instance_Segmentation/assets/image/Screen_Shot_2018-08-21_at_9.52.43.png)
 
 ---
 
@@ -105,8 +103,8 @@ Mask R-CNNの Stage1 と Stage2の間に以下のBlockを挟むだけ
 ####self-attention応用いろいろ
 + 「Non-Local」な連携は、言語処理で盛り上がっている（らしい）self-attentionを汎化した形として捉えられる（本論文・元論文でも言及）
 	
-+ 「Non-Local」の数式 ![5](assets/image/Screen Shot 2018-08-21 at 10.00.33.png)
-+ 「self-attention」の数式: ![6](assets/image/Screen Shot 2018-08-21 at 10.00.44.png)
++ 「Non-Local」の数式 ![5](20180823_reports//Non-local_RoIs_for_Instance_Segmentation/assets/image/Screen_Shot_2018-08-21_at_10.00.33.png)
++ 「self-attention」の数式: ![6](20180823_reports//Non-local_RoIs_for_Instance_Segmentation/assets/image/Screen_Shot_2018-08-21_at_10.00.44.png)
 
 + 日本語論文解説 [Attention Is All You Need (Transformer)](http://deeplearning.hatenablog.com/entry/transformer)
 + Attention Networkの画像系活用
