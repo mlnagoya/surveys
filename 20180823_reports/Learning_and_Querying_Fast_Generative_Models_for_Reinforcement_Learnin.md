@@ -1,18 +1,7 @@
 Learning and Querying Fast Generative Models for Reinforcement Learnin
 ===
 
-2018/02/08 
-Lars Buesing
-Th'eophane Weber
-S'ebastien Racani'ere
-S. M. Ali Eslami
-Danilo Rezende
-David P. Reichert
-Fabio Viola
-Fr'ed'eric Besse
-Karol Gregor
-Demis Hassabis
-Daan Wierstra
+2018/02/08  Lars Buesing, Th'eophane Weber, S'ebastien Racani'ere, S. M. Ali Eslami, Danilo Rezende, David P. Reichert, Fabio Viola, Fr'ed'eric Besse, Karol Gregor, Demis Hassabis, Daan Wierstra
 
 [https://arxiv.org/pdf/1802.03006.pdf](https://arxiv.org/pdf/1802.03006.pdf)
 
