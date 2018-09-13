@@ -12,7 +12,7 @@ https://arxiv.org/abs/1807.03039
 ## どんなもの？
 
 + Glow の提案
-    + 1x1 可逆 Convolurions を利用した生成的Flow
+    + 1x1 可逆 Convolutions を利用した生成的Flow
     + 高解像度の自然画像を効率的に合成することができる文字通り最初の尤度ベースのモデル（らしい）
 
 ---
