@@ -32,6 +32,9 @@ https://www.arxiv-vanity.com/papers/1805.04687/
 * ベジエ曲線でアノテーション
 * 隣接した線のコピー機能
 
+![隣接した線のコピー](https://arxiv-sanity-sanity-production.s3.amazonaws.com/render-output/390220/images/border_example.jpg)
+![ベジエ曲線](https://arxiv-sanity-sanity-production.s3.amazonaws.com/render-output/390220/images/beizer/beizer_with.png)
+
 ---
 
 ## 議論はある？
