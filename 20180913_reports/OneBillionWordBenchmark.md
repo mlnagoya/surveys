@@ -1,7 +1,7 @@
 One Billion Word Benchmark for Measuring Progress in Statistical Language Modeling
 ===
 
-Ciprian Chelba, Tomas Mikolov, Mike Schuster, Qi Ge, Thorsten Brants, Phillipp Koehn, Tony Robinson (Google)
+2013/12/11 Ciprian Chelba, Tomas Mikolov, Mike Schuster, Qi Ge, Thorsten Brants, Phillipp Koehn, Tony Robinson (Google)
 
 [https://arxiv.org/abs/1312.3005](https://arxiv.org/abs/1312.3005)
 
