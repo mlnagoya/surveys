@@ -27,7 +27,7 @@ https://www.arxiv-vanity.com/papers/1809.08888/
 
 
 ## 技術や手法の肝は？
-* CrowdTrutheは、
+* [CrowdTruth](http://crowdtruth.org/)は、
     * 不一致の三角形
     * 品質は、media unit, アノテーション、クラウドワーカで決まる
     * 質の低いアノテータを識別することができる
@@ -35,7 +35,7 @@ https://www.arxiv-vanity.com/papers/1809.08888/
 
 ![Disagreement Triangle](https://arxiv-sanity-sanity-production.s3.amazonaws.com/render-output/402493/img/triangle.png)
 
-ｰｰｰ
+---
 
 ## どうやって有効だと検証した？
 * Sound Interpretationでは、専門家より品質が高かった
