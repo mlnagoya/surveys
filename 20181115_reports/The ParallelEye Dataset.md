@@ -81,10 +81,14 @@ Discussionなし。
 =======================
 ---
 
+### 参考サイト
+* [Dataset for Semantic Urban Scene Understanding](https://www.slideshare.net/YosukeShinya/dataset-for-semantic-urban-scene-understanding)
+
 ### 用語
 * ACP (Artificial systems, Computational experiments, and Parallel execution) theory
-* Optical Flow
 * Parallel Vision?
+
+### 分からなかった用語
 * optical flow, and depth
 
 ### 豆知識
@@ -92,3 +96,4 @@ Discussionなし。
 * セマンティックセグメンテーション：10-20カテゴリ、高品質、1枚：30-60分
 * “curse of dataset annotation” : データセットの呪縛？
 * Google Mapsはオープンソースでない
+
