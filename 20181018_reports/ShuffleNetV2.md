@@ -1,4 +1,4 @@
- ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design
+ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design
 ====
 
 Ningning Ma, Xiangyu Zhang, Hai-Tao Zheng, Jian Sun
@@ -46,3 +46,5 @@ Ningning Ma, Xiangyu Zhang, Hai-Tao Zheng, Jian Sun
 
 ## 次に読むべき論文
 
+- ShuffleNet: An Extremely Efficient Convolutional Neural Network for Mobile Devices (https://arxiv.org/abs/1707.01083)
+- MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications (https://arxiv.org/abs/1704.04861)
