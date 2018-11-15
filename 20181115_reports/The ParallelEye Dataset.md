@@ -28,7 +28,7 @@ https://www.arxiv-vanity.com/papers/1712.08394/
     * 専門家はsparse
     * 意見が一致しないとき、どう対応するか
     * アノテーションは時間がかかる30-60分
-* [virtual KITTI](http://www.europe.naverlabs.com/Research/Computer-Vision/Proxy-Virtual-Worlds)は、拡張できない
+* [virtual KITTI](http://www.europe.naverlabs.com/Research/Computer-Vision/Proxy-Virtual-Worlds)は、任意の交通ネットワークへ簡単に拡張できない
 * 多くのデータセットはセマンティックセグメンテーションアノテーションを提供していない
 
 ---
