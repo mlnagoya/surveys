@@ -1,7 +1,7 @@
-#A Survey of Deep Transfer Learning
+##　A Survey of Deep Transfer Learning
 　
 
-## 複数のドメイン間の転移によって新たな価値を見出す→Deep Transfer Learning。（従来の転移学習もその一つ。）
+### 複数のドメイン間の転移によって新たな価値を見出す→Deep Transfer Learning。（従来の転移学習もその一つ。）
 https://arxiv.org/abs/1808.01974
 
 * Instances-based deep transfer learning
@@ -22,29 +22,29 @@ https://arxiv.org/abs/1808.01974
 
 ---
 
-#Instance-based Deep Transfer Learning
+##　Instance-based Deep Transfer Learning
 　
 　
 https://arxiv.org/abs/1809.02776
 
-## 従来の転移学習（model-based）の精度向上に　instances-based を提案
+### 従来の転移学習（model-based）の精度向上に　instances-based を提案
 
 * 複数ドメイン間のコンビネーションを高め、転移学習の効果をより広く汎用的に
 
-## どんなものか？
+### どんなものか？
 
 * Targetドメインの個々のデータをSourceドメインとのの類似性を確認。
 * 精度の低下につながるデータを除去して学習データを最適化するアルゴリズム
 * そのうえで従来の転移学習を実施する
 
-### アルゴリズムについて
+#### アルゴリズムについて
 
 * Sourceドメインのモデル（＋重み）に、Targetドメインの訓練データ、検証データを取り込む
 * Targetドメインの個々の訓練データを、そのデータがなかった場合と比較してその変化を１つずつチェック
 * 損失>0のデータを排除して、訓練データを絞って最適化→Targetドメインの教師データセット　
 
 
-## 実験１.　Source:拡張MNIST（英文字＋数値）を Target:MNIST(数値)に転移
+### 実験１.　Source:拡張MNIST（英文字＋数値）を Target:MNIST(数値)に転移
 
 　手書きの文字と数字では特徴量が類似する
 
@@ -56,7 +56,7 @@ https://arxiv.org/abs/1809.02776
 
 　　※MNISTはすぐに精度が出るのでエポック数=１で実施
 
-## 実験２.　Source:Imagenet　 Target: CIFAR-10 CIFAR-100　　
+### 実験２.　Source:Imagenet　 Target: CIFAR-10 CIFAR-100　　
 
 　　※　学習済みVGG16、ResNet50、DenseNet-121を利用
 
@@ -80,7 +80,7 @@ https://arxiv.org/abs/1809.02776
       Figure 2. VGG-16,ResNet-50,DenseNet-121のCIFAR-10におけるVal-accuracy
 
 
-## 実験３.　Source:Imagenet　 Target: The Street View House Numbers （SVHN）
+### 実験３.　Source:Imagenet　 Target: The Street View House Numbers （SVHN）
 
 　　※　学習済みResNet50、DenseNet-121を利用
 
@@ -98,7 +98,7 @@ https://arxiv.org/abs/1809.02776
 ##### 　・　　　　　　　　　　   　　DenseNet-121 　　　 1.12
 　＿
 
-## 実験４.　Source:Imagenet　 Target: CIFAR-10 CIFAR-100～不均衡データ　　　
+### 実験４.　Source:Imagenet　 Target: CIFAR-10 CIFAR-100～不均衡データ　　　
 
 
 
@@ -120,6 +120,6 @@ https://arxiv.org/abs/1809.02776
 
 ---
 
-## 議論はある？
+### 議論はある？
 
 転移学習はモデル＋重みを再利用するだけでなく、その応用や精度向上策への研究がさらに広がっている。複数ドメインを掛け合わせて価値を広げる発想は、多品種少量の日本企業向けであることに変わりなく、引き続き見逃せない。
