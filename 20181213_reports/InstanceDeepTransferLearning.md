@@ -1,4 +1,4 @@
-##　A Survey of Deep Transfer Learning
+# A Survey of Deep Transfer Learning
 　
 
 ### 複数のドメイン間の転移によって新たな価値を見出す→Deep Transfer Learning。（従来の転移学習もその一つ。）
@@ -22,7 +22,7 @@ https://arxiv.org/abs/1808.01974
 
 ---
 
-##　Instance-based Deep Transfer Learning
+# Instance-based Deep Transfer Learning
 　
 　
 https://arxiv.org/abs/1809.02776
