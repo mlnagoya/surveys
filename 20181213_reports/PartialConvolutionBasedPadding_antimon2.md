@@ -13,6 +13,7 @@ https://arxiv.org/abs/1811.11718
 
 + 部分畳み込みを利用した新しいパディング手法
     + ゼロ埋め、反射、複製に代わるモノ
++ サンプルコード（PyTorch）: https://github.com/NVIDIA/partialconv
 
 ---
 
@@ -34,8 +35,8 @@ https://arxiv.org/abs/1811.11718
 ## 技術や手法の肝は？
 
 + 部分畳み込み（Partial Convolution）
-    + 元々は穴あき画像のような不完全な入力データを扱うための提案されたもの
-    + ↑を利用し、パッディング領域を穴とみなして係数を計算して畳み込みを行う↓  
+    + 元々は穴あき画像のような不完全な入力データを扱うために提案されたもの
+    + ↑を利用し、パディング領域を穴とみなして係数を計算して畳み込みを行う↓  
     ![Fig2](https://i.imgur.com/wvQASi0.png)  
     ![Eq4,Eq5](https://i.imgur.com/HNITA36.png)
 
