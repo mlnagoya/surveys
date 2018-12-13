@@ -18,6 +18,7 @@ https://www.aaai.org/ocs/index.php/WS/AAAIW12/paper/viewFile/5350/5599
     * Quality verification: 2人目の作業者が、bounding boxで対象物を正しく囲われていることを確認する
     * Coverage verification: 3人目の作業者が、すべての対象物がbounding boxで囲われていることを確認する
 
+![workflow](yuji38kwmt/workflow.PNG)
 
 ---
 ## 先行研究と比べて何がすごい？
@@ -103,6 +104,7 @@ https://www.aaai.org/ocs/index.php/WS/AAAIW12/paper/viewFile/5350/5599
 * "quality verification task"の品質を測るのに多数決を採用しているが、ImageNetの正解情報を使えば多数決は不要にならない？
 * [61個の論文から引用されている](https://www.researchgate.net/publication/291249011_Crowdsourcing_annotations_for_visual_object_detection)。
 * 今後作業時間を評価する際は、平均値だけでなく中央値も意識しよう
+
 
 ### 調べた英語
 * Meanwhile: 話は変わって
