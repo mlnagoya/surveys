@@ -13,7 +13,7 @@ https://www.aaai.org/ocs/index.php/WS/AAAIW12/paper/viewFile/5350/5599
 ## どんなもの？
 
 * クラウドソーシングでbounding boxアノテーションを収集するシステムの紹介
-* ワークフローは以下の3つのsub-taskで成り立っている。品質管理が考慮されている
+* ワークフローは以下の3つのsub-taskで成り立っている。
     * Drawing: 1人目の作業者がbounding boxで対象物を囲う
     * Quality verification: 2人目の作業者が、bounding boxで対象物を正しく囲われていることを確認する
     * Coverage verification: 3人目の作業者が、すべての対象物がbounding boxで囲われていることを確認する
@@ -38,8 +38,9 @@ https://www.aaai.org/ocs/index.php/WS/AAAIW12/paper/viewFile/5350/5599
 * drawing taskに対してトレーニングを義務付けている
     * 間違ったbounding boxに対して、作業者はフィードバックを受ける
     * テスト用の画像で実施.トレーニングが完了したら本物の画像で作業する。
-    * ![Instructions for the drawing task](yuji38kwmt/instructions-for-drawing.PNG)
 * quality verification task, coverage verification taskに対してもトレーニングを義務付けている
+
+![Instructions for the drawing task](yuji38kwmt/instructions-for-drawing.PNG)
 
 ![Interface](yuji38kwmt/interface.PNG)
 
@@ -52,13 +53,13 @@ https://www.aaai.org/ocs/index.php/WS/AAAIW12/paper/viewFile/5350/5599
     * カテゴリごとに200枚。
 
 ### 全体の品質
-* 97.9%　Boundinx Boxが付与されていた
+* 97.9% Boundinx Boxが付与されていた
     * Bounding Boxのミス：the size is too small, the boundary is blurry, or there is strong shadow
 * Boundinx Boxの精度は99.2%
 ![Examples of bounding boxes](yuji38kwmt/example-bbox.PNG)
 
 ### コスト
-* drawing taskはverification taskの2倍以上
+* drawing taskの作業時間はverification taskの2倍以上
 * 多数決よりも効率的（どんな多数決でも、最低drawing taskのコストの2倍かかる）
     * 多数決だと時間の平均値で32.8%コスト増、中央値だと38.9%コスト増
 ![Time cost](yuji38kwmt/time-cost.PNG)
