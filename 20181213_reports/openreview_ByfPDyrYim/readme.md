@@ -56,7 +56,7 @@ ReLU とはほぼ同じ精度になった。
 ### Sweeping different learning rates and weight decays for VGG19 on CIFAR-10
 学習率と重み減衰率を探索して図2の結果を得た。明るい色の線が Backprop、暗い色の線が Linear Backpro の結果である。
 
-![図4](fig_3.jpg)
+![図4](fig_4.jpg)
 
 
 ## 議論はある？
