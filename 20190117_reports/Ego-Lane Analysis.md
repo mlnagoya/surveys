@@ -15,8 +15,8 @@ https://arxiv.org/abs/1806.05984
     * 自車レーンの位置
     * LMT(lane marking type)の分類
     * Road marking
-    * LDW
-    * レーン変更
+    * 車線逸脱防止支援 LDW(lane departure warning)
+    * レーン変更(lane  change)
 
 
 * ELASは30 farmes / seconds で処理される（下図のすべてのタスク)
@@ -91,6 +91,7 @@ proportion ( width / height ) threshold.
 
 -------
 # メモ
+
 ### 英語
 * decades: 十年
 * pavement: 舗装
