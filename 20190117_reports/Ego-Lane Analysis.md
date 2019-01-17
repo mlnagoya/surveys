@@ -31,11 +31,11 @@ markings, performing LDW and detecting lane change events.
 ## どうやって有効だと検証した？
 20種類のシーン(urban road, highways, traffic, shadows, rain, etc.)で、15,000 frame、手動アノテーションで試した。
 
-![Lane Marking Types](yuji38kwmt/errors.PNG)
+![Lane Marking Types](yuji38kwmt/error.PNG)
 * particle filterが大きくなるとaccuracyが上昇するが、実行時間が長くなる
 
 
-![Frames per Second](yuji38kwmt/fps.PNG)
+![Frames per Second](yuji38kwmt/fps.png)
 * 低いFPSだとaccuracyが小さい
 
 ![table](yuji38kwmt/table.PNG)
