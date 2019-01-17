@@ -1,4 +1,4 @@
-#Distilling the Knowledge in a Neural Network　
+# Distilling the Knowledge in a Neural Network　
 
 ## 軽量な計算リソースで、且つ高精度を目指し、ナレッジを余すところなく活用して教師モデルから生徒モデルに継承
 https://arxiv.org/pdf/1503.02531.pdf
@@ -28,7 +28,7 @@ https://arxiv.org/pdf/1503.02531.pdf
 
 ---
 
-#Domain Adaptive Transfer Learning with Specialist Models
+# Domain Adaptive Transfer Learning with Specialist Models
 https://arxiv.org/pdf/1811.07056.pdf
 (2018/)
 
