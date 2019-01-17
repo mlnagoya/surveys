@@ -26,6 +26,7 @@ https://arxiv.org/abs/1806.05984
 markings, performing LDW and detecting lane change events.
 
 
+
 ---
 
 ## どうやって有効だと検証した？
@@ -43,6 +44,12 @@ markings, performing LDW and detecting lane change events.
 
 ![Frames per Second](yuji38kwmt/result.PNG)
 
+
+>All experiments were performed on a desktop with Intel
+Core i7-4770 (3.40GHz) and 16GB RAM. ELAS was implemented
+in C++ using the open source library OpenCV.
+Despite this setup, ELAS used up to 15% of the processing
+power and up to 40MB of RAM during experiments.
 
 ---
 
