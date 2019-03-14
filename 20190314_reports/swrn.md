@@ -29,7 +29,7 @@ Pedro Savarese, Michael Maire
 - CIFAR-10, CIFAR-100, ImageNet でベースラインの WideResNet の他、DenseNet、ResNeXt、NAS 系とも比較
 - CIFAR-10 error rate 2% 台
   - ENAS より強くて ENAS よりも少しだけ訓練時間短い
-- コサイン類似度で似てるところを共通に (陽に Recuurent に)
+- コサイン類似度で似てるところを共通に (陽に Recuurent に) してもエラー率 0.02% 増えるだけ
 
 
 ## 先行研究と比べて何がすごい？
@@ -40,12 +40,10 @@ Pedro Savarese, Michael Maire
 
 ## 議論はある?
 
-- Layer の範囲にとどまらず、チャネル方向にも再利用するような FRU も考えられる
-- 所感
-  - 同精度くらいのネットワークで比較しているけど実は高い精度だせないのでは...?
+- k=1 でもそこそこ精度が出ている。普通のリカレントとは違う？
 
 
 ## 次に読むべき論文
 
-- https://arxiv.org/abs/1807.11164
-  - ShuffleNet V2
+- hypernetwork
+- neural turing machine
