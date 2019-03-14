@@ -3,7 +3,7 @@ Learning Implicitly Recurrent CNNs Through Parameter Sharing
 
 Pedro Savarese, Michael Maire
 
-[paper](https://arxiv.org/abs/1901.09615)
+[paper](https://arxiv.org/abs/1902.09701)
 
 @cohama
 
