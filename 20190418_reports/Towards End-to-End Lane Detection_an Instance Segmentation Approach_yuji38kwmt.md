@@ -50,11 +50,13 @@ https://arxiv.org/abs/1802.05591
 ### Lane-Fitting
 * least square closed-form solutionなので、微分可能
 
-### LaneNetのNetwork Architecture
+### H-NetのNetwork Architecture
 * 意図的に小さくしている
 * 3x3の畳み込み
 
 ![H-Net](yuji38kwmt/hnet.PNG)
+
+### LaneNet
 ![LaneNet](yuji38kwmt/lanenet.PNG)
 
 
