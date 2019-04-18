@@ -21,7 +21,7 @@ DocBERT: BERT for Document Classification
 ---
 
 ## どうやって有効だと検証した？
-- Reutar, AAPD, IMDB, Yelp 2014の4つのデータセットでSVMやLSTM, CNNを用いた手法(HAN, KimCNN, XMLCNN, SGM)と比較した
+- Reutar-21578, [AAPD(arXiv Academic Paper dataset)](https://arxiv.org/abs/1806.04822), IMDBレビュー, [Yelp 2014](https://www.yelp.com/dataset/challenge)の4つのデータセットでSVMやLSTM, CNNを用いた手法(HAN, KimCNN, XMLCNN, SGM)と比較した
 
 ![表1](./arxiv_1904.08398/table1.png)
 
@@ -39,3 +39,5 @@ DocBERT: BERT for Document Classification
 ---
 
 ## 次に読むべき論文は？
+- Hierarchical Attention Networks for Document Classification
+  - 今回の比較対象の一つ, GRU+Attention
