@@ -103,7 +103,7 @@ HoloGAN で生成した画像を観察した。３次元形状と見た目を分
 ## 議論はある？
 - 不均一な分布からでも訓練できるようにする方向性: CelebA と Cats のように標高と方位が偏りすぎているデータセットでは上手く訓練できない。偏りが大きいデータセットでも上手く訓練できるようにする。
 - 質感や照明などの外観も分離できるようにする方向性: より多くの観点に関するもつれを解消できるようにする（※書いてはないが、新しい観点に対応する帰納バイアスを Generator に実装する必要がある）。
-- 高解像度の画像を生成する方向性: HoloGAN と ProgressiveGAN を組み合わせることで、高解像度画像の生成を制御ｄ系るようにする。
+- 高解像度の画像を生成する方向性: HoloGAN と ProgressiveGAN を組み合わせることで、高解像度画像の生成を制御できるようにする。
 
 ## 次に読むべきタイトルは？
 - [\[arxiv\]](https://arxiv.org/abs/1812.04948) T. Karras, S. Laine, and T. Aila, "A Style-Based Generator Architecture for Generative Adversarial Networks". arxiv, 2018
