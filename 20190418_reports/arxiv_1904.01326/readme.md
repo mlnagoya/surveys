@@ -1,4 +1,4 @@
-# HoloGAN: Unsupervised learning of 3D representations from natural images [\[arxiv\]](https://arxiv.org/abs/1812.04948)
+# HoloGAN: Unsupervised learning of 3D representations from natural images [\[arxiv\]](https://arxiv.org/abs/1904.01326)
 
 - 著者
     - Thu Nguyen-Phuoc *1
