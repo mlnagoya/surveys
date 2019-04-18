@@ -8,6 +8,10 @@ Zhi Tian, Chunhua Shen, Hao Chen, Tong He
 @cohama
 
 
+## 補足説明
+Anchor (アンカー) とは
+[いい感じの説明 (p47)](https://www.slideshare.net/minorunatsutani/road-damge-ai)
+
 ## どんなもの?
 
 - Anchor-Free な Single Shot Object Detection
