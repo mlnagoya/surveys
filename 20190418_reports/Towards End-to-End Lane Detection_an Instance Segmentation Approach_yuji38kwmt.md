@@ -27,9 +27,6 @@ https://arxiv.org/abs/1802.05591
 * Popular choices of such hand-crafted cues include color-based features [7], the structure tensor [25], the bar filter [34], ridge features [26], etc., which are possibly combined with a hough transform [23, 37] and particle or Kalman filters [18, 8, 34]. 
 * 一般的にロバスト性が低い
 
-### birds-eye-viewの問題
-* 平坦でない地面に対応できない
-
 
 ---
 ## どうやって有効だと検証した？
@@ -53,7 +50,8 @@ https://arxiv.org/abs/1802.05591
 ### Lane-Fitting
 * least square closed-form solutionなので、微分可能
 
-### Network Architecture
+### LaneNetのNetwork Architecture
+* 意図的に小さくしている
 * 3x3の畳み込み
 
 ![H-Net](yuji38kwmt/hnet.PNG)
@@ -88,5 +86,7 @@ https://github.com/MaybeShewill-CV/lanenet-lane-detection
 * closed-form（閉形式）：https://minus9d.hatenablog.com/entry/20130624/1372084229
 * Automatic differentiation(自動微分)
 * MSE: mean squared error
+* bounded inverse class weighting?
+* 
 
 
