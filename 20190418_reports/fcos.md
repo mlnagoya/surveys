@@ -26,11 +26,13 @@ Anchor (アンカー) とは
 - 構造は RetinaNet と同じ
   - Feature Pyramid あり
   - Feature Pyraid と物体の対応付は設定する必要あり (論文中では stride の 8倍)
+  - Focal Loss
 - 枠内にあるものは全部正事例として扱う
   - 正事例かどうかを計算しなくても良い
   - かぶりがあったらとりあえず、小さい方
 - 検出部分は各ピクセルから上端、左端、下端、右端までの距離を `exp(s * 入力画像の座標)` で回帰
   - s は学習させる
+  - 回帰の Loss は IOU Loss
 - さらに、centerness という値も出力させる
   - 枠の端では0、ちょうど中心で1になるような実数値
   - 2値問題 (Binary Cross Entoropy) で学習させる
@@ -39,6 +41,7 @@ Anchor (アンカー) とは
 ## どうやって有効だと検証した？
 
 - RetinaNet と同じパラメータを使って実験
+  - COCO の mAP
 - Overlapping に対する強さについて、COCO から overlap が必ずある画像を集めて評価
   - アンカーなしにもかかわらず overlap に対しても処理できている
 
