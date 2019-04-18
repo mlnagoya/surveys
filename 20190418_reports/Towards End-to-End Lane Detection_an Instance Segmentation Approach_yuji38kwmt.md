@@ -46,7 +46,7 @@ https://arxiv.org/abs/1802.05591
 
 ---
 ## 技術や手法の肝は？
-* bird-viewにすることで、車線が平行になる。2次、3次の多項式にあてはめられる
+* birds-eye-viewにすることで、車線が平行になる。2次、3次の多項式にあてはめられる？
 
 * one-shot instancee segmentation（based on distance metric learnin）で、real-timeが実現できる？
 
