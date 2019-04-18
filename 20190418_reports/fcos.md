@@ -63,7 +63,11 @@ Anchor (アンカー) とは
 - UnitBox https://arxiv.org/abs/1608.01471
 - CornerNet https://arxiv.org/abs/1808.01244
   - 左上と右下の2点のキーポイント検出と、それらが同一物体のペアになるかを推論
-
-- CenterNet https://arxiv.org/abs/1904.08189
+- DuBox https://arxiv.org/abs/1904.06883v1
+- Feature Selective Anchor-Free Module for Single-Shot Object Detection https://arxiv.org/abs/1903.00621
+  - COCO map 44.6%
+- Bottom-up Object Detection by Grouping Extreme and Center Points https://arxiv.org/abs/1901.08043
+- Objects as Points (CenterNet) https://arxiv.org/abs/1904.07850
+- CenterNet (名前がかぶっている...) https://arxiv.org/abs/1904.08189
   - COCO mAP 47%
   - one stage で優勝
