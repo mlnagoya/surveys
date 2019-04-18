@@ -69,7 +69,5 @@ BNはbatch sizeが小さいと微妙（mini batchが似た画像からなると�
 * 2フレームでカメラパラメータを出すのは少し無理があるのでは？動かないとか
 
 # 次に読むべき論文は？
-* [https://arxiv.org/abs/1806.09055](https://arxiv.org/abs/1806.09055)  
-  DARTSという、同じようなアイデアの論文
-* [https://arxiv.org/abs/1901.00596](https://arxiv.org/abs/1901.00596)  
-  今回の方法だとLSTMだけど、グラフ系の手法を使うなら・・・と考えたときにグラフ関係の評判のいいサーベイ論文
+* [https://people.eecs.berkeley.edu/~tinghuiz/projects/SfMLearner/cvpr17_sfm_final.pdf](https://people.eecs.berkeley.edu/~tinghuiz/projects/SfMLearner/cvpr17_sfm_final.pdf)  
+  先行研究（struct2depth）の先行研究。訓練の詳細が分かるかも
