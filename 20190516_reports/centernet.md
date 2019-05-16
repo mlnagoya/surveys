@@ -16,7 +16,7 @@ Kaiwen Duan, Song Bai, Lingxi Xie, Honggang Qi, Qingming Huang, Qi Tian
 
 ## 技術や手法の肝は？
 
-- CenterNet をベースにしている
+- CornerNet をベースにしている
   - 左上の点と右下の点のヒートマップを予測
   - ヒートマップのピクセルから実際の枠の位置までのオフセットを回帰で予測
   - 同じ物体だと同じ、違う物体に対しては違うベクトルを出すような Embedding
