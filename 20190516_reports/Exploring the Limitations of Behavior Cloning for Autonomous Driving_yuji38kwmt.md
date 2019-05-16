@@ -29,7 +29,7 @@ https://arxiv.org/abs/1904.08980
 
 ### CILRS
 * ResNet34を使っている
-![CIRS](yuji38kwmt/CIRS.PNG)
+![CILRS](yuji38kwmt/CILRS.PNG)
 
 ### NoCrash
 * エージェントが制限時間内にゴールに着けば、成功とみなす
