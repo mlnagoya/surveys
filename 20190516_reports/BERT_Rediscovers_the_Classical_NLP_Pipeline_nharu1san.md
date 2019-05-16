@@ -45,7 +45,7 @@ BERT Rediscovers the Classical NLP Pipeline
 - Dependency labeling (Deps.)
   - フレーズ間の関係性の予測
 - Named entity labeling(Entities)
-  - 与えられたエンティティスパンのカテゴリ(person, location,  organizationなど)を予測する
+  - 与えられた句のカテゴリ(person, location,  organizationなど)を予測する
 - Semantic role labeling (SRL)
   - 述語項構造のラベリングを行う(ARG0, ARG1, ARGM-TMPなど)
 - Coreference (Coref.)
@@ -53,7 +53,7 @@ BERT Rediscovers the Classical NLP Pipeline
 - Semantic proto-role (SPR)
   - 述語と引数間の関係の潜在的な属性についてマルチラベル分類をする
 - Relation Classification (Relations)
-  - 2つのエンティティ間に成立する現実世界の関係を予測する
+  - 2つのエンティティ間の関係を予測する
 
 ### Results
 ![図1](./arxiv_1905.05950/figure1.png)
