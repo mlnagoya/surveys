@@ -110,5 +110,7 @@ AtlasNetはChamfer-L1の値が良い
 occupancy network は高解像度の色んな3次元タスクに役に立つはず。
 
 # 次に読むべき論文は？
-* 
-* 
+* https://arxiv.org/abs/1611.05009 
+  OctNet。3次元表現のために同じように解像度を複雑な部分だけ高くする処理をしているらしい
+* https://arxiv.org/abs/1807.02443  
+  Tangent Convolutions for Dense Prediction in 3D
