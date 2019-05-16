@@ -13,6 +13,7 @@ https://arxiv.org/abs/1708.02551
 
 + Instance Segmentation の基本
     + **Discriminative Loss**（日本語だと **弁別的損失** ？）の利用
++ Tensorflow による実装 → https://github.com/hq-jiang/instance-segmentation-with-discriminative-loss-tensorflow
 
 ----
 
