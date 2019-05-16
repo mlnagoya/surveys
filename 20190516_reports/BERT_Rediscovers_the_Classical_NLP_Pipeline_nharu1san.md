@@ -57,11 +57,14 @@ BERT Rediscovers the Classical NLP Pipeline
 
 ### Results
 ![図1](./arxiv_1905.05950/figure1.png)
+
 ![図2](./arxiv_1905.05950/figure2.png)
+
 基本的な構文情報はネットワークの初期の段階で表現され、上位レベルの意味情報は上位層に現れる
 
 
 ![図3](./arxiv_1905.05950/figure3.png)
+
 (a)では誤って"tronto"が都市を指しており、GPEとしてタグ付けしているが、"tronto"が"smoked"されたと判断した後は、ORGが増えている("tronto"は正しくは都市ではなくトロント・ブルージェイズを指す)
 
 ---
