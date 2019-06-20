@@ -44,4 +44,9 @@ David Berthelot, Nicholas Carlini, Ian Goodfellow, Nicolas Papernot, Avital Oliv
 
 
 ## 次に読むべき論文
-- 
+- Yves Grandvalet and Yoshua Bengio. Semi-supervised learning by entropy minimization. In Advances in Neural Information Processing Systems, 2005.
+  - Entropy Minimization
+- Vikas Verma, Alex Lamb, Juho Kannala, Yoshua Bengio, and David Lopez-Paz. Interpolation consistency training for semi-supervised learning.arXiv preprint arXiv:1903.03825, 2019.
+  - Consistency Interpolatiion
+- Avital Oliver, Augustus Odena, Colin Raffel, Ekin Dogus Cubuk, and Ian Goodfellow. Realistic evaluation of deep semi-supervised learning algorithms.  InAdvances in Neural InformationProcessing Systems, pages 3235–3246, 2018.
+  - Goodfellow 先生「世の中の半教師はだめ」
