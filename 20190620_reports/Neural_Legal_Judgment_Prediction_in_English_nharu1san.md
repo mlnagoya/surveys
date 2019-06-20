@@ -41,7 +41,8 @@ Neural Legal Judgment Prediction in English
 ---
 
 ## 議論はある？
-- BERT自体がWordEmbedが可能な為、匿名化するとパフォーマンスが落ちる？
+- 匿名化するとHIER-BERTの性能が落ちるのは過学習しているからかも
+  - BERT自体がWordEmbedが可能な為？
 
 ![](./arxiv_1906.02059/figure1.png)
 - 二項分類の例で、Kharkiv(ハリコフ), District Police Station(地区警察署), City Prosecutor’s office(市検察官事務所)などもハイライトされている
