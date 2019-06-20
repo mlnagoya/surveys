@@ -44,10 +44,13 @@ Neural Legal Judgment Prediction in English
 - BERT自体がWordEmbedが可能な為、匿名化するとパフォーマンスが落ちる？
 
 ![](./arxiv_1906.02059/figure1.png)
-- 
 - 二項分類の例で、Kharkiv(ハリコフ), District Police Station(地区警察署), City Prosecutor’s office(市検察官事務所)などもハイライトされている
   - バイアスの兆候らしい
 
 ---
 
 ## 次に読むべき論文は？
+- [Attention is not explanation](https://arxiv.org/abs/1902.10186)
+  - Attentionの重みについて
+- [Learning to predict charges for criminal cases with legal basis.](https://arxiv.org/abs/1707.09168)
+  - 中国語での事例
