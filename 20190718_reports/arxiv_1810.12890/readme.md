@@ -47,7 +47,7 @@
 ![表3](tab_3.png)
 
 ### 分割タスクにおける性能比較
-- モデル: using ResNet-101 FPN
+- モデル: ResNet-101 FPN
 - データセット: PASCAL VOC 2012
 
 ![表4](tab_4.png)
