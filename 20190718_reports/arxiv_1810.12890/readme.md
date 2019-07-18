@@ -1,4 +1,4 @@
-# DropBlock: A regularization method for convolutional networks [\[arxiv\]](https://arxiv.org/abs/1810.128901)
+# DropBlock: A regularization method for convolutional networks [\[arxiv\]](https://arxiv.org/abs/1810.12890)
 
 - 著者
     - Golnaz Ghiasi *1
