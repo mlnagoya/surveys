@@ -11,7 +11,7 @@ Jifeng Dai, Haozhi Qi, Yuwen Xiong, Yi Li, Guodong Zhang, Han Hu, Yichen Wei
 ## どんなもの?
 
 - 通常の畳込みは隣接の3x3など予め決まった位置のピクセルの値で畳み込みを行うが、これを自由な位置を参照できるように改良した Deformable Convolution という手法を提案
-- Atrous Convolution の一般化
+- Atrous (dilated) Convolution の一般化。dilation rate をいくつにするのかを NN で決める
 - 同様に ROI Pooling も自由な位置を参照する版の Deformable ROI Pooling も提案
 - 物体検出タスクで +2 ~ +5% ほどの精度向上
 
@@ -19,9 +19,10 @@ Jifeng Dai, Haozhi Qi, Yuwen Xiong, Yi Li, Guodong Zhang, Han Hu, Yichen Wei
 
 - Deformable Convolution
   - 入力のフィーチャーマップから x, y 方向のオフセットのマップを作るための畳込みを行う
-  - オフセットマップと入力のフィーチャーマップから線形補間したフィーチャーマップを作る
+  - オフセットマップと入力のフィーチャーマップからバイリニア補間したフィーチャーマップを作る
   - 畳み込む
 - Deformable ROI Pooling
+  - Position Sensitive ROI Pooling (?) という手法のさらに Deformable 版
 
 - Deformable Convolution は最終層直前に3層くらいいれるのがよい
 
@@ -45,4 +46,5 @@ Jifeng Dai, Haozhi Qi, Yuwen Xiong, Yi Li, Guodong Zhang, Han Hu, Yichen Wei
 - 途中の層に入れないのか？
 
 ## 次に読むべき論文
+
 - Deformable Conv v2 https://arxiv.org/abs/1811.11168
