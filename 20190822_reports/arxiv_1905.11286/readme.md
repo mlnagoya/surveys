@@ -111,7 +111,7 @@ Adam などの２次モーメントの移動平均を用いる手法では stoch
 
 ### Adam の性能が SGD with momentum に劣る問題への対策という観点で関連する手法
 - [\[arxiv\]](https://arxiv.org/abs/1902.09843) Liangchen Luo, Yuanhao Xiong, Yan Liu, and Xu Sun, "Adaptive gradient methods with dynamic bound of learning rate", ICLR, 2019.
-- [\[arxiv\]](https://openreview.net/forum?id=Bkg6RiCqY7) Ilya Loshchilov and Frank Hutter, "Decoupled weight decay regularization", ICLR, 2019.
+- [\[openreview\]](https://openreview.net/forum?id=Bkg6RiCqY7) Ilya Loshchilov and Frank Hutter, "Decoupled weight decay regularization", ICLR, 2019.
 
 ### メモリ使用量を節約するという観点で関連する手法
 - [\[arxiv\]](https://arxiv.org/abs/1709.04546) Zijun Zhang, Lin Ma, Zongpeng Li, and Chuan Wu, "Normalized direction-preserving adam", arXiv e-prints, 2017.
