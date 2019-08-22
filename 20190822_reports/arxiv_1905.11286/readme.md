@@ -105,14 +105,14 @@ Adam などの２次モーメントの移動平均を用いる手法では stoch
 
 ## 次に読むべきタイトルは？
 
-### 勾配を正規化する勾配法という観点で NovoGrad と関連している手法
+### 勾配を正規化する勾配法という観点で関連する手法
 - [\[arxiv\]](https://arxiv.org/abs/1510.04609) Bharat Singh, Soham De, Yangmuzi Zhang, Thomas Goldstein, and Gavin Taylor, "Layerspecific adaptive learning rates for deep networks", ICMLA, 2015.
 - [\[arxiv\]](https://arxiv.org/abs/1707.04822) Adams Wei Yu, Qihang Lin, Ruslan Salakhutdinov, and Jaime Carbonell, "Block-normalized gradient method: An empirical study for training deep neural network", arXiv e-prints, 2018.
 
-### Adam が SGD with momentum に対して性能が悪い問題への対策という観点で NovoGrad と関連している手法
+### Adam の性能が SGD with momentum に劣る問題への対策という観点で関連する手法
 - [\[arxiv\]](https://arxiv.org/abs/1902.09843) Liangchen Luo, Yuanhao Xiong, Yan Liu, and Xu Sun, "Adaptive gradient methods with dynamic bound of learning rate", ICLR, 2019.
 - [\[arxiv\]](https://openreview.net/forum?id=Bkg6RiCqY7) Ilya Loshchilov and Frank Hutter, "Decoupled weight decay regularization", ICLR, 2019.
 
-### メモリ使用量を節約するという観点で NovoGrad と関連している手法
+### メモリ使用量を節約するという観点で関連する手法
 - [\[arxiv\]](https://arxiv.org/abs/1709.04546) Zijun Zhang, Lin Ma, Zongpeng Li, and Chuan Wu, "Normalized direction-preserving adam", arXiv e-prints, 2017.
 - [\[arxiv\]](https://arxiv.org/abs/1804.04235) Noam Shazeer and Mitchell Stern, "Adafactor: Adaptive learning rates with sublinear memory cost", arXiv e-prints, 2018.
