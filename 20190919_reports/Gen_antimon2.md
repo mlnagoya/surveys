@@ -1,7 +1,7 @@
 Gen: A General-Purpose Probabilistic Programming System with Programmable Inference
 ===
 
-2019/06/22 Marco F. Cusumano-Towner, Feras A. Saad, Alexander K. Lew, and Vikash K. Mansinghka
+2019/06/22 Marco F. Cusumano-Towner, Feras A. Saad, Alexander K. Lew, and Vikash K. Mansinghka - [MIT](https://dl.acm.org/inst_page.cfm?id=60022195)
 
 https://doi.org/10.1145/3314221.3314642
 
