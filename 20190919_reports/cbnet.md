@@ -42,7 +42,6 @@ Yudong Liu, Yongtao Wang, Siwei Wang, TingTing Liang, Qijie Zhao, Zhi Tang, Haib
 
 - レベルの違う特徴を混ぜ合わせるという意味では FPN、PANet、M2Det などで試みられているが Backbone の時点でそれをするほうがいいということなのか。
   - FishNet は似ているようだが同じレベルの特徴を混ぜるのがよくない
-- ImageNet の pretrain をそのまま使えるのはたしかに利点だが、それを
 
 ## 次に読むべき論文
 - MegDet: A Large Mini-Batch Object Detector (https://arxiv.org/abs/1711.07240)
