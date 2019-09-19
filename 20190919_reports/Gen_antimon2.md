@@ -63,4 +63,8 @@ https://doi.org/10.1145/3314221.3314642
 
 ## 次に読むべき論文は？
 
-+ …
++ [An introduction to probabilistic programming](https://arxiv.org/abs/1809.10756)
+    + 最近の確率的プログラミングの共通パラダイム（Gen はこれに則っていない！）
++ [Pyro: Deep Universal Probabilistic Programming](https://arxiv.org/abs/1810.09538)
+    + Python によるユニバーサルモデリング環境（『汎用的だが遅い』の例と思われる）
+
