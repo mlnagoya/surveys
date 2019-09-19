@@ -27,7 +27,7 @@ that provides an accurate ML model of molecular electronic structure via a direc
 * occupied orbitalsの場合、’chemical accuracy’ (∼0.04 eV) を満たしている？
 
 
-![fig2](yuji38kwmt/fig2.png)
+![fig2](yuji38kwmt/fig2.PNG)
 
 ---
 ## 技術や手法の肝は？
@@ -66,22 +66,9 @@ architectures
 * HF：ハートリーフォック方程式（Hartree-Fock dquation）
 * covariance：共分散
 * dipole moment：双極子モーメント
-* 
-# 大事そうな文章
 
->All chemical concepts and
-physical molecular properties are determined by the electronic Schr¨odinger equation and derive from the groundstate wavefunction.
 
-* 原子座標や分子構成の関数は、固有値や波動関数の係数に対して滑らかでない
-* State degeneracies(縮重度) and electronic level crossings（？）から、ML技術で固有値や波動関数を直接予測する？
 
->Unfortunately, as a function of atomic coordinates and changing molecular configurations, eigenvalues and wavefunction coefficients are not
-well-behaved or smooth.State degeneracies and electronic level crossings provide a challenge to the direct prediction of eigenvalues and wavefunctions with ML techniques. We address this problem with a deep learning
-architecture that directly describes the Hamiltonian matrix in local atomic orbital representation.
-
-* 
-
----
 ### 参考資料
 * [SchNet: A continuous-filter convolutional neural network for modeling quantum interactions](https://www.slideshare.net/KazukiFujikawa/schnet-a-continuousfilter-convolutional-neural-network-for-modeling-quantum-interactions)
 * [HOMO/LUMO](https://omedstu.jimdo.com/2017/11/12/フロンティア軌道理論とhomo-lumo/)
@@ -97,3 +84,15 @@ architecture that directly describes the Hamiltonian matrix in local atomic orbi
 
 ## 分からなかったこと
 * Fig. S2：コサイン類似度をどう見ればよい？
+
+
+
+## 大事そうな文章
+
+>All chemical concepts and
+physical molecular properties are determined by the electronic Schr¨odinger equation and derive from the groundstate wavefunction.
+
+
+>Unfortunately, as a function of atomic coordinates and changing molecular configurations, eigenvalues and wavefunction coefficients are not
+well-behaved or smooth.State degeneracies and electronic level crossings provide a challenge to the direct prediction of eigenvalues and wavefunctions with ML techniques. We address this problem with a deep learning
+architecture that directly describes the Hamiltonian matrix in local atomic orbital representation.
