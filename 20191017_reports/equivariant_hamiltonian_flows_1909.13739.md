@@ -51,8 +51,6 @@ dq/dt = ∂H/∂p, dp/dt = -∂H/∂q の関係式で力学を表現する（こ
 
 symmetry generator を背景知識の対称性を表すものとして利用する。
 
-＊ネーターの定理の主張が怪しい（非可換群の場合が怪しい）
-
 ## 全体の損失関数
 ELBOとsymmetry generatorを使う。
 
