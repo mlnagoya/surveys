@@ -56,6 +56,8 @@ ELBOとsymmetry generatorを使う。
 
 ![](./equivariant_hamiltonian_flows_1909.13739/loss.png)
 
+ただし、係数のλは非負で、L を大きくする方向へ
+
 # どうやって有効だと検証した？
 平面上の点を生成するモデルで検証。
 
