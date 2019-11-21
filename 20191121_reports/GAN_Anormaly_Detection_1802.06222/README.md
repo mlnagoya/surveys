@@ -83,6 +83,8 @@
 
 
 ## 次に読むべきタイトルは？
+- Adversarially Learned Anomaly Detection
+同じ著者の新作... <https://arxiv.org/pdf/1812.02288.pdf>
 - A Flexible Framework for Anomaly Detection via
 Dimensionality Reduction <https://arxiv.org/pdf/1909.04060.pdf>
 	- encoder/decoder/clustering を組み合わせて anomaly detection手法を、frameworkとして実装した話
