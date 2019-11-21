@@ -91,5 +91,6 @@ MoCo で獲得したモデル（MoCo）をファインチューンする手法�
 
 
 ## 次に読むべきタイトルは？
+- [\[openreview\]](https://openreview.net/forum?id=BkgStySKPB) レビュー中につき不明, "Contrastive Multiview Coding", ICLR, 2020
 - [\[arxiv\]](https://arxiv.org/abs/1805.01978v1) Z. Wu, Y. Xiong, S. Yu, and D. Lin, "Unsupervised feature learning via non-parametric instance discrimination". CVPR, 2018
 - [\[arxiv\]](https://arxiv.org/abs/1807.03748) A. van den Oord, Y. Li, and O. Vinyals, "Representation learning with contrastive predictive coding". CVPR, 2018
