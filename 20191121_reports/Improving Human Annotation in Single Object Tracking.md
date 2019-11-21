@@ -24,7 +24,7 @@ https://arxiv.org/abs/1911.02807
     * 5%程度置換したら、精度改善に意味があった。
     * 10%置換したら、baselineを下回った。
 
-[tbl1.png](yuji38kwmt/tbl1.png)
+![tbl1.png](yuji38kwmt/tbl1.png)
 
 
 
@@ -35,7 +35,7 @@ https://arxiv.org/abs/1911.02807
     * RANSAC Tracking (RSRT)を使った方法。SIFT、HoG、ORB、SURFなどでポイント抽出
     * enhanced correlation coefficient maximization (ECC)
 
-[fig5.png](yuji38kwmt/fig5.png)
+![fig5.png](yuji38kwmt/fig5.png)
 
 * 軌跡の平滑化（Trajectory Smoothing）メソッドで試したもの
     * Moving Average
@@ -45,8 +45,8 @@ https://arxiv.org/abs/1911.02807
 * Smoothed Data as Better Ground Truth
     * 青線が平滑化されたアノテーションの軌道、シアン（水色？）線は元のアノテーションの軌道
     
-[fig6.png](yuji38kwmt/fig6.png)
-[fig7.png](yuji38kwmt/fig7.png)
+![fig6.png](yuji38kwmt/fig6.png)
+![fig7.png](yuji38kwmt/fig7.png)
 
 ---
 ## 議論はある？
