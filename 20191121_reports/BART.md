@@ -28,10 +28,15 @@ BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generatio
 ### 事前学習タスク設定
 ![](./arxiv_1910.13461/fig2.png)
 - Token Masking
+  - ランダムにサンプリングしたトークンをMASKに置き換える
 - Sentence Permutation
+  - ランダムに並び替える
 - Document Rotation
+  - ランダムに選択したトークンから開始するように回転させる
 - Token Deletion
-- Tet Infilling
+  - ランダムにトークンを削除する
+- Text Infilling
+  - ポアソン分布(λ=3)から得た長さでテキストをMASKに置き換える
 
 ---
 
@@ -43,18 +48,18 @@ BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generatio
   - RoBERTaとほぼ同等の結果
 - Generation Tasks
   - Summarization
-    - CNN/DailyMail(https://cs.nyu.edu/~kcho/DMQA/)
+    - [CNN/DailyMail](https://cs.nyu.edu/~kcho/DMQA/)
       - 入力と密接に関連したニュース要約
-    - XSum(https://github.com/EdinburghNLP/XSum)
+    - [XSum](https://github.com/EdinburghNLP/XSum)
       - 高度に抽象化されたニュース要約
     - UniLMやBERTSUMABSを上回った
   - Dialogue
-    - ConvAI2(http://convai.io/)
+    - [ConvAI2](http://convai.io/)
       - ペルソナに基づいた対話データセット
   - Abstractive QA
-    - ELI5(https://facebookresearch.github.io/ELI5/)
+    - [ELI5](https://facebookresearch.github.io/ELI5/)
       - 回答にサポート文書を必要とする長文形式の抽象質問応答データセット
-      - Fanらのモデル(https://arxiv.org/abs/1907.09190)を上回る
+      - [Fanらのモデル](https://arxiv.org/abs/1907.09190)を上回る
 - Translation
   - WMT’16 RO-EN
     - ルーマニア語-英語の翻訳
@@ -69,4 +74,3 @@ BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generatio
 
 ## 次に読むべき論文は？
 - [Mass: Masked sequence to sequence pretraining for language generation.](https://arxiv.org/abs/1905.02450)
-  - 
