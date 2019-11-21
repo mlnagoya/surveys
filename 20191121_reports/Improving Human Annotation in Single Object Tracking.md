@@ -66,6 +66,10 @@ https://arxiv.org/abs/1911.02807
 
 ---------------------------------
 ---------------------------------
+### トラッキングアノテーションの失敗要因
+* Partially or fully occlusion
+* Close to boundary or out of view
+* Object deformation
 
 ### 参考
 * LaSOT Dataset
