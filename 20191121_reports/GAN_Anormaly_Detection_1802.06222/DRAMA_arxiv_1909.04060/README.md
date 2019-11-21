@@ -27,7 +27,7 @@
 - 手法の新しさよりは、形式化/普及の意味合い大きいかもしれない
 
 ## 技術や手法の肝は？
-![図1](Screen Shot 2019-11-20 at 12.25.18.png)
+![図1](a.png)
 
 - 4 steps
 	1. dimensionality reduction (encoding)
@@ -54,7 +54,7 @@
 	- 人工的に作った10種類の時系列データ（ノイズ入れる+x/y scaleをランダムに変える)
 		- 人工異常値その１:compact Gaussian “bump” anomalies with random location
 		- 人工異常値その２:9種類を正常扱いにして、残り一種類を異常とする
-![図2](Screen Shot 2019-11-20 at 12.39.55.png)
+![図2](b.png)
 		
 		
 	- 異常値検出用のbenchmark dataset ODSS database <http://odds.cs.stonybrook.edu/>
@@ -66,7 +66,7 @@
 - 元々Frameworkなので、DRT/clustering/metrixで変わる => 組み合わせの中で、必ずbenchmarkに勝つものが存在した
 - (n_f = 100)ではbenchmarkとの差がそれほどではないが、高次元(n_f = 3000)ではDRAMAの優位性が際立つ
 
-![図3](Screen Shot 2019-11-20 at 13.06.10.png)
+![図3](c.png)
 	
 	
 		
