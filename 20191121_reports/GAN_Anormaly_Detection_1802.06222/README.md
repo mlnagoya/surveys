@@ -1,4 +1,4 @@
-#EFFICIENT GAN-BASED ANOMALY DETECTION
+# EFFICIENT GAN-BASED ANOMALY DETECTION
  
 ### 論文著者
 - Houssam Zenati @Institute for Infocomm Research, Singapore
