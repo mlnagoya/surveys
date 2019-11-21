@@ -17,26 +17,25 @@
 
 ## どんなもの？
 ### 異常値検知の世界
-- 応用事例：電波望遠鏡 100PB-10EB rangeデータから新天体を探す
-- feature + distanceベースの異常検出... 次元の呪いでdistanceがどんどん無意味に
-- supervied learningでやると、教師がない(異常値データが極端少ない）
-- 近年は、unsupervised で作ったencoder/decoder + clustering の手法が増えてきた（気がする）
-
-### 本論文のテーマ 
+- 応用事例：セキュリティ、電波望遠鏡(100PB-10EB rangeデータから新天体を探す)
+-いろいろアプローチ
+	- feature + distance (次元の呪いでfeatureが大きくなると無効)
+	- clustering approaches + nearest neighbor methods
+	- one class classification approaches (supervised)
+- supervied learningでやると、教師がない(異常値データが極端少ない）問題発生
+- unsupervised でやるものは、２種類あると思う 
+	- 異常混ざっているかもしれないデータセット
+	- 正常だけとわかっているデータセット
+	
+### 今回の手法
+- GANを使った、unsupervised(正常だけとわかっているデータセット)なやり方
 
 
 ## 先行研究と比べてどこがすごい？
-### Anomaly detection のいろいろアプローチ
-- clustering approaches 
-- nearest neighbor methods
-- one class classification approaches (supervised)
-- recent works use deep neural networks,which do not require explicit feature construction
-
-### 本研究の特徴
-- (Aside from AnoGAN) GANを使った anomaly detectionの研究はあまりなかった
+- 2018時点(AnoGANを除いて) GANを使った anomaly detectionの研究はあまりなかった
 	- AnoGANのまとめ: <https://github.com/mlnagoya/surveys/blob/master/20181213_reports/AnoGAN_devjap.md>
 	- 遅いの問題らしい
-- 当然、unsupervised/ 自動feature抽出 の アプローチの部類に入る
+- この手法で精度・速度面改善
 
 ## 技術や手法の肝は？
 ### GAN訓練
