@@ -15,9 +15,9 @@ OpenVSLAM: A Versatile Visual SLAM Framework
 ## 先行研究と比べて何がすごい？
 ![](./arxiv_1910.01122/table_1.png)
 - ゆるいライセンス(二条項BSDライセンス)
-- APIにまとめてて使いやすい
+- APIにまとめてあって使いやすい
 - 魚眼, 全天球等のカメラタイプとも互換性がありカスタマイズ可能
-  - 正距円筒を利用できる最初のOSS SLAMフレームワーク
+  - 正距円筒画像を利用できる最初のOSS SLAMフレームワーク
 - ブラウザで表示できるViewer
 
 ---
@@ -41,3 +41,4 @@ OpenVSLAM: A Versatile Visual SLAM Framework
 ## 次に読むべき論文は？
 - [https://arxiv.org/abs/1502.00956](ORB-SLAM: a Versatile and Accurate Monocular SLAM System)
 - [https://arxiv.org/abs/1709.04377](ProSLAM: Graph SLAM from a Programmer's Perspective)
+- [https://arxiv.org/abs/1912.03426](Self-Supervised 3D Keypoint Learning for Ego-motion Estimation)
