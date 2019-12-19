@@ -39,6 +39,6 @@ OpenVSLAM: A Versatile Visual SLAM Framework
 ---
 
 ## 次に読むべき論文は？
-- [https://arxiv.org/abs/1502.00956](ORB-SLAM: a Versatile and Accurate Monocular SLAM System)
-- [https://arxiv.org/abs/1709.04377](ProSLAM: Graph SLAM from a Programmer's Perspective)
-- [https://arxiv.org/abs/1912.03426](Self-Supervised 3D Keypoint Learning for Ego-motion Estimation)
+- [ORB-SLAM: a Versatile and Accurate Monocular SLAM System](https://arxiv.org/abs/1502.00956)
+- [ProSLAM: Graph SLAM from a Programmer's Perspective](https://arxiv.org/abs/1709.04377)
+- [Self-Supervised 3D Keypoint Learning for Ego-motion Estimation](https://arxiv.org/abs/1912.03426)
