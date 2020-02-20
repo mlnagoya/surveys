@@ -28,7 +28,6 @@ https://arxiv.org/abs/2002.06626
 
 ![fig4](yuji38kwmt/fig4.png)
 
-* 給料に対してボーナスあり
 
 #### 研究の詳細
 * Amazon Mechanical Turkを使った
