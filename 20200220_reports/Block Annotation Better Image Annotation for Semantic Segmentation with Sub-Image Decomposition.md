@@ -4,6 +4,7 @@ Block Annotation: Better Image Annotation for Semantic Segmentation with Sub-Ima
 2020/02/16 Hubert Lin, Paul Upchurch, Kavita Bala
 
 https://arxiv.org/abs/2002.06626
+https://www.arxiv-vanity.com/papers/2002.06626/
 
 （まとめ：yuji38kmwt）
 
