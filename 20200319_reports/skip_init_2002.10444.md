@@ -72,7 +72,7 @@ wide resnetを変形して検証。
 ## 亜種との比較
 1で初期化するパターン、1/√2で固定するパターン、L2正則化を除くパターン
 
-![](skip_init_2002.10444/table_no_l2.png)
+![](skip_init_2002.10444/table_variations.png)
 
 （CIFAR-10で評価）
 
