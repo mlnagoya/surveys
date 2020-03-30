@@ -17,7 +17,7 @@ https://arxiv.org/abs/2003.05176
     - `T(fj)` はクラス `j` の頻度 `fj` があるしきい値 `λ` 以下かどうか
       - `λ` は 1.76e-4 くらいが良いらしい (LVIS の場合だと思われる)
     - つまり、`w` は
-      - 背景である、かつ、頻度の低いクラス、かつ、正解が `j` でないときときに Loss が 0 になる
+      - 前景である、かつ、頻度の低いクラス、かつ、正解が `j` でないときときに Loss が 0 になる
 - Focal Loss や Class Balanced Loss などと比較しても強い
 - 分類問題でも使える
   - E(r) の代わりにベルヌーイ分布を使う
@@ -37,7 +37,7 @@ https://arxiv.org/abs/2003.05176
 - Single Shot に応用したい場合はどうすれば良さそうか？
 
 ## 次に読むべき論文
-- Class-aware Sampling
-- Repeat Factor Sampling
-- Class-balanced Loss
-- Focal Loss
+- [Class-aware Sampling](https://arxiv.org/abs/1512.05830)
+- [Repeat Factor Sampling](https://arxiv.org/abs/1908.03195)
+- [Class-balanced Loss](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwjQmb7VlsHoAhUF7GEKHTDUAVEQFjABegQIAhAB&url=http%3A%2F%2Fopenaccess.thecvf.com%2Fcontent_CVPR_2019%2Fpapers%2FCui_Class-Balanced_Loss_Based_on_Effective_Number_of_Samples_CVPR_2019_paper.pdf&usg=AOvVaw3c5EYljNlnkzfC4L6U7Hwb)
+- [Focal Loss](https://arxiv.org/abs/1708.02002)
