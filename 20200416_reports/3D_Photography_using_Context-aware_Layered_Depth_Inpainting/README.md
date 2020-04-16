@@ -22,7 +22,8 @@
 
 + 1枚のRGB-D画像をもとに、前景によって隠れている背景を高品質に補完しながら、3D画像(LDI: Layered Depth Image)を生成する手法
 + 生成されたLDIは、標準的なグラフィックエンジンを利用して、小さな計算量でレンダリングすることが出来る
-
+![Sample1](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/sample1.png)
+  ![Sample2](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/sample2.png)
 
 ---
 
@@ -32,9 +33,7 @@
 + 従来と比較し、より自然な見た目でオクルージョンが発生している部分を補完出来る
 + 1枚のRGB-D画像のみを使用するため、適用範囲が広い(CNNでDepthを推定することで、RGB画像にも適用可能)
 + オクルージョンが発生している部分の補完を行う際、色情報だけでなく、Depth情報の補完も行う
-  ![Figure1](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/figure1.png)
-  ![Sample1](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/sample1.png)
-  ![Sample2](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/sample2.png)
+![Figure1](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/figure1.png)
 
 ---
 
