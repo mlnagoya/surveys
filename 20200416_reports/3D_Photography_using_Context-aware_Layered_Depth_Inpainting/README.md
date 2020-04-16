@@ -60,21 +60,12 @@
     + 奥行き情報として、予めレイヤー数を決め打ちする必要がないため、複雑な深度情報を持つシーンにも対応可能
 
 + オクルージョン部分の補完を行う際、画像全体ではなく、深度の境界部分の情報のみをソースにする
-
-+ オクルージョン部分の補完を行う際、深度と画像の色情報に一貫性が保たれるよう、３ステージの補完を行う
-
-    ![Multiplane Image](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/multiplane.png)
-
     ![Figure2](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/figure2.png)
-    ![Figure3](figure3.png)
-
+    ![Figure3](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/figure3.png)
     ![Figure4](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/figure4.png)
 
-    ![Figure5](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/figure5.png)
-
++ オクルージョン部分の補完を行う際、深度と画像の色情報に一貫性が保たれるよう、３ステージの補完を行う
     ![Figure6](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/figure6.png)
-    ![Figure7](figure7-8.png)
-
 
 ---
 
@@ -92,7 +83,6 @@
   ![Table1](https://github.com/strshp/surveys/blob/20200416/20200416_reports/3D_Photography_using_Context-aware_Layered_Depth_Inpainting/table1.png)
 
 
-
 ---
 
 ## 議論はある？
@@ -105,4 +95,4 @@
 
 ## 次に読むべき論文は？
 
-+ 特になし
++ ？
