@@ -2,7 +2,9 @@ Controllable Person Image Synthesis with Attribute-Decomposed GAN
 ===
 
 論文URL: [https://menyifang.github.io/projects/ADGAN/ADGAN_files/Paper_ADGAN_CVPR2020.pdf](https://menyifang.github.io/projects/ADGAN/ADGAN_files/Paper_ADGAN_CVPR2020.pdf)
+
 補助資料URL: [https://menyifang.github.io/projects/ADGAN/ADGAN_files/Supp_ADGAN_CVPR2020.pdf](https://menyifang.github.io/projects/ADGAN/ADGAN_files/Supp_ADGAN_CVPR2020.pdf)
+
 ビデオURL: [https://menyifang.github.io/projects/ADGAN/ADGAN_files/Video_ADGAN_CVPR2020.mp4](https://menyifang.github.io/projects/ADGAN/ADGAN_files/Video_ADGAN_CVPR2020.mp4)
 
 著者
