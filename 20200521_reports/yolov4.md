@@ -55,7 +55,7 @@ YOLOv3の著者とは別の人
 参考:[http://owatank.hatenablog.com/entry/2017/08/29/182549](http://owatank.hatenablog.com/entry/2017/08/29/182549)
 ### PANet（neck）
 * 既存手法 [https://arxiv.org/abs/1803.01534](https://arxiv.org/abs/1803.01534)
-* YOLOv3でいうFPNの代わり
+* YOLOv3でいうFPNにくっつけるようなもの
 * FPNをベースとした抽出器に入力に近い層→遠い層へ接続を追加（緑・赤の点線）
 * それぞれのスケールに適した重み付けを行なってプーリング
 * YOLOv4では層の合わせ方を変更
