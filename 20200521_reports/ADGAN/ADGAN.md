@@ -47,19 +47,23 @@ Controllable Person Image Synthesis with Attribute-Decomposed GAN
 ## 損失関数
 - Adversarial Loss
   生成画像と、ターゲット画像の分布の距離に対して損失を与える
-  ![Adversarial Loss](https://latex.codecogs.com/gif.latex?\bg_white&space;\begin{align*}&space;\mathcal{L}_{adv}&space;&=&space;\mathbb{E}_{I_s,&space;P_t,&space;I_t}[log(D_t(I_s,&space;I_t)\cdotD_p(P_t,&space;I_t))]&space;&plus;&space;\mathbb{E}_{I_s,&space;P_t}[log((1&space;-&space;D_t(I_s,&space;G(I_s,&space;P_t)))&space;\cdot&space;(1&space;-&space;D_p(P_t,&space;G(I_s,&space;P_t))))]&space;\end{align*})
+  
+  ![Adversarial Loss](ad_loss.gif)
   
 - Reconstruction Loss
   生成画像とターゲット画像とのL1距離 色の歪みを抑え、生成画像のクオリティを高める
-  ![Reonstruction Loss](https://latex.codecogs.com/gif.latex?\dpi{200}&space;\mathcal{L}_{rec}&space;=&space;\|G(I_s,&space;Pt)&space;-&space;I_t\|_1)
+  
+  ![Reonstruction Loss](l_rec.gif)
   
 - Perceptual Loss
   生成画像をVGGネットワークに通して得られた特徴マップと、ターゲット画像をVGGネットワークに通して得られた特徴マップ間の距離 生成画像とターゲット画像のテクスチャの差異に対しての損失
-  ![Perceptual Loss](https://latex.codecogs.com/gif.latex?\dpi{200}&space;\mathcal{G}(\mathcal{F}^\ell(I_t))&space;=&space;[\mathcal{F}^\ell(I_t)][\F^\ell(I_t)]^\top,\\&space;\mathcal{L}_{per}&space;=&space;\|\mathcal{G}(\mathcal{F}^\ell(G(I_s,&space;P_t)))&space;-&space;\mathcal{G}(\mathcal{F}^\ell(I_t))\|^2)
+  
+  ![Perceptual Loss](per_loss.gif)
   
 - Contextual Loss
   被写体の位置が揃っていない、2つの画像間の類似度を測る損失
-  ![Contextual Loss](https://latex.codecogs.com/gif.latex?\dpi{200}&space;\mathcal{L}_{CX}&space;=&space;-log(CX(\mathcal{F}^\ell(I_g),&space;\mathcal{F}^\ell(I_t))))
+  
+  ![Contextual Loss](l_con.gif)
 
 
 # どうやって有効だと検証した？
@@ -81,10 +85,8 @@ Controllable Person Image Synthesis with Attribute-Decomposed GAN
 ![AttributeEditing](attribute_editing.png)
 
 ## 議論はある？
+疑問
 - データセットはランダムに分割されたとの記述があったが、訓練データ内に存在しない人に関してはどれくらい上手く生成できるのか？
 
 ## 次に読むべき論文は？
-
-+ Reference の他の論文で読んだ方が良さげなものをピックアップ
-+ [Web で公開されている論文ならリンクにする](https://arxiv.org/pdf/1710.05941.pdf)
-+ サブリストでそれがどんな論文か一言あるとBetter
+- 特になし
