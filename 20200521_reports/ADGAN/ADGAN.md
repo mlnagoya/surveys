@@ -35,8 +35,15 @@ Controllable Person Image Synthesis with Attribute-Decomposed GAN
 # 技術や手法の肝は？
 ## Generator
 ![Generator](generator.png)
+![TextureEncoder](texture_encoder.png)
 - 既存モデルを利用し、ソース画像からの姿勢情報、属性情報を抽出する
 - 抽出した姿勢情報、属性情報から、それぞれ潜在変数C_{pose}とC_{sty}を生成する
+    - PoseEncoder: ソース画像から姿勢情報C_{pose}をエンコード
+        - 畳み込みCNN (論文中の設定では2層)
+    - Tenc: ソース画像からテクスチャ情報C_{sty}をエンコード
+        - 画像全体から潜在変数を抽出するのではなく、部品ごとに分けて作成することで、収束が早くなる
+        - Tencの片方は重みを固定したVGG(COCOで事前学習済み), もう片方は学習可能なCNN
+        
 - StyleBlockを使用してそれらの潜在変数から画像を生成する
 
 ## Discriminator
@@ -77,8 +84,8 @@ Controllable Person Image Synthesis with Attribute-Decomposed GAN
 
 ## 定性評価
 - 従来手法により生成した画像を、人手により評価
- - 本物の画像50枚、生成画像50枚 計100枚の画像セットを、各手法について作成(合計500枚)し、それぞれの画像について、本物か生成画像かを選択してもらう
- - 1枚のソース画像を、5つの手法を使って属性変換し、どれが一番自然な画像か選んでもらう
+   - 本物の画像50枚、生成画像50枚 計100枚の画像セットを、各手法について作成(合計500枚)し、それぞれの画像について、本物か生成画像かを選択してもらう
+   - 1枚のソース画像を、5つの手法を使って属性変換し、どれが一番自然な画像か選んでもらう
 
 ![Evaluation](evaluation.png)
 ![Qualitative Results](qualitative_results.png)
