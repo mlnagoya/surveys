@@ -4,11 +4,11 @@
 （まとめ @usako_tail）
 
 著者
-* Alexey Bochkovskiy∗  
-* Chien-Yao Wang∗  
-* Institute of Information Science Academia Sinica, Taiwan  
-* Hong-Yuan Mark Liao  
-* Institute of Information Science Academia Sinica, Taiwan
+* Alexey Bochkovskiy  
+* Chien-Yao Wang
+(Institute of Information Science Academia Sinica, Taiwan)  
+* Hong-Yuan Mark Liao
+(Institute of Information Science Academia Sinica, Taiwan)
 
 YOLOv3の著者とは別の人
 
