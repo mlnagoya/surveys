@@ -51,6 +51,7 @@ YOLOv3の著者とは別の人
 * 畳み込み層からの特徴マップを それぞれ 16x16, 4x4, 1x1 のウィンドウでmaxプーリング
 * 結果をreshapeして固定長の出力にして全結合層へ渡す
 ![](yolov4/spp.png)
+
 参考:[http://owatank.hatenablog.com/entry/2017/08/29/182549](http://owatank.hatenablog.com/entry/2017/08/29/182549)
 ### PANet（neck）
 * 既存手法 [https://arxiv.org/abs/1803.01534](https://arxiv.org/abs/1803.01534)
@@ -60,10 +61,12 @@ YOLOv3の著者とは別の人
 * YOLOv4では層の合わせ方を変更
 ![](yolov4/pan2.png)
 ![](yolov4/pan.png)
+
 参考:[https://qiita.com/chobaken/items/c15298fdc08be9a034a2](https://qiita.com/chobaken/items/c15298fdc08be9a034a2)
 ### YOLOv3のHead（アンカーベース）
 * 既存手法
 ![](yolov4/head.png)
+
 参考:[https://www.slideshare.net/YujiKobayashi7/foss4g-2018-tokyo](https://www.slideshare.net/YujiKobayashi7/foss4g-2018-tokyo)
 
 ![](yolov4/meta.png)
@@ -84,6 +87,7 @@ YOLOv3の著者とは別の人
 * 隣り合う画素は相関が強いので通常のDropoutでは効果が薄い
 * 画像中の矩形型にDropしてしまうことで汎化性能が上がる
 ![](yolov4/dropblock.png)
+
 参考:[https://www.slideshare.net/DeepLearningJP2016/dldropblock-a-regularization-method-for-convolutional-networks](https://www.slideshare.net/DeepLearningJP2016/dldropblock-a-regularization-method-for-convolutional-networks)
 ## loss
 ### CIoU-loss・DIoU-NMS
