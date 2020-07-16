@@ -1,9 +1,15 @@
 
 # PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation
 [https://arxiv.org/abs/1612.00593](https://arxiv.org/abs/1612.00593)
+
+[https://qiita.com/arutema47/items/cda262c61baa953a97e9](https://qiita.com/arutema47/items/cda262c61baa953a97e9)
+
 [https://qiita.com/KYoshiyama/items/802506ec397559725a1c](https://qiita.com/KYoshiyama/items/802506ec397559725a1c)
+
 [https://www.slideshare.net/FujimotoKeisuke/point-net](https://www.slideshare.net/FujimotoKeisuke/point-net)
+
 [https://www.slideshare.net/naoyachiba18/metastudy](https://www.slideshare.net/naoyachiba18/metastudy)
+
 （まとめ @usako_tail）
 
 著者
