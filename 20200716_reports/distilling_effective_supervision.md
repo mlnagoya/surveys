@@ -45,9 +45,14 @@ CPVR2020 accepted
   - 信頼できるデータをそのまま使うと過学習してしまう。信頼できるデータは常に Mixup した形で訓練に使う
 
 ## どうやって有効だと検証した？
-
+### CIFAR-10
 ![](./distilling_effective_supervision/cifar-10.png)
+
+### CIFAR-100
 ![](./distilling_effective_supervision/cifar-100.png)
+
+### Ablation study
+![](./distilling_effective_supervision/ablation.png)
 
 ## 先行研究と比べて何がすごい？
 
