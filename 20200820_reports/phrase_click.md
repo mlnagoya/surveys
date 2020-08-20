@@ -56,7 +56,7 @@ http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123480426.pdf
 
 
 ### フレーズの入力と、画像との融合
-- CNNの出力を平均プーリングすることで、特徴ベクトルを得る
+- CNNの出力をGlobalAveragePoolingすることで、特徴ベクトルを得る
 
 ![](phrase_click/exp6.png)
 
@@ -142,3 +142,4 @@ Negativeなクリックのシュミレーション
 - フレーズの入力の方がクリックより手間が掛かりそう
 
 # 次に読むべき論文は？
+Deep Interactive Object Selection: https://arxiv.org/abs/1603.04042
