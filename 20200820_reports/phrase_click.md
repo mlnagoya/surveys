@@ -1,5 +1,5 @@
 # PhraseClick: Toward Achieving FlexibleInteractive Segmentation by Phrase and Click
-[http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123480426.pdf]
+http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123480426.pdf
 (まとめ @strshp)
 
 著者
