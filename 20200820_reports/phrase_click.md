@@ -57,35 +57,45 @@ http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123480426.pdf
 
 ### フレーズの入力と、画像との融合
 - CNNの出力を平均プーリングすることで、特徴ベクトルを得る
+
 ![](phrase_click/exp6.png)
 
 - word2vec と bidirectional LSTMを利用して、特徴ベクトルを抽出
+
 ![](phrase_click/exp1.png)
+
 ![](phrase_click/exp2.png)
 
 - 画像から得られたベクトルと、フレーズから得られた2つのベクトルを結合
+
 ![](phrase_click/exp4.png)
 
 - 画像のチャネル数と、特徴ベクトルの次元数が一致するように、ネットワークにかけたあと(Dense?)、tanhに通して[-1, 1]に正規化
+
 ![](phrase_click/exp5.png)
 
 - 元のネットワークに次のように足し合わせる。βは学習可能なパラメータ
+
 ![](phrase_click/exp3.png)
+
 ![](phrase_click/figure4.png)
 
 
 ## 損失関数
 バイナリークロスエントロピー
 - tはセグメンテーションの教師 sはセグメンテーションの推論結果σはシグモイド関数
+
 ![](phrase_click/exp7.png)
 
 アトリビュートロス
 - 視覚的な特徴と、フレーズの特徴をより効率的に学習するための損失
 - Cの後にヘッドをつけて、入力フレーズに幾つかの属性が存在するかどうか(青、椅子、男の子、...)の二値を推定
 - p_i ∈ {0, 1}: モデルの推定結果, a_i ∈ {0, 1}: 教師データ w_i ∈ R: 各属性のバランシングを行う重み
+
 ![](phrase_click/exp8.png)
 
 全体の損失
+
 ![](phrase_click/exp9.png)
 
 
