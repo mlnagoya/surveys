@@ -72,6 +72,11 @@ DSPNet よりは速い。
 - 長いフレームシーケンスを効率的に処理できる（時間的に離れたフレームの情報も加味した推論ができる）。
 - 未観測領域も上手く推定できる。
 
+### 私見
+- 複数視点の画像をフュージョンする良い素直な手法に見える。
+- Voxel を使っているので、広い空間へ適用することが難しそう。
+    - 現状は、6.4m × 6.4m × 2.56m の空間（4㎤, 160×160×64）について学習するのに Titan RTX が 8 個も必要となる。
+- 姿勢が分からない状況でも上手くいくのか（拡張できるのか）が気になる。
 
 ## 次に読むべきタイトルは？
 - [\[arxiv\]](https://arxiv.org/abs/1912.00036v2) A. Dai, C. Diller, M. Nießner, "Sg-nn: Sparse generative neural networks for selfsupervised scene completion of rgb-d scans", arXiv preprint, 2019.
