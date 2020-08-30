@@ -154,3 +154,19 @@
 ||contrastive_learning world_model|@n-kats|https://arxiv.org/abs/1911.12247|Contrastive Learning of Structured World Models|C-SWM|
 ||NN一般 正規化|@cohama|https://arxiv.org/abs/1905.11926v4|Network Deconvolution||
 ||物体検出|@usakotail|https://arxiv.org/abs/2004.10934|YOLOv4: Optimal Speed and Accuracy of Object Detection|YOLOv4|
+|27|物体検出|@n-kats|https://arxiv.org/abs/2005.12872|End-to-End Object Detection with Transformers|DETR|
+||物体検出|@cohama|https://arxiv.org/abs/2006.04388v1|Generalized Focal Loss: Learning Qualified and Distributed Bounding Boxes for Dense Object Detection|Gemeralized fOcal loss|
+||因果推論|@K_Ryuichirou|https://www.pnas.org/content/116/10/4156|Metalearners for estimating heterogeneous treatment effects using machine learning||
+||GAN ファッション|@usakotail|https://openaccess.thecvf.com/content_CVPR_2020/html/Neuberger_Image_Based_Virtual_Try-On_Network_From_Unpaired_Data_CVPR_2020_paper.html|Image Based Virtual Try-on Network from Unpaired Data||
+||contrastive_learning 自己教師|@melleo1978|https://arxiv.org/abs/2006.07733v1|Bootstrap Your Own Latent A New Approach to Self-Supervised Learning|BYOL|
+|28|教師ノイズ|@cohama|https://arxiv.org/abs/1910.00701|Distilling Effective Supervision from Severe Label Noise||
+||自然言語|@n-kats|https://arxiv.org/abs/2006.16236|Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention||
+||点群|@usakotail|https://arxiv.org/abs/1612.00593|PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation|PointNet|
+||contrastive_learning 自己教師|@melleo1978|https://arxiv.org/abs/2005.04966v2|Prototypical Contrastive Learning of Unsupervised Representations||
+||インスタンスセグメンテーション トラッキング|@sennin0901|https://arxiv.org/abs/1912.04573|Classifying, Segmenting, and Tracking Object Instances in Video with Mask Propagation||
+|29|強化学習|@Mit-Funa|https://arxiv.org/abs/1909.01387|Making Efficient Use ofDemonstrations to Solve Hard Exploration Problems|R2D3|
+||3D|@n-kats|https://arxiv.org/abs/1909.01387|NeRF in the Wild: Neural Radiance Fields for Unconstrained Photo Collections|NeRF-W|
+||アノテーション インスタンスセグメンテーション|@strshp|https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/495_ECCV_2020_paper.php|PhraseClick: Toward Achieving Flexible Interactive Segmentation by Phrase and Click|PhraseClick|
+||画像分類|@cohama|https://arxiv.org/abs/2007.09558|Resolution Switchable Networks for Runtime Efficient Image Recognition||
+||3D|@melleo1978|https://arxiv.org/abs/2003.10432v2|Atlas: End-to-End 3D Scene Reconstruction from Posed Images|Atlas|
+
