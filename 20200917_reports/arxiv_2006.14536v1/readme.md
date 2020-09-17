@@ -11,14 +11,14 @@
     - 2: Johns Hopkins University
 
 ## どんなもの？
-### SAT (Smmoth Adversarial Training)
+### SAT (Smooth Adversarial Training)
 - 滑らかな活性化関数（Swish など）を用いた Adversarial Training
 
 
 ## 先行研究と比べてどこがすごい？
 - Adversarial Training が上手くいかない原因が ReLU（滑らかでない勾配）にあることを突き止めた。
 - 「精度と敵対的頑健性はトレードオフの関係にあり、追加の計算コストを支払わない限り同時に高めることはできない」と信じれれてきたが、間違いであることを示した。
-- SAT を EfficientNet-L1 へ適用することで、精度を約 9.5%%、敵対的頑健性を 11.6% も改善した。
+- SAT を EfficientNet-L1 へ適用することで、精度を約 9.5%、敵対的頑健性を 11.6% も改善した。
 
 
 ## 技術や手法の肝は？
@@ -39,7 +39,7 @@
 ![式１](equation_1.png)
 
 #### Parametric Softplus
-![式２～３](table_2to3.png)
+![式２～３](equation_2to3.png)
 ![図１](figure_1.png)
 
 #### 実験結果
@@ -69,7 +69,7 @@ EfficientNet-L1 へ SAT を適用し、適用前後で精度の変化を観察�
 
 
 ## 議論はある？
-- SAT を EfficientNet-L1 へ適用することで、精度を約 9.5%%、敵対的頑健性を 11.6% も改善した。
+- SAT を EfficientNet-L1 へ適用することで、精度を約 9.5%、敵対的頑健性を 11.6% も改善した。
 - その他は特に書かれていない。
 
 ### 私見
