@@ -48,7 +48,7 @@ PackNet は depth estimator を改良し、Lpose（※オプション）を追�
 ### PackNet
 - max pooling / strided convolution ⇒ packing
 - bilinear upsampling ⇒ unpacking
-- batchnormalization ⇒ group normalization
+- batch normalization ⇒ group normalization
 - ReLU ⇒ ELU
 
 ![表１](table_1.png)
@@ -112,7 +112,7 @@ PackNet と monodepth2 を KITTI と CityScapes で学習し、NuSences で評�
 
 ### 私見
 - KITTI は規模も小さく、かなり攻略されているので、最新手法を比較するには不十分だったが、DDAD がこの問題を緩和してくれたことは、貢献として大きい。
-- 論文中では 3D convolution が効いている風な主張があるが疑わしい。チャネル空間をスライドして畳み込む意味がよく分からない（パラメータは節約できるが、意味的には不自然である）。3D convolution を 2D convolution にしても同等の精度が出せるような気がする（パラメータ数が多くなるが、意味的に自然になる）。
+- 論文中では 3D convolution が効いている風な主張があるが疑わしい。チャネル方向にスライドして畳み込む意味がよく分からない（パラメータは節約できるが、意味的には不自然である）。3D convolution を 2D convolution にしても同等の精度が出せるような気がする（パラメータ数が多くなるが、意味的に自然になる）。
 - 特に言及されていないが、ELU も効いているような気がする。回帰問題を解く場合に、ReLU など滑らかではないモデルを用いると良くない（汎化精度や敵対的頑健性が低下する）。これを ELU でケアしたことが効いているのかもしれない。
 
 ## 次に読むべきタイトルは？
