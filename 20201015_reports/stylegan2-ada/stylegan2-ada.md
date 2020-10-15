@@ -13,7 +13,7 @@ https://arxiv.org/abs/2006.06676
 
 ## どんなもの？
 - GANの学習時にデータが少ないと、Discriminatorが過学習してしまう
-- 上記の減少を防ぐ手法として*adaptive discriminator augmentation (ADA)*を提案
+- 上記の減少を防ぐ手法としてadaptive discriminator augmentation (ADA)を提案
 - Discriminatorの入力となる画像に対してオーグメントを行う
 - オーグメントを適用する確率は訓練中に動的に変化する
 
