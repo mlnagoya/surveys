@@ -32,33 +32,59 @@
 
 ![](meshguided_oneshot_face_reenactment/figure2.png)
 
-### MeshRegressionModule
+### モデル
+- モデルは Generator と Discriminator からなる
+  - Discriminator は WGAN-GPのものを利用する
+  - Generator が本手法の肝
+  
+#### MeshRegressionModule
 - ソース画像とターゲット画像に対するメッシュを生成するモジュール
   - 既存モデル(3DMM regressor)を使って、画像から表情(exp)、見た目(id)、頭部姿勢(pose)をエンコードしたベクトルを抽出
   - 抽出したベクトルから、既存モデル(?)を使ってメッシュ(頂点ベクトルと隣接行列)を生成
   - ソース画像とターゲット画像それぞれに対して上記の処理を行うことで各画像に対してメッシュ(M_s, M_t)を生成
     - このとき、ターゲット画像のIDをソース画像のIDに置き換えることで、ターゲット画像の顔の形状を無視できると主張
   
-### MotionNet
+#### MotionNet
 - 2つのメッシュ間から、2画像間のピクセルの移動を表すOpticalFlowを生成するモジュール
   - GCNを使って(M_s, M_t)から2画像間の動きをエンコードしたベクトル(F_m: Motion Feature)を生成
   - 残差構造を利用したデコーダーネットワークで、F_mからOpticalFlow(Γ*)を生成
 
-### Reenacting Module
+#### Reenacting Module
 - OpticalFlowとソース画像を元に、ソース画像にターゲット画像の表情と頭部姿勢を適用した画像を生成するモジュール
 ![](meshguided_oneshot_face_reenactment/figure3.png)
-  - aa
+  - エンコーダーを利用して、ソース画像I_sから画像中の特徴Fを抽出しておく
+  - OpticalFlow Γ* をソース画像 I_s に適用し、雑な出力結果I_s'をまず作成
+  - Occlusion Netを用いて、I_s'から Occlusion Map と OpticalFlow Mak を生成
+  - OpticalFlow Maskを利用してOptical Flow Γ* をマスキングし、それを用いてFを変形
+  - Occlusion Map と 変形した F を掛け合わせたものを Decoderに入力し、最終的な出力を得る
 
+#### 学習
+- MeshRegressionModule は　MotionNet と Reenacting Module とは別に学習
+  - FaceWarehouse, WFLW, AFLW の3つの顔画像のデータセットを使って学習
+- MotionNet と Reenacting Module の学習には自己教師あり学習を適用
+  - I_s と I_d に同じ画像を入力して学習させる
+  - 推論時は I_s と I_d は異なる画像にできる
+
+#### 損失関数
+- 
 
 ## どうやって有効だと検証した？
 ### 定性評価
+- 同様のタスクに対する既存手法を同じ画像に適用し、視覚的に性能を評価
 ![](meshguided_oneshot_face_reenactment/figure4.png)
 
 ### 定量評価
+#### 入力画像の再構成の評価
+- ソース画像とターゲット画像に同一の画像を与え(入力画像の再構成)、入力画像と出力画像の一致度を評価
+- 評価指標
+  - 画像上の見た目を評価: ピクセル間の類似度を図る指標(SSIM, PSNR)
+  - ソース画像の見た目が保持されているかを評価: 顔認識モデルを使って中秋出した画像上の人物の Identity ベクトルのコサイン類似度(CSIM)
+  - ターゲット画像の表情や頭部姿勢が保持されているかを評価: PRMSE, AUCON
 ![](meshguided_oneshot_face_reenactment/table1.png)
----
 
-
+#### ソース画像とターゲット画像が違う場合の評価
+- ソース画像とモデルの出力が違った見た目になるため、ただ単に画像の類似度を評価するSSIMとPSNRは利用できない
+![](meshguided_oneshot_face_reenactment/table2.png)
 
 ## 議論はある？
 - 特になし
@@ -66,8 +92,3 @@
 ## 次に読むべき論文は？
 [Graph Neural Networks](https://arxiv.org/pdf/1812.08434.pdf)
 [Regressing Robust and Discriminative 3D Morphable Models](https://openaccess.thecvf.com/content_cvpr_2017/papers/Tran_Regressing_Robust_and_CVPR_2017_paper.pdf)
-
-
-+ Reference の他の論文で読んだ方が良さげなものをピックアップ
-+ [Web で公開されている論文ならリンクにする](https://arxiv.org/pdf/1710.05941.pdf)
-    + サブリストでそれがどんな論文か一言あるとBetter
