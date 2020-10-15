@@ -65,8 +65,6 @@
   - I_s と I_d に同じ画像を入力して学習させる
   - 推論時は I_s と I_d は異なる画像にできる
 
-#### 損失関数
-- 
 
 ## どうやって有効だと検証した？
 ### 定性評価
@@ -91,4 +89,5 @@
 
 ## 次に読むべき論文は？
 [Graph Neural Networks](https://arxiv.org/pdf/1812.08434.pdf)
+
 [Regressing Robust and Discriminative 3D Morphable Models](https://openaccess.thecvf.com/content_cvpr_2017/papers/Tran_Regressing_Robust_and_CVPR_2017_paper.pdf)
