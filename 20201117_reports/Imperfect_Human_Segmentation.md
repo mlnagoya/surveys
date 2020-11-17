@@ -1,7 +1,9 @@
 # Learning to Segment Human by Watching YouTube
 
 https://arxiv.org/pdf/1710.01457.pdf
+
 （まとめ 熊Bill）
+
 著者　Xiaodan Liang, Yunchao Wei, Liang Lin, Yunpeng Chen, Xiaohui Shen, Jianchao Yang, Shuicheng Yan
 
 # どんなもの？
