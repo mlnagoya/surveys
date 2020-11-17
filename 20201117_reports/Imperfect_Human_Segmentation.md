@@ -28,7 +28,8 @@ https://arxiv.org/pdf/1710.01457.pdf
 ![](Imperfect_Human_Segmentation/005.jpg)
 
 # 次に読むべき論文は？
-最後のこのノートに気になる
+- 最後のこのノートに気になる
 「This work was in part supported by State Key Development
 Program under Grant NO. 2016YFB1001000 and sponsored
 by CCF-Tencent Open Fund.」
+- 比較に出てきた「CRF-RNN」と「WSSL」
