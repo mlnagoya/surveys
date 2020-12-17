@@ -41,6 +41,7 @@ https://arxiv.org/abs/2010.04159
 
 ![](./deformable_detr/deformattention.png)
 
+- `⊿p` オフセット。この分の離れた点の値をフィーチャーマップからバイリニア補間で持ってくる
 - `K` 近傍のピクセル何点参照するかのハイパーパラメータ。この論文の実験では K=4 くらいで設定
 - `A` Attention Weights (さっきの A とはサイズが違う)
 - `x` Feature map の情報
