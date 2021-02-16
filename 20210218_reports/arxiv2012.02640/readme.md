@@ -1,4 +1,4 @@
-[¥[arxiv¥]](https://arxiv.org/abs/2012.02640) A Comparison of Natural Language Understanding Platforms for Chatbots in Software Engineering.
+[\[arxiv \]](https://arxiv.org/abs/2012.02640) A Comparison of Natural Language Understanding Platforms for Chatbots in Software Engineering.
 ===
 
 2020/12/04
