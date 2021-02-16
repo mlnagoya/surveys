@@ -1,4 +1,4 @@
-A Comparison of Natural Language Understanding Platforms for Chatbots in Software Engineering.
+[¥[arxiv¥]](https://arxiv.org/abs/2012.02640) A Comparison of Natural Language Understanding Platforms for Chatbots in Software Engineering.
 ===
 
 2020/12/04
@@ -10,7 +10,7 @@ A Comparison of Natural Language Understanding Platforms for Chatbots in Softwar
 + 所属
 	+ Concordia University, Montreal, Canada.
 
-https://arxiv.org/abs/2012.02640
+
 
 （まとめ：井上嵩浩 as @takinou0）
 
