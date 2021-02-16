@@ -20,22 +20,31 @@
 	+ SaaSとして提供されているチャットボット用の言語推定エンジンは複数あるが、質疑応答させる分野によって得意・不得意がある。
 	+ 分野毎に検証結果があるが、Software Engineeringの領域では検証がされていないため、検証してみた。
 	+ 比較対象は、IBM Watson, Google Dialogflow, Microsoft Luis, オープンソースRasa の4種類。
-	+ 製品の精度は、与えるFAQデータ次第だが、いくつかの検証方法をを試してみたら、トータルではIBM Watsonが最も良かった。
+	+ 製品の精度は与えるFAQデータ次第だが、いくつかの検証方法をを試してみたら、トータルではIBM Watsonが最も良かった。
 
-![figure7](table7_overall_ranking.png)
+![figure1](figure1_overview.png)
 
 ---
 
 ## どうやって有効だと検証した？
 
-+ 2種類のSE系の質問を用意して、検証を行った。適合率・再現率・F値の3つ。
++ Intents(質問の意図を正しく分類できているか）、Entity(目的語が正しく取れているか)、Confidence Score(確信度の閾値を変更した際、F値がずっと高いままでいられるか)で比較を行なった。
++ データとしては2種類のSE系の質問を用意して、検証を行った。
 	+ 実際のシステム開発プロジェクトで使われている質問などのレポジトリ
 		+ 例
 		+ "List me the changes done in ClassA.java"
 		+ "Who has the most bug assignments?"
+		![table1](table1_intents_Repository.png)
+		![table2](table2_entities_repository.png)
+		
 	+ stack overflow (https://stackoverflow.com) に登録されているQ&Aデータ
 		+ 例
 		+ "How to create an JS object from scratch using a HTML button?"
+		![table3](table3_entities_StackOverflow.png)
+		![table4](table4_intents_StackOverflow.png)
+
+##結果
+![figure7](table7_overall_ranking.png)
 
 ---
 
