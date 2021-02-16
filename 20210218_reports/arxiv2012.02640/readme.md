@@ -2,8 +2,13 @@ A Comparison of Natural Language Understanding Platforms for Chatbots in Softwar
 ===
 
 2020/12/04
-Ahmad Abdellatif, Khaled Badran, Diego Elias Costa, Emad Shihab
-Senior Member, IEEE
++ 著者
+	+ Ahmad Abdellatif
+	+ Khaled Badran
+	+ Diego Elias Costa
+	+ Emad Shihab Senior Member, IEEE
++ 所属
+	+ Concordia University, Montreal, Canada.
 
 https://arxiv.org/abs/2012.02640
 
