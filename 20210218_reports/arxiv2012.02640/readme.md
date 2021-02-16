@@ -1,4 +1,4 @@
-[\[arxiv \]](https://arxiv.org/abs/2012.02640) A Comparison of Natural Language Understanding Platforms for Chatbots in Software Engineering.
+[\[arxiv\]](https://arxiv.org/abs/2012.02640) A Comparison of Natural Language Understanding Platforms for Chatbots in Software Engineering.
 ===
 
 2020/12/04
@@ -10,18 +10,19 @@
 + 所属
 	+ Concordia University, Montreal, Canada.
 
-
-
 （まとめ：井上嵩浩 as @takinou0）
 
 ---
 
 ## どんなもの？
 
-+ SaaSとして提供されているチャットボット用の言語推定エンジンは複数あるが、質疑応答させる分野によって得意・不得意がある。
-+ 分野毎に検証結果があるが、Software Engineeringの領域では検証がされていないため、検証してみた。
-+ 比較対象は、IBM Watson, Google Dialogflow, Microsoft Luis, オープンソースRasa の4種類。
-+ 製品ごとの精度の良し悪しは、与えるFAQデータ次第だが、F値で考えると、IBM Watsonが最も良かった。
++ abstract
+	+ SaaSとして提供されているチャットボット用の言語推定エンジンは複数あるが、質疑応答させる分野によって得意・不得意がある。
+	+ 分野毎に検証結果があるが、Software Engineeringの領域では検証がされていないため、検証してみた。
+	+ 比較対象は、IBM Watson, Google Dialogflow, Microsoft Luis, オープンソースRasa の4種類。
+	+ 製品ごとの精度の良し悪しは、与えるFAQデータ次第だが、F値で考えると、IBM Watsonが最も良かった。
+
+
 
 ---
 
@@ -40,35 +41,27 @@
 
 ## 技術や手法の肝は？
 
-+ Experiments/Methods 等で読んだ内容を書く。
-+ リストで2～4項目程度
-    + サブリスト組み合わせてもOK
-
 + 精度を比較してみました、だけなので、あまり肝というものはなかった。
-+ とはいえ、企業レベルでは、これらSaaSのエンジンをそのまま利用することが多いため、調査が既になされているのはありがたい。
 
 ---
 
 ## 議論はある？
 
-+ Discussion 節があれば読んだ内容を書く。
-+ なくても議論してそうな記述が他にあれば書く。
-+ リストで2～4項目程度
-    + サブリスト組み合わせてもOK
+- 特になし
 
 ---
 
 ## 先行研究と比べて何がすごい？
 
-+ Related Works を読んだ内容を書く。
-+ リストで2～4項目程度
-    + サブリスト組み合わせてもOK
-、
 + 論文曰く、2点ある。
 	+ リスト提示や予測など、複数の観点でNLUを比較したところが珍しい。
 	+ SE領域に関連したFAQのデータを使っていることが珍しい、とのこと。
-	
-+ 私見
+---
+
+## 私見
++ 比較してみただけの論文なので、実に読みやすかった。
+- とはいえ、業務上、チャットボットの製品比較をすることが多いので、調査が既になされているのはありがたかった。
+
 
 ---
 
