@@ -22,7 +22,7 @@
 	+ 比較対象は、IBM Watson, Google Dialogflow, Microsoft Luis, オープンソースRasa の4種類。
 	+ 製品ごとの精度の良し悪しは、与えるFAQデータ次第だが、F値で考えると、IBM Watsonが最も良かった。
 
-
+![figure1](figure1_overview)
 
 ---
 
