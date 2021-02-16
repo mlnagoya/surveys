@@ -32,9 +32,11 @@ https://arxiv.org/abs/2012.02640
 
 + 2種類の質問を用意して、検証を行った。
 	+ 実際のシステム開発プロジェクトで使われている質問などのレポジトリ
-		+例　
+		+ 例
+		+ "List me the changes done in ClassA.java"
+		+ "Who has the most bug assignments?"
 	+ stack overflow (https://stackoverflow.com) に登録されているQ&Aデータ
-		+例　
+		+ 例　
 
 ---
 
@@ -45,7 +47,8 @@ https://arxiv.org/abs/2012.02640
     + サブリスト組み合わせてもOK
 
 + 精度を比較してみました、だけなので、あまり肝という肝はない。
-+ 再現率
++ 企業では、ベンダーの作成しているエンジンをそのまま利用することが多いため、調査が既になされているのはありがたい。
+
 ---
 
 ## 議論はある？
