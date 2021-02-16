@@ -20,7 +20,7 @@
 	+ SaaSとして提供されているチャットボット用の言語推定エンジンは複数あるが、質疑応答させる分野によって得意・不得意がある。
 	+ 分野毎に検証結果があるが、Software Engineeringの領域では検証がされていないため、検証してみた。
 	+ 比較対象は、IBM Watson, Google Dialogflow, Microsoft Luis, オープンソースRasa の4種類。
-	+ 製品ごとの精度の良し悪しは、与えるFAQデータ次第だが、F値で考えると、IBM Watsonが最も良かった。
+	+ 製品の精度は、与えるFAQデータ次第だが、いくつかの検証方法をを試してみたら、トータルではIBM Watsonが最も良かった。
 
 ![figure7](table7_overall_ranking.png)
 
