@@ -16,7 +16,7 @@ https://arxiv.org/abs/2012.02640
 + Abstract/Conclusion/Introduction で読んだ内容を書く。
 + リストで2～4項目程度
 
-+Abstract
++ Abstract
 	+ クラウドベンダーなどの提供しているチャットボット用の言語推定エンジンは複数あるが、質疑応答させる分野によって得意・	不得意がある。
 	+ 分野毎に検証結果があるが、Software Engineeringの領域では検証がされていないため、検証してみた。
 	+ 比較対象は、IBM Watson, Google Dialogflow, Microsoft Luis, オープンソースRasa の4種類。
