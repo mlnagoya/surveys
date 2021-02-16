@@ -34,16 +34,19 @@
 		+ 例
 		+ "List me the changes done in ClassA.java"
 		+ "Who has the most bug assignments?"
-		![table1](table1_intents_Repository.png)
-		![table2](table2_entities_repository.png)
 		
 	+ stack overflow (https://stackoverflow.com) に登録されているQ&Aデータ
 		+ 例
 		+ "How to create an JS object from scratch using a HTML button?"
-		![table3](table3_entities_StackOverflow.png)
-		![table4](table4_intents_StackOverflow.png)
+		
+## それぞれのintent, entity
+![table1](table1_intents_Repository.png)
+![table2](table2_entities_repository.png)
+![table3](table3_entities_StackOverflow.png)
+![table4](table4_intents_StackOverflow.png)
 
-##結果
+
+## 結果
 ![figure7](table7_overall_ranking.png)
 
 ---
