@@ -21,7 +21,7 @@ DETR系は、画像→特徴抽出→エンコーダー→デコーダー→推�
 * DETR・・・それらと比べて10倍くらい学習が遅く、小さいものの性能が悪い
 * Deformable DETR・・・Attentionを範囲を狭め、feature pyramidを活用して性能改善。
 
-しかし、Deformable DETRでもデコーダー部分が6個の
+しかし、Deformable DETRでもデコーダー部分が6層必要だった。ここの原因を考え、1層で十分にした。
 
 
 # 技術や手法の肝は？
@@ -58,7 +58,7 @@ reference pointという点を考えて、そこから周辺の情報を集め�
 ### DETR/Deformable DETRの課題
 DETR等のデコーダー部分には6層のattentionが入っている。これを変更すると、次の表のように精度が大きく落ちる。
 
-![](./efficient_detr_2104.01319/effect_num_detector.png)
+![](./efficient_detr_2104.01319/effect_num_decoder.png)
 
 また、
 * エンコーダーの方で同じことを試してもそこまで急激には落ちない。
@@ -92,7 +92,7 @@ backboneは他研究に合わせてresnetを使用。
 
 ![](./efficient_detr_2104.01319/scores_coco.png)
 
-## CroudHuman
+## CrowdHuman
 小さい人が大量に映っているデータセット
 
 ![](./efficient_detr_2104.01319/scores_crowd_human.png)
