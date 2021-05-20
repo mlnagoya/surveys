@@ -33,7 +33,7 @@ https://arxiv.org/abs/2103.14030v1
 
 ## どうやって有効だと検証した？
 
-### ImageNet
+### 分類 (ImageNet)
 
 ![](./swintransformer/result1.png)
 
@@ -41,6 +41,10 @@ https://arxiv.org/abs/2103.14030v1
 ### 物体検出 (COCO)
 
 ![](./swintransformer/result2.png)
+
+### セグメンテーション (ADE20K)
+
+![](./swintransformer/result3.png)
 
 ## 議論はある?
 
