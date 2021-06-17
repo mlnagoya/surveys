@@ -1,4 +1,4 @@
-# [\[arxiv\]](https://arxiv.org/abs/2105.08050v1) With a Little Help from My Friends: Nearest-Neighbor Contrastive Learning of Visual Representations
+# [\[arxiv\]](https://arxiv.org/abs/2104.14548v1) With a Little Help from My Friends: Nearest-Neighbor Contrastive Learning of Visual Representations
 
 - 著者
     - Debidatta Dwibedi *1
