@@ -8,7 +8,7 @@
     - Andrew Zisserman *2
 - 所属
     - 1: Google Research
-    - 2: Brain Team
+    - 2: DeepMind
 
 
 ## どんなもの？
