@@ -47,10 +47,6 @@ https://ieeexplore.ieee.org/document/9363898
 
 ![table2](yuji38kwmt/table2.PNG)
 
-+ Experiments で読んだ内容を書く。
-+ リストで2～4項目程度
-    + サブリスト組み合わせてもOK
-
 
 
 ---
