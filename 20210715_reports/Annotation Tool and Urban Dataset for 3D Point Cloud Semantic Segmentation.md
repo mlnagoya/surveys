@@ -61,5 +61,5 @@ https://ieeexplore.ieee.org/document/9363898
 ---
 
 ## 次に読むべき論文は？
-特になし
-
+* [PointAtMe: Efficient 3D Point Cloud Labeling in Virtual Reality](https://ieeexplore.ieee.org/document/8814115)
+    * アノテーション効率化のためVRでアノテーションする
