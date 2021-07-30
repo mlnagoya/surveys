@@ -1,5 +1,6 @@
 Per-Pixel Classification is Not All You Need for Semantic Segmentation
 ===
+
 - Bowen Cheng (Facebook AI Research)
 - Alexander G. Schwing
 - Alexander Kirillov (Facebook AI Research)
@@ -16,9 +17,8 @@ https://arxiv.org/abs/2107.06278v1
 
 ## 先行研究と比べて何がすごい
 
-- ViT は JFT-300M のような巨大なデータセットでの事前学習が必要だが、提案手法は不要
-  - ただし、これは DeiT という研究で既に達成されている
-- ViT 解像度の粗い特徴マップしか作れず、また、解像度を上げるのが難しい (2乗オーダーで計算量が増える)。結果的に物体検出やセグメンテーションなどのバックボーンに利用できない。提案手法はその点を改善している。
+- 従来の FCN 系は per-pix で分類を行う手法だったが提案手法は Mask 分類という異なる手法でセグメンテーションを実現している。
+- Mask 分類自体は Mask-RCNN や DETR など以前からあったものだが instance-discrimination loss や mask-id loss など複雑な Loss の設計が必要。
 
 ## 技術や手法の肝は？
 
