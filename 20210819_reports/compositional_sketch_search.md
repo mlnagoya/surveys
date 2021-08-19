@@ -59,6 +59,9 @@ https://arxiv.org/pdf/2008.07783.pdf
 ## f_t(.), Encoder backbone の学習
 学習時は 「物体検出用のデータセット (画像中の各物体に対し、物体を囲う枠と物体のクラスが教師付けされたデータ)」を利用する。
 
+- Encoder backbone は GoogLe Net
+  - 中間層の特徴 T_I(I) を拾ってきて、Flatten したものを E_I(I) とする
+
 - Similarlity Loss:
   - (意図) 同じ画像 I をネットワーク E_I 、E_Q' に通して得られたそれぞれの埋め込み e_I 、 e_Q は似通ったものになるはず
 
@@ -67,7 +70,7 @@ https://arxiv.org/pdf/2008.07783.pdf
 
 - Discriminative (CE) Loss:
   - c(I) は画像 I に写る物体のクラス情報
-  - (意図) ネットワーク E_I の出力 T_I (これを Flatten すると e_I になる) から、写っている物体のクラス情報が復元できるようであれば、 T_I(I) は I の特徴を良い感じに保持したものになるはず
+  - (意図) ネットワーク E_I の出力 T_I(I) (これを Flatten すると E_I(I) → e_I になる) から、写っている物体のクラス情報が復元できるようであれば、 T_I(I) は I の特徴を良い感じに保持したものになるはず
   ![](compositional_sketch_search/exp2.png)
 
 
@@ -78,12 +81,15 @@ https://arxiv.org/pdf/2008.07783.pdf
 ---
 
 # どうやって有効だと検証した？
-
-- 定性評価
 ![](compositional_sketch_search/figure5.png)
+
+## 定性評価
+- Amazon Mechanical Turk を使って人手で定性評価
+  - クエリスケッチに対し、3つの手法で類似度トップ 20 の画像 (リザルト) を選出
+  - クエリスケッチと各リザルトを比較し、それぞれのリザルトに 1 (全く違う) 〜 5 (正しく検索できている) の 5 段階でランク付けしてもらう
 ![](compositional_sketch_search/figure4.png)
 
-- 定量評価
+## 定量評価
 ![](compositional_sketch_search/exp5.png)
 ![](compositional_sketch_search/table1.png)
 
