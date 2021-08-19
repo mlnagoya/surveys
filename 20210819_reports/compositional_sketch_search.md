@@ -14,7 +14,7 @@ https://arxiv.org/pdf/2008.07783.pdf
 
 ---
 
-## どんなもの？
+# どんなもの？
 
 - 手書きのスケッチを検索クエリとして、検索クエリと似たような構図を持つ画像を検索するための手法
 
@@ -22,29 +22,29 @@ https://arxiv.org/pdf/2008.07783.pdf
 
 ---
 
-## 先行研究と比べてどこがすごい？
+# 先行研究と比べてどこがすごい？
 
-### 先行研究
+## 先行研究
 - これまでに提案されてきた手法では、複数の物体を含むスケッチで検索することが出来なかった
 - 最近、[複数の物体を含むスケッチで検索可能な手法も提案された](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123640698.pdf)が、検索対象の画像に対して事前に物体検出を行う必要があり、あまりイケていなかった
 ![](compositional_sketch_search/external_figure2.png)
 
-### 提案手法
+## 提案手法
 - 複数の物体を含むスケッチで検索可能
 - 検索対象の画像に対して、物体検出を行うステップが不要
 
 ---
 
-## 技術や手法の肝は？
+# 技術や手法の肝は？
 
-### 指針
+## 指針
 クエリ画像 (手書きのスケッチ) を Q 、検索対象の画像を I としたとき、
 クエリ画像の埋め込み E_Q(Q) → e_q と、 検索対象の画像の埋め込み E_I(I) → e_i の L2 距離 | e_q - e_i |_2 が小さい程、 Q と I の類似度が大きくなるような、ネットワーク E_Q と E_I を作る。
 
-### モデル構造
+## モデル構造
 ![](compositional_sketch_search/figure2_.png)
 
-### f_s(.) f_i(.) の学習
+## f_s(.) f_i(.) の学習
 - スケッチを入力するモデル (青) と 写真を入力するモデル (緑) の 2つを用意
 - 青と緑のモデルに対し、同じ対象物については、中間層の出力が近くなるよう、「triplet loss」を利用して学習を行う
 - 学習には TU-Berlin Dataset を使用
@@ -52,11 +52,11 @@ https://arxiv.org/pdf/2008.07783.pdf
 ![](compositional_sketch_search/external_figure4.png)
 
 
-### Query Tensor の作り方
+## Query Tensor の作り方
 - 以下の式の出力は C × N × N 、 MP は Max Pooling
 ![](compositional_sketch_search/exp0.png)
 
-### f_t(.), Encoder backbone の学習
+## f_t(.), Encoder backbone の学習
 学習時は 「物体検出用のデータセット (画像中の各物体に対し、物体を囲う枠と物体のクラスが教師付けされたデータ)」を利用する。
 
 - Similarlity Loss:
@@ -77,7 +77,7 @@ https://arxiv.org/pdf/2008.07783.pdf
 
 ---
 
-## どうやって有効だと検証した？
+# どうやって有効だと検証した？
 
 - 定性評価
 ![](compositional_sketch_search/figure5.png)
@@ -89,11 +89,11 @@ https://arxiv.org/pdf/2008.07783.pdf
 
 ---
 
-## 議論はある？
+# 議論はある？
 
 - 特になし
 
 ---
 
-## 次に読むべき論文は？
+# 次に読むべき論文は？
 - [Sketching out the Details: Sketch-based Image Retrieval using Convolutional Neural Networks with Multi-stage Regression](https://www.researchgate.net/publication/322250059_Sketching_out_the_Details_Sketch-based_Image_Retrieval_using_Convolutional_Neural_Networks_with_Multi-stage_Regression)
