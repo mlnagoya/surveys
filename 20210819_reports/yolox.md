@@ -57,14 +57,17 @@ yolov3で使用されている一体型ヘッドでは、分類および回帰�
 
 ## データオーグメンテーション（Mosaic・MixUp）
 ### Mosaic
-4 つの画像を混ぜるオーグメント
+4つの画像を混ぜるオーグメント
+
 初出はYOLOv4[https://arxiv.org/abs/2004.10934](https://arxiv.org/abs/2004.10934)
 
 ![](yolox/mosaic.png)
 
 ### MixUp
 2つの画像を重ね合わせてそれぞれの画像の透過度によってラベルを決定するというオーグメント
+
 [https://arxiv.org/abs/1710.09412](https://arxiv.org/abs/1710.09412)
+
 判別面が滑らかになることによって汎化性能が上がるとのこと
 
 ![](yolox/mixup.png)
