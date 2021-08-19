@@ -39,7 +39,7 @@ https://arxiv.org/pdf/2008.07783.pdf
 
 ### 指針
 クエリ画像 (手書きのスケッチ) を Q 、検索対象の画像を I としたとき、
-クエリ画像の埋め込み E_Q(Q) と、 検索対象の画像の埋め込み E_I(I) の L2 距離 | E_Q(Q) - E_I(I) |_2 が小さい程、 Q と I の類似度が大きくなるような、ネットワーク E_Q と E_I を作る。
+クエリ画像の埋め込み E_Q(Q) → e_q と、 検索対象の画像の埋め込み E_I(I) → e_i の L2 距離 | e_q - e_i |_2 が小さい程、 Q と I の類似度が大きくなるような、ネットワーク E_Q と E_I を作る。
 
 ### モデル構造
 ![](compositional_sketch_search/figure2_.png)
@@ -50,6 +50,11 @@ https://arxiv.org/pdf/2008.07783.pdf
 - 学習には TU-Berlin Dataset を使用
 ![](compositional_sketch_search/external_figure3.png)
 ![](compositional_sketch_search/external_figure4.png)
+
+
+### Query Tensor の作り方
+- 以下の式の出力は C × N × N 、 MP は Max Pooling
+![](compositional_sketch_search/exp0.png)
 
 ### f_t(.), Encoder backbone の学習
 学習時は 「物体検出用のデータセット (画像中の各物体に対し、物体を囲う枠と物体のクラスが教師付けされたデータ)」を利用する。
@@ -80,8 +85,7 @@ https://arxiv.org/pdf/2008.07783.pdf
 
 - 定量評価
 ![](compositional_sketch_search/exp5.png)
-![](compositional_sketch_search/table2.png)
-
+![](compositional_sketch_search/table1.png)
 
 ---
 
