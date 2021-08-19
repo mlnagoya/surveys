@@ -19,7 +19,7 @@ YOLOシリーズ最新作
 * 分離ヘッドや最先端のラベル割り当て戦略SimOTAなどを導入
 * 早くてかしこい(Tesla V100で68.9FPS、YOLOv5-Lを1.8%AP上回る)
 
-![](yolox/sota.png)
+![](yolox/sota2.png)
 
 # 先行研究と比べてどこがすごい？
 
@@ -74,8 +74,10 @@ yolov3で使用されている一体型ヘッドでは、分類および回帰�
 
 ## これまでのSOTAとの比較
 ![](yolox/sota.png)
+
 最高性能のYOLOX-XではAP51.2%,FPS57.8
 性能が下がるYOLOX-DarkNet53ではAP47.4％だが、FPS90.1
+
 ![](yolox/sota2.png)
 
 # 次に読むべき論文は？
