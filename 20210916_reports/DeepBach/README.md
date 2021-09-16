@@ -104,4 +104,5 @@ https://youtu.be/QiBM7-5hA6o （生成作品の動画）
     -  対話型なら、ユーザーが自発的・主体的になれそう
 
 ## 次に読むべきタイトルは？
-- 未定
+- Music Composition with Deep Learning: A Review https://arxiv.org/abs/2108.12290
+- A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions https://arxiv.org/abs/2011.06801
