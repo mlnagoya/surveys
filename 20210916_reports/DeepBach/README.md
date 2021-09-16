@@ -1,7 +1,7 @@
 # DeepBach:  Steerable Model for Bach Chorales Generation
 Author : Ga¨etan Hadjeres, Franc¸ois Pachet, Frank Nielsen
 
-ソニー・コンピュータ・サイエンス研究所所属（当時）
+所属：パリ第6大学、ソニー・コンピュータ・サイエンス研究所（パリ及び日本）
 
 https://arxiv.org/abs/1612.01010  （原著論文）
 
