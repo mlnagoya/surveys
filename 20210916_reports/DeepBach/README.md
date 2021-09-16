@@ -107,5 +107,9 @@ https://youtu.be/QiBM7-5hA6o （生成作品の動画）
     - 主題的性格を持たせることができるか（例えばフーガの作曲など） 
 
 ## 次に読むべきタイトルは？
-- Music Composition with Deep Learning: A Review https://arxiv.org/abs/2108.12290
-- A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions https://arxiv.org/abs/2011.06801
+- 近い手法
+    - BachBot https://github.com/feynmanliang/bachbot
+    - Assisted Lead Sheet Composition Using FlowComposer https://link.springer.com/chapter/10.1007%2F978-3-319-44953-1_48
+- 深層学習による作曲の全体像
+    - Music Composition with Deep Learning: A Review https://arxiv.org/abs/2108.12290
+    - A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions https://arxiv.org/abs/2011.06801
