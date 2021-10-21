@@ -33,6 +33,7 @@ https://github.com/lijx10/DeepI2P
 分かりませんでした。
 
 ![fig1](yuji38kwmt/fig1.png)
+![fig2](yuji38kwmt/fig2.png)
 ![eq1](yuji38kwmt/eq1.png)
 
 ![fig3](yuji38kwmt/fig3.png)
