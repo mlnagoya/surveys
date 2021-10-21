@@ -79,3 +79,8 @@ ResNet-50 の最適な設定と ViT の最適な設定は一致しない
 ## 議論はあるか？
 
 - 今回発見した最適な学習手法は ResNet-50 のためのものであって、他のモデルに適用しても精度向上はするが最適ではない。特により深い/複雑なモデルには強い正則化が必要なのではないか
+
+
+## 次に読むべき論文
+
+- [Pervasive Label Errors in Test Sets Destabilize Machine Learning Benchmarks](https://arxiv.org/abs/2103.14749): ノイズがないきれいなデータだと ResNet18 で十分らしい
