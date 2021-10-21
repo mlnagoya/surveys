@@ -25,7 +25,7 @@ https://github.com/lijx10/DeepI2P
 
 * RTE(Relative Translation Error)とRRE(Relative Rotation Error)で比較した
 * Direct Regressionと比較すると、かなりよい
-
+![tab1](yuji38kwmt/tab1.png)
 ---
 
 ## 技術や手法の肝は？
