@@ -91,11 +91,19 @@ avg_send < avg_ackなら輻輳状態
 
 ## 先行研究と比べて何がすごい？
 * ルールベースでないところがすごい
-
+* 他の手法はtask-drivenで、特定のアプリケーションに対応している。直接的に輻輳制御の問題を対応していない。
 ---
 
 ## 次に読むべき論文は？
-TODO
+* [End-to-end congestion control approaches for high throughput and low delay in 4G/5G cellular networks](https://www.sciencedirect.com/science/article/pii/S1389128620312974)
+    * cellular networksでの輻輳制御の手法の概要について述べている文書。QTCPについても言及している。
+* [DL-TCP: Deep Learning-Based Transmission Control Protocol for Disaster 5G mmWave Networks](https://ieeexplore.ieee.org/abstract/document/8859212)
+    * Deep Learningで輻輳制御している手法の紹介
+* [AUTO: Adaptive Congestion Control Based on Multi-Objective Reinforcement Learning for the Satellite-Ground Integrated Network](https://www.usenix.org/conference/atc21/presentation/li-xu)
+    * 衛星との通信の輻輳制御を Multi-Objective Reinforcement Learning手法を使った
+* [Improving TCP Congestion Control with Machine Intelligence](https://dl.acm.org/doi/10.1145/3229543.3229550)    
+    * 強化学習を使ったTCPの輻輳制御。QTCPとは異なる方法で、QTCPと比較している。
+* [TCP-Drinc: Smart Congestion Control Based on Deep Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/8610116)
 
 
 
@@ -105,3 +113,44 @@ TODO
 * CUBICやBBRと比較した場合はどうなる？
 * スマホとかに実装できる？
 * 他の輻輳制御アルゴリズムとの親和性は大丈夫？  https://gihyo.jp/admin/serial/01/tcp-cc/0003
+
+
+## 英単語とか用語とか
+
+* eliminates: 省く
+* proportional fairness: 比例公平？
+* emphasizes: 強調する
+* converge: 収束する
+* Intuitively: 直観的に
+* halve: 半減
+* hense: したがって
+* consecutive: 連続
+* utility:目的関数
+* Dynamic Programming：動的計画法
+* optimal policy: 最適政策
+* episode-by-episode ?
+* episode-by-episode basis
+* infeasible: 実行不可能
+* Kanerva coding
+* adjacent: 隣接
+* Empirical:経験的
+* mitigate: 軽減する
+* deteriorate: 悪くなる
+* coarsely: 粗い
+* argue: 論じる
+* CDF: 累積分布関数
+* fluctuate: 揺れ動く
+* dominate: 支配する
+* sacrifice: 犠牲
+* fluctuations: 変動
+* conservative: 保守的
+* merely: 単に
+* inferior: 劣る
+* eventually: 最終的に
+* comperable: 同程度
+* superior: 優れた
+* Meanwhile: その間
+* diminish: 少なくなる
+* QoE: 体感品質
+* enormous: 膨大
+* tile coding? http://www.incompleteideas.net/book/8/node6.html
