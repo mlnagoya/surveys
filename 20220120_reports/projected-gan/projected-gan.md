@@ -46,13 +46,15 @@ https://arxiv.org/pdf/2111.01007.pdf
 
 - Discriminator が特徴空間の部分集合にのみ注目しないように:
   
-  - Discriminator に
+  - Discriminator に上記の特徴量を入力するのではなく、特徴量をミックスしたり、ランダムに射影した特徴量を入力とした
 
 ### Multi-Scale Discriminators
 
 - Discriminator の入力に画像を与えるのではなく、学習済みの特徴抽出器が出力した特徴量を与える
 
 - 特徴抽出器の各レイヤーが出力する特徴量のうち、64<sup>2</sup>、32<sup>2</sup>、16<sup>2</sup>、8<sup>2</sup>の解像度のものを、それぞれ D<sub>1</sub>、D<sub>2</sub>、D<sub>3</sub>、D<sub>4</sub>の入力とする
+
+- 損失計算時はすべてのD<sub>l</sub>に関して加算したものを求める
 
 ### Random Projections
 
@@ -79,5 +81,69 @@ https://arxiv.org/pdf/2111.01007.pdf
 - 空間方向の特徴をミックスするモジュールとして、U-Net と同様のアーキテクチャを用いた
 
 - これも重みは He の初期化を用いる
+
+#### Pretrained Feature Network
+
+- 特徴抽出器はいろいろなサイズを試した
   
+  - EfficientNet、ResNet の様々なサイズのモデルと、ViT
+
+- 実験の結果、より小さいモデルの方がより低いFIDを得ることができた
   
+  - このことから、よりコンパクトな表現のほうが良いことがわかる
+
+- コンパクトなモデルで済むので、計算速度もその分向上した
+
+- また、事前学習の有効性を示すため、ランダムな重みで初期化して実験してみたら、FIDの値は高くなった
+  
+  - やっぱり事前学習が有効
+
+
+
+上述の施策によって、従来の GAN とは異なり、複数の Discriminator やランダム射影などのコンポーネントが追加されたため、目的関数も下記のように変更する
+
+<img src="pgan_objective.png" title="" alt="pgan_objective.png_" data-align="center">
+
+## 結局どの施策が有効だったの？ (Ablation Study)
+
+<img src="fid_table.png" title="" alt="fid_table.png_" data-align="center">
+
+### どの特徴抽出器のレイヤーが有用な特徴量を出力するのか？
+
+- （表の一番上、'No Projection' のところ）有用な特徴量を知るために、L<sub>1</sub>からL<sub>4</sub>までの特徴をいろんな組み合わせで用いた
+
+- 表の値は RGB 画像を Discriminator の入力として学習させたときに得られた FID で、特徴抽出器の特徴量を Discriminator の入力として学習させたときに得られたFIDを割ったもの
+
+- 特徴抽出器を用いた場合、値が大体1を下回っており、画像を入力するよりも良いことがわかる
+
+- 興味深い点は、Discriminator を追加していくにつれて性能が悪くなっていくところ
+  
+  - より意味的な特徴は直接ロスに関わらない
+
+
+
+### どうしたら最も有効に特徴量を利用できるか？
+
+- CCMを導入すると、FIDを大幅に向上させることができたが、深い層の特徴は未だに有効に扱えていないことがわかる
+
+- CSMを導入すると、4つの Discriminator を組み合わせたときに最もよいFIDを得られることがわかった。
+  
+  - CSMによって深い層の特徴をよく使えるようになったと著者は主張
+  
+  - ちなみに、CCM + CSM に画像を突っ込むと性能が低下するらしい
+
+
+
+## どうやって有効性を示した？
+
+- 実験で従来のSOTAと実行速度、FIDの値で比較した
+
+
+
+### 実行速度
+
+<img src="train_prop.png" title="" alt="train_property.png_" data-align="center">
+
+### FID
+
+![fid_res.png_](fid_res.png)
