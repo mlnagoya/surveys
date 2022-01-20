@@ -66,7 +66,7 @@ https://arxiv.org/pdf/2111.01007.pdf
 
 #### Cross-Channel Mixing (CCM)
 
-<img title="" src="ccm.png" alt="ccm.png" data-align="center" width="226">
+<img title="" src="ccm.png" alt="ccm.png" data-align="center" width="496">
 
 - ランダムな射影によって、特徴の情報が射影前から失われることなく、かつ自明な変換でない一番簡単な方法は 1x1 Conv である
 
@@ -76,7 +76,7 @@ https://arxiv.org/pdf/2111.01007.pdf
 
 #### Cross-Scale Mixing (CSM)
 
-<img title="" src="csm.png" alt="csm.png" data-align="center" width="252">
+<img title="" src="csm.png" alt="csm.png" data-align="center" width="529">
 
 - 空間方向の特徴をミックスするモジュールとして、U-Net と同様のアーキテクチャを用いた
 
@@ -98,8 +98,6 @@ https://arxiv.org/pdf/2111.01007.pdf
   
   - やっぱり事前学習が有効
 
-
-
 上述の施策によって、従来の GAN とは異なり、複数の Discriminator やランダム射影などのコンポーネントが追加されたため、目的関数も下記のように変更する
 
 <img src="pgan_objective.png" title="" alt="pgan_objective.png_" data-align="center">
@@ -120,8 +118,6 @@ https://arxiv.org/pdf/2111.01007.pdf
   
   - より意味的な特徴は直接ロスに関わらない
 
-
-
 ### どうしたら最も有効に特徴量を利用できるか？
 
 - CCMを導入すると、FIDを大幅に向上させることができたが、深い層の特徴は未だに有効に扱えていないことがわかる
@@ -132,13 +128,9 @@ https://arxiv.org/pdf/2111.01007.pdf
   
   - ちなみに、CCM + CSM に画像を突っ込むと性能が低下するらしい
 
-
-
 ## どうやって有効性を示した？
 
 - 実験で従来のSOTAと実行速度、FIDの値で比較した
-
-
 
 ### 実行速度
 
