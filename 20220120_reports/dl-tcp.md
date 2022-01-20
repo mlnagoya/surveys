@@ -22,6 +22,9 @@ https://ieeexplore.ieee.org/abstract/document/8859212
 * 5Gミリ波環境ではパケットロスが発生しやすい
      * Blockage problem:
      * Beam misalignment
+
+![](yuji38kwmt/fig2.gif)
+
 * 従来のTCP輻輳アルゴリズムだと、パケットロスが発生したたら、輻輳が発生したとみなし、cwnd（輻輳ウィンドウサイズ）を小さくする。したがて、5Gの帯域を有効活用できない。
 
 * 5Gの問題
@@ -54,7 +57,9 @@ Hs ：ネットワーク障害の期間が短い場合、それは一時的な�
 Hn ： TCP送信側とgNB間のLOSが形成され、通信が可能な場合は、 cwndのサイズを大きくすることをお勧めします。
 ```
 
-
+![](yuji38kwmt/fig6.gif)
+![](yuji38kwmt/fig7.gif)
+![](yuji38kwmt/fig8.gif)
 
 
 ## どうやって有効だと検証した？
@@ -67,6 +72,8 @@ Hn ： TCP送信側とgNB間のLOSが形成され、通信が可能な場合は�
 * DL-TCPは障害物に関係なくパフォーマンスが高い
 * どのアルゴリズムも、スキャンモデルより*ランダムウォークの方がパフォーマンスが低い。ランダムウォークの方が、Blockage problem, Beam misalignmentに関する問題が頻発するため。
 
+![](yuji38kwmt/fig9.gif)
+![](yuji38kwmt/fig10.gif)
 
 ## 議論はある？
 * 5Gネットワーク環境で災害が起きたときに特化したアルゴリズム。一般的に利用できるかはよくわからなかった。
