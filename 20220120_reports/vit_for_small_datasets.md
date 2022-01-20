@@ -11,7 +11,7 @@ https://arxiv.org/abs/2112.13492v1
 ## どんなもの？
 
 - Vision Transformer (ViT) の亜種で、Tiny-ImageNet (100k 枚) や CIFAR-10 (50k 枚) などの少量データセットをフルスクラッチで学習できるようにしたもの。
-- ViT の訓練は JFT300M などの巨大なデータセットでの事前学習なのは局所性の帰納バイアスが欠如しているから、としてそれを改善する Shifted Patch Tokenization (SPT) と Locality Self-Attention (LSA) という2つのモジュールを考案
+- ViT の訓練において JFT300M などの巨大なデータセットでの事前学習が必要なのは局所性の帰納バイアスが欠如しているから、としてそれを改善する Shifted Patch Tokenization (SPT) と Locality Self-Attention (LSA) という2つのモジュールを考案
 - 小さいデータセットに対して 1% から 4% の精度向上を達成
 
 ## 先行研究と比べて何がすごい
@@ -26,7 +26,7 @@ https://arxiv.org/abs/2112.13492v1
 
 ### Shifted Patch Tokenization (SPT)
 
-1つのパッチが持つ Receptive Field が小さい、という問題を解消するために SPT とう機構を導入する。より空間的な特徴を織り込めるようになる。
+1つのパッチが持つ Receptive Field が小さい、という問題を解消するために SPT という機構を導入する。より空間的な特徴を織り込めるようになる。
 
 1. 入力画像と、それを上下左右にずらした版の画像、計5枚をチャネル方向に concat する。ずらす幅はパッチの半分
 2. その状態でパッチ化する
@@ -53,8 +53,8 @@ Transformer の中にある Scaled Dot-Product Attention は実際には温度 `
 
 ![](./vit_for_small_datasets/result_summary.png)
 
-`SL`: `SPT` + `LSA`
-`Spool`: `SPT` を Pooling として利用
+- `SL`: `SPT` + `LSA`
+- `Spool`: `SPT` を Pooling として利用
 
 ### Ablation (SPT と LSA の効果)
 
