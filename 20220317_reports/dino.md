@@ -44,7 +44,7 @@ Attension を取る際に画像全体ではなく Deformable Conv のように�
 
 ### DAB-DETR
 
-![](./dino/detr_meta_arch.png)
+![](./dino/dab_detr_arch.png)
 
 object query の代わりに x, y, w, h の4次元の実数値にする (アンカー)。
 Decoder では Δx とかを予測してアンカーをリファインしていく
