@@ -61,17 +61,7 @@ PandaSetの特徴
 ---
 
 ## 技術や手法の肝は？
-
-
-### 2種類のlidarの位置合わせ
->Moreover, to implement motion
-compensation, we estimate the vehicle’s ego motion at each
-timestamp of the point cloud with linear interpolation of the
-vehicle’s GNSS/IMU data, helping better align LiDAR scans
-and images, as well as consecutive LiDAR scans.
-
-タイムスタンプやGNSS/IMUを参照して、2種類の点群の位置を合わせているらしい
-
+* 2日間で収集していて、センサーはしっかり固定しているので、外部/内部パラメータは変わらないはず
 
 ---
 
