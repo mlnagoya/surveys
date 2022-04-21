@@ -27,6 +27,7 @@ https://scale.com/open-datasets/pandaset
 
 ![fig1](yuji38kwmt/fig1.png)
 ![fig2](yuji38kwmt/fig2.png)
+![tab2](yuji38kwmt/tab2.png)
 
 ---
 
@@ -37,7 +38,6 @@ PandaSetの特徴
 * クラス数が多い
 
 ![tab1](yuji38kwmt/tab1.png)
-![tab2](yuji38kwmt/tab2.png)
 
 ---
 
