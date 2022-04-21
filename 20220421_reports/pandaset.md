@@ -46,6 +46,7 @@ PandaSetの特徴
 ### アノテーション
 
 ![fig6](yuji38kwmt/fig6.png)
+![fig7](yuji38kwmt/fig7.png)
 
 ### baseline
 ![tab5](yuji38kwmt/tab5.png)
