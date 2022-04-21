@@ -6,6 +6,7 @@ Zesong Li1, Jian Wu1, Kai Sun1, Kun Jiang4, Yunlong Wang4 and Diange Yang4;
 
 
 https://arxiv.org/abs/2112.12610
+https://scale.com/open-datasets/pandaset
 
 （まとめ：yuji38kwmt）
 
@@ -45,6 +46,16 @@ PandaSetの特徴
 ### アノテーション
 
 ![fig6](yuji38kwmt/fig6.png)
+
+### baseline
+![tab5](yuji38kwmt/tab5.png)
+
+* LiDAR-only 3D object detection
+    * PV-RCNN
+* LiDAR-camera fusion 3D object detection
+    * DeepLabv3+, PointRCNN
+* LiDAR point cloud segmentation
+    * RangeNet53
 
 ---
 
