@@ -37,7 +37,7 @@ PandaSetの特徴
 * クラス数が多い
 
 ![tab1](yuji38kwmt/tab1.png)
-
+![tab2](yuji38kwmt/tab2.png)
 
 ---
 
