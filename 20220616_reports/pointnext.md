@@ -6,6 +6,8 @@ Guocheng Qian 1, Yuchen Li 1, Houwen Peng 2, Jinjie Mai 1, Hasan Abed Al Kader H
 1: King Abdullah University of Science and Technology
 2: Microsoft Research
 
+https://arxiv.org/abs/2206.04670v1
+
 @cohama
 
 # どんなもの？
