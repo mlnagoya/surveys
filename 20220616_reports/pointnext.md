@@ -33,7 +33,7 @@ Guocheng Qian 1, Yuchen Li 1, Houwen Peng 2, Jinjie Mai 1, Hasan Abed Al Kader H
 - SA (Set Abstraction) モジュールというのがある。
   - Sampling → 既存の点から適当に N 個選ぶ
   - Grouping -> N 個の選んだ点のうち半径r以内にある点を K 個選んでグループ化
-  - Reduction (PointNet) -> Average Pooling でグループ化された点の特徴を混ぜる
+  - PointNet -> 点ごとに MLP したあと Average Pooling でグループ化された点の特徴を混ぜる。後者は Reduction
 
 ## データオーグメンテーション
 
