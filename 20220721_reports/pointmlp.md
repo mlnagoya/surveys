@@ -26,7 +26,7 @@ https://arxiv.org/abs/2202.07123
 ![](./pointmlp/pointnet2_arch.png)
 
 - SA (Set Abstraction) モジュールというのがある。
-  - Sampling → 既存の点から適当に N 個選ぶ
+  - Sampling -> 既存の点から適当に N 個選ぶ
   - Grouping -> N 個の選んだ点のうち半径r以内にある点を K 個選んでグループ化
   - PointNet -> 点ごとに MLP したあと Average Pooling でグループ化された点の特徴を混ぜる。後者は Reduction
 
@@ -55,6 +55,8 @@ Residual な構造を持っていると言っても単純に深くしてもう�
 
 ![](./pointmlp/result1.png)
 
+当時の SOTA 達成。vot は Voting Strategy という手法？
+
 ## Ablation
 
 ### 深さ
@@ -65,11 +67,10 @@ Residual な構造を持っていると言っても単純に深くしてもう�
 
 ![](./pointmlp/ablation.png)
 
-Affine が効いている
+Geometric Affine Module が効いている。なお、PointNet++ にこのモジュールを入れるだけでもかなり精度向上するらしい (93.3%)。
 
 
-当時の SOTA 達成。vot は Voting Strategy という手法？
-
+# 次に読むべき論文
 
 - PointNet++ (https://arxiv.org/abs/1706.02413) 偉大な先行研究。この手法のベースになっている
 - RepSurf (https://arxiv.org/abs/2205.05740v2) 先々月読んだ。入力となる点群に特徴を追加する方式なので本手法と組み合わせられるかも
