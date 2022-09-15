@@ -4,6 +4,10 @@ Paulius Micikevicius, Dusan Stosic, Neil Burgess, Marius Cornea, Pradeep Dubey, 
 
 (NVIDIA と Intel と ARM の人たち)
 
+https://arxiv.org/abs/2206.02915
+
+@cohama
+
 # どんなもの？
 
 - ニューラルネットを FP8 (8ビット浮動小数点数) で訓練、推論する
