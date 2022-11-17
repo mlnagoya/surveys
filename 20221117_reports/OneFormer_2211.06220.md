@@ -117,7 +117,7 @@ mIoU: semantic segmentation用
 
 ## CityScape
 
-![](./OneFormer_2211.06220/scores_city_scape.png)
+![](./OneFormer_2211.06220/scores_cityscape.png)
 
 ## COCO
 
