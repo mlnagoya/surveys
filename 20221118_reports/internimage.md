@@ -78,10 +78,10 @@ K チャネルの softmax とすることで m の合計を1にすることに�
 # 議論はある
 
 - 計算効率が良いという触れ込みだが実際には早くないらしい。メモリ効率は良いのかもしれない
-- 物体検出 SOTA だが DINO がすごいだけの可能性もある
+- 物体検出 SOTA だが DINO / Mask2Former がすごいだけの可能性もある
 
 # 次に読むべき論文は
 
-- SwinV2: Ze Liu, Han Hu, Yutong Lin, Zhuliang Yao, Zhenda Xie, Yixuan Wei, Jia Ning, Yue Cao, Zheng Zhang, Li Dong, et al. Swin transformer v2: Scaling up capacity and resolution. Adv. Neural Inform. Process. Syst., pages 12009–12019, 2022. 
+- SwinV2: Ze Liu, Han Hu, Yutong Lin, Zhuliang Yao, Zhenda Xie, Yixuan Wei, Jia Ning, Yue Cao, Zheng Zhang, Li Dong, et al. Swin transformer v2: Scaling up capacity and resolution. Adv. Neural Inform. Process. Syst., pages 12009–12019, 2022.
 - DCNv2: Xizhou Zhu, Han Hu, Stephen Lin, and Jifeng Dai. Deformable convnets v2: More deformable, better results. In IEEE Conf. Comput. Vis. Pattern Recog., pages 9308–9316, 2019
 - replknet: Xiaohan Ding, Xiangyu Zhang, Jungong Han, and Guiguang Ding. Scaling up your kernels to 31x31: Revisiting large kernel design in cnns. In IEEE Conf. Comput. Vis. Pattern Recog., pages 11963–11975, 2022
