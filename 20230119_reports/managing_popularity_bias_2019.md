@@ -54,10 +54,6 @@ url: https://arxiv.org/pdf/1901.07555.pdf
   - $ACLT = \frac{1}{|U_t|} \sum_{u \in U_t} \sum_{i \in L_u} \mathbb{1}(i \in \Gamma)$
   - APLTとの違い: (ex. 1種類のlong-tailアイテムを全ユーザに推薦しても、複数のlong-tailアイテムを1ユーザ一つずつ推薦したとしてもAPLTは値が等しくなってしまう.)
 
-### 結果:
-
-![Figure 2: Results for the Epinions dataset ](https://d3i71xaburhd42.cloudfront.net/6d77d7467f993780d02f3d8ea563959643d48f89/4-Figure2-1.png)
-
 ## 技術や手法の肝は？
 
 情報検索の結果に多様性を持たせる手法である**xQuAD(EXplicit Query Aspect Diversification)**を応用し、推薦アルゴリズムにおけるPopularity Biasの制御(i.e 推薦結果がshort-tailアイテムのみにならないようにする.)を試みている.
