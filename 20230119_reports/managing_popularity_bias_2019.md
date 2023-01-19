@@ -13,6 +13,8 @@ url: https://arxiv.org/pdf/1901.07555.pdf
 - もちろん人気アイテムを推薦する事が良いユーザ体験をもたらすケースもあるが、**新しいアイテムの発見を促進せず、ニッチな嗜好を持つユーザーの興味を無視する**事になる.
 - 本論文では、推薦システムの**出力(各ユーザへの推薦アイテムリスト)に後処理を追加**する事で、推薦精度を維持しながらも**推薦結果にshort-head & long-tailの多様性を持たせる**アプローチを提案しています.
 
+![]()
+
 ## 先行研究と比べて何がすごい？
 
 - 他の多様性を向上させる手法 LT-Reg(regularized long-tail diversification algorithm)と比較して:
@@ -42,11 +44,14 @@ url: https://arxiv.org/pdf/1901.07555.pdf
 
 - Average Recommendation Popularity (ARP):
   - 各推薦リスト内のアイテムの**平均人気度**.
+  - $ARP = \frac{1}{|U_t|} \sum_{u \in U_t} \frac{\sum_{i \in L_u} \phi(i)}{|L_u|}$
   - 推薦リスト内の任意のアイテムについて、人気度の代理指標として、それらのアイテムの**平均評価数**を測定.
 - Average Percentage of Long Tail Items (APLT):
   - 推薦リストにおけるlong-tailアイテムの割合の平均値.
+  - $APLT = \frac{1}{|U_t|}\sum_{u \in U_t} \frac{|{i,i \in (L_u \cap \Gamma)}|}{|L_u|}$
 - Average Coverage of Long Tail items (ACLT):
   - 推薦システムがlong-tailアイテム達の何割をカバーしたかを測定する.
+  - $ACLT = \frac{1}{|U_t|} \sum_{u \in U_t} \sum_{i \in L_u} \mathbb{1}(i \in \Gamma)$
   - APLTとの違い: (ex. 1種類のlong-tailアイテムを全ユーザに推薦しても、複数のlong-tailアイテムを1ユーザ一つずつ推薦したとしてもAPLTは値が等しくなってしまう.)
 
 ## 技術や手法の肝は？
@@ -111,4 +116,6 @@ Binary xQuADとSmooth xQuADの違いに関して:
 ## 次に読むべき論文は？
 
 - 情報検索における検索結果多様化の先行研究[Exploiting Query Reformulations for Web Search Result Diversification](https://dl.acm.org/doi/pdf/10.1145/1772690.1772780?casa_token=_NkfT8SH_V4AAAAA:mkjn91maD3dGMMF6GbfFSbmOqqa9tfqBDohAO26vAytPbVt0BQidOPWX0tL4EsUkRD00tJ-4CrMWAQ)
-- regularized long-tail diversification algorithmに関する論文 [Controlling Popularity Bias in Learning to Rank Recommendation](https://dl.acm.org/doi/10.1145/3109859.3109912)
+- regularized long-tail diversification algorithmに関する論文 [Controlling Popularity Bias in Learning to Rank Recommendation](https://dl.acm.org/doi/10.1145/3109859.310991
+
+## なんとなくこんな感じ.
