@@ -33,12 +33,17 @@ Popularity biasとはこういう話でした...!(先月の論文読み会で読
 - $Neg_{u}$: ユーザ$u$がconsumeしなかったアイテムの集合.
 - $\hat{y_{ui}}$: ユーザuがアイテムiに対して持つ予測嗜好に基づく推薦スコア(=推定されるパラメータ?)
 
-既存のBRP(の目的関数:
+既存のBRP損失関数:
 
 $$
-Loss_{BPR} = - \sum_{u \in U} \sum_{p \in Po_{s_u}, n \in Ne_{g_u}} \log \sigma(\hat{y}_{u,p} - \hat{y}_{u,n})
+Loss_{BPR} = - \sum_{u \in U} \sum_{p \in Pos_{u}, n \in Neg_{u}} \log \sigma(\hat{y}_{u,p} - \hat{y}_{u,n}) - \lambda_{\Theta}||\Theta||^2 \\
 \tag{1}
 $$
+
+- Bayesian Personalized Ranking (BPR)について:
+  - **implicit feedbackから**ランキング学習を行う手法. (pair-wiseのランク学習)
+  - モデルの種類というよりは、ユーザuのアイテムiに対する推薦スコア(ex. 嗜好度)$\hat{y}_{u,i}$を推論する任意のモデルに適用可能な**損失関数の種類**、というイメージ.
+  - 最適化手法としては、勾配降下法的なイメージ (元論文では、学習用データ(u,p,n)のブートストラップサンプリングに基づく確率的勾配降下法を提案.)
 
 model-biasを測定するために２つの評価指標を採用.
 一つ目は、 PopularityRank correlation for items (PRI, アイテムの人気度順位相関)
