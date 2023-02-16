@@ -11,7 +11,7 @@ url(presantation slide): https://dl.acm.org/action/downloadSupplement?doi=10.114
 ## どんなもの?
 
 - 多くの推薦システムでは、人気のアイテム(="short-head"なアイテム)は頻繁に推薦され、人気のないニッチなアイテム("long-tail"なアイテム)はほとんどor全く推薦されないという、Popularity Bias(人気度バイアス)に悩まされている.
-- 本論文では，Popularity Bias、特に，**ユーザが同じように好きなアイテムの中で人気のあるアイテムに高いスコアを与えてしまう****model-bias**に着目し，解決を試みている.
+- 本論文では，Popularity Bias、特に，**ユーザが同じように好きなアイテムの中で人気のあるアイテムに高いスコアを与えてしまう\*\***model-bias\*\*に着目し，解決を試みている.
 - 本論文は，**推薦システムが各ユーザのポジティブアイテム間で等しい推薦スコアを予測する(=人気アイテムのスコアを過剰に高くしない)**ように、BPR損失関数にregularization termを追加することで，精度を維持したまま推薦結果のbiasを低減する新しい手法を提案する．
 - (個人的には、疑似データの実験が、model-biasの存在を認識するのにわかりやすくて面白かった...!)
 
@@ -94,6 +94,11 @@ model-biasが少なくても精度が低ければ、個人に合った推薦を�
 ### Proposed Method
 
 model-biasを減らすために、我々は**BPR損失関数にregularization termを追加**して拡張し、positive & negativeアイテム間のスコア差をそれぞれ最小化する方法を提案する. (**positive同士、negative同士のスコアを近くしたい...!!**)
+
+contrastive learning(対照学習)的なアプローチ
+
+- 1）同じカテゴリのインスタンス(=学習データの１レコード的な意味か...!)に対しては**類似表現(similar representations)**を学習し
+- 2）異なるカテゴリのインスタンスに対しては**対照表現(contrasting representations)**を学習する.
 
 BPR損失はpositive item と negative item の推薦スコアを対比させるが、追加するregularization termはさらに、positive (negative) item内でスコアが等しくなるように強制する.
 
