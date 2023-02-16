@@ -11,10 +11,11 @@ url(presantation slide): https://dl.acm.org/action/downloadSupplement?doi=10.114
 ## どんなもの?
 
 - 多くの推薦システムでは、人気のアイテム(="short-head"なアイテム)は頻繁に推薦され、人気のないニッチなアイテム("long-tail"なアイテム)はほとんどor全く推薦されないという、Popularity Bias(人気度バイアス)に悩まされている.
-- 本論文では，Popularity Bias、特に，ユーザが同じように好きなアイテムの中で人気のあるアイテムに高いスコアを与えてしまう**model-bias**に着目し，解決を試みている.
+- 本論文では，Popularity Bias、特に，**ユーザが同じように好きなアイテムの中で人気のあるアイテムに高いスコアを与えてしまう****model-bias**に着目し，解決を試みている.
 - 本論文は，**推薦システムが各ユーザのポジティブアイテム間で等しい推薦スコアを予測する(=人気アイテムのスコアを過剰に高くしない)**ように、BPR損失関数にregularization termを追加することで，精度を維持したまま推薦結果のbiasを低減する新しい手法を提案する．
+- (個人的には、疑似データの実験が、model-biasの存在を認識するのにわかりやすくて面白かった...!)
 
-Popularity biasとはこういう話でした...!(先月の論文読み会で読んだ論文より)
+Popularity biasとはこういう感じの話でした...!(先月の論文読み会で読んだ論文より. ↓はpopularity biasの中のdata-biasというらしい.)
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/1697279/6b6f12c4-dd34-d41c-ee07-32cb965da284.png)
 
 ## 先行研究と比べて何がすごい？
@@ -29,9 +30,10 @@ Popularity biasとはこういう話でした...!(先月の論文読み会で読
 
 問題設定:
 
-- $Pos_{u}$: ユーザ$u$がconsumeしたアイテムの集合
-- $Neg_{u}$: ユーザ$u$がconsumeしなかったアイテムの集合.
-- $\hat{y_{ui}}$: ユーザuがアイテムiに対して持つ予測嗜好に基づく推薦スコア(=推定されるパラメータ?)
+- 適用するデータは**implicit(暗黙的な) feedback**(ex. ユーザuがアイテムをview, click, 購入, etc.). explicit(明示的な) feedbackではない(ex. "星3"や"good/bad", etc.)
+- $Pos_{u}$: ユーザ$u$がconsumeしたアイテムの集合 (clickや購入等したアイテムたち)
+- $Neg_{u}$: ユーザ$u$がconsumeしなかったアイテムの集合. (negativeといいつつも、ユーザが嫌いなアイテム + ユーザが未発見のアイテム の両方が混在している.)
+- $\hat{y_{ui}}$: ユーザuがアイテムiに対して持つ予測嗜好に基づく推薦スコア(=任意のモデルによる出力値)
 
 既存のBRP損失関数:
 
