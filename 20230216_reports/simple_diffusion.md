@@ -43,8 +43,10 @@ https://arxiv.org/abs/2301.11093v1
 
 α は入力画像とノイズの割合 (SN比のようなもの)、σ はノイズの分散の大きさ。
 よく使われる設定として
+
 - α = cos(πt/2)
 - σ = sin(πt/2)
+
 というものがある。t=0 のときα=1、σ=0 なので入力画像そのもの。t=1 のとき α=0、σ=1 で純粋なノイズになる。
 
 しかし、この設定は DDPM の登場初期に CIFAR-10 (32x32) や ImageNet (64x64 に縮小したもの) の画像生成向けに作られたもので高解像度な画像ではこのスケジュールは正しくない。
@@ -77,13 +79,17 @@ https://arxiv.org/abs/2301.11093v1
 
 ![](./simple_diffusion/uvit.png)
 
-低解像度のフィーチャーマップでは畳み込みの変わりに MLP を使う。Diffusion Model では伝統的には Self Attention が含まれるので Conv を ML にすることで標準的な Transformer になる。
+低解像度のフィーチャーマップでは畳み込みの変わりに MLP を使う。Diffusion Model では伝統的には Self Attention が含まれるので Conv を MLP にすることで標準的な Transformer になる。
 MLP の方が巨大なモデルを訓練しやすい。
 
 ダウンサンプリングとアップサンプリングの部分は通常の U-Net のように畳み込みを使う
 
 
 ## どうやって有効だと検証した？
+
+### 生成結果
+
+![](./simple_diffusion/result_sample_image.png)
 
 ### 他の生成手法との比較
 
