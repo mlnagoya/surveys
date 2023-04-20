@@ -19,13 +19,16 @@ v1が2021年9月, 最新版(v3)が2022年6月
 ## **技術や手法のキモは？**
 - 活性化関数の役割
 - 活性化関数のタイプ
+
   ![](activation_survey/image_002.png)
 - 表1：勾配の減少、非線形性の制限、最適化の難しさ、学習パラメータ、計算効率の悪さの有無の観点で主要なAFの利点・欠点をまとめた。tanhはexpが何度もあり効率悪いが、sigmoid関数を利用して、1つの指数で計算出来る
 
   ![](activation_survey/image_003.png)
 - 活性化関数の進化 
   - ロジスティックシグモイド関数
+
     ![](activation_survey/image_004.png)
+
     ![](activation_survey/image_005.png) 
     - 最初に使われていた活性化関数。
     - 欠点 
@@ -33,13 +36,17 @@ v1が2021年9月, 最新版(v3)が2022年6月
       - 勾配消失（あるパラメータに対する目的関数（loss）の勾配がゼロに非常に近くなり、パラメータが殆ど更新されなくなること）が発生しやすい
       - Outputの中心が0でないため収束しにくい
   - tanh型
+
     ![](activation_survey/image_006.png)
     ![](activation_survey/image_007.png) 
+
     - ロジスティックシグモイドの勾配消失問題、計算量の多さはtanhにもある
     - 出力の中心が0にならない問題は解決された
     - ロジスティックシグモイド、tanhには改良版もある（省略）
   - Relu型
+
     ![](activation_survey/image_008.png)
+
     ![](activation_survey/image_009.png) 
     - 計算量少ない
     - 勾配消失問題を改善
@@ -52,13 +59,17 @@ v1が2021年9月, 最新版(v3)が2022年6月
   - 指数型
 
     ![](activation_survey/image_010.png)
+
     ![](activation_survey/image_011.png)
+
     ![](activation_survey/image_012.png) 
     - ロジスティックシグモイドとtanhの欠点は大きな正負の入力に対して、出力が飽和すること（図1参照）
     - Relu系の問題は負の値の利用が不十分でグラデーションが消失してしまうこと
     - ELUベースのAFは指数関数を用いて、負の値を利用する
   - 学習型/適応型
+
     ![](activation_survey/image_013.png)
+
     ![](activation_survey/image_014.png) 
     - 近年人気
     - a, bが学習可能なパラメータ
@@ -80,8 +91,10 @@ v1が2021年9月, 最新版(v3)が2022年6月
   - 表はAccuracyの平均と標準偏差（各AFで5回実験した）
   - 軽量モデル、重量モデル、残差接続ありなしなどいろいろ
   - CIFAR10
+
     ![](activation_survey/image_016.png)
   - CIFAR100
+
     ![](activation_survey/image_017.png)
   - 精度の傾向 
     - Softplus、ELU、CELUはMobilenetに適している
@@ -98,6 +111,7 @@ v1が2021年9月, 最新版(v3)が2022年6月
     - ![](activation_survey/image_019.png)
   - **ReLU, ELU, CELU, Softplusは精度と学習時間で良いトレードオフ**
 - 翻訳（ドイツ語→英語）、音声認識
+
   ![](activation_survey/image_020.png) 
   - 翻訳 
     - 実験概要 
