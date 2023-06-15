@@ -1,4 +1,4 @@
-﻿# **2023-4-12 Focal Loss for Dense Object Detection**
+﻿# **Focal Loss for Dense Object Detection**
 <https://arxiv.org/abs/1708.02002>
 ### **著者**
 [Tsung-Yi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+T) , [Priya Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+P) , [Ross Girshick](https://arxiv.org/search/cs?searchtype=author&query=Girshick%2C+R) , [Kaiming He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+K) , [Piotr Dollár](https://arxiv.org/search/cs?searchtype=author&query=Doll%C3%A1r%2C+P)
