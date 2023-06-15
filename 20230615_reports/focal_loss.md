@@ -1,22 +1,22 @@
 ﻿# **2023-4-12 Focal Loss for Dense Object Detection**
 <https://arxiv.org/abs/1708.02002>
-### **著者（googleの研究者）**
+### **著者**
 [Tsung-Yi Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin%2C+T) , [Priya Goyal](https://arxiv.org/search/cs?searchtype=author&query=Goyal%2C+P) , [Ross Girshick](https://arxiv.org/search/cs?searchtype=author&query=Girshick%2C+R) , [Kaiming He](https://arxiv.org/search/cs?searchtype=author&query=He%2C+K) , [Piotr Dollár](https://arxiv.org/search/cs?searchtype=author&query=Doll%C3%A1r%2C+P)
 
 2017 年 8 月 7 日に提出 ( [v1](https://arxiv.org/abs/1708.02002v1) )、2018 年 2 月 7 日に最終改訂
 
 # **どんなもの？**
 - one-stageのアプローチがtwo-stageに精度面で劣る理由を調査 
-  - 前景-背景クラスの不均衡が原因である事を特定した
+  - 前景-背景クラスの不均衡が原因である事を特定した(画像のほとんどが背景なので、背景かどうかを判定すればOKになる)
 - クロスエントロピー損失を変形させて、不均衡に対処する事を提案（**Focal loss**） 
   - 膨大な数の負事例の影響を小さくする
   - これの有効性を評価するためにRetinaNetと呼ぶ単純な検出器を設計し、学習させる 
     - 既存の全てのtwo-stage検出器の精度を上回りながら、one-stageの検出器の速度に匹敵する結果を得た
 # **先行研究と比較**
 - 先行研究の話 
-  - これまで最高制度の物体検出器は、R-CNNのようなtwo-stageのアプローチ 
+  - これまで最高精度の物体検出器は、R-CNNのようなtwo-stageのアプローチ 
     - 分類器は候補物体位置の疎な集合に適用される（？）
-  - one-stageの検出器は高速・シンプルになる可能性があるが、2段階のものと比較して精度が劣る。
+  - one-stageの検出器は高速・シンプルになる可能性があるが、two-stageのものと比較して精度が劣る。
 - SOTAとの比較 
   - ![](./focal_loss/image001.png)
     ![](./focal_loss/image002.png)
@@ -51,6 +51,7 @@
           - 正事例はγによらずグラフの形状は似ている
           - 負事例はγが大きくなるに連れて困難な負事例（右側）に重みが集中する。例えば紫の線
     - 実際には以下のαを付けた形式の方が精度高いので、こちらを採用
+      
       ![](./focal_loss/image009.png)
 - **RetinaNet関連**
   
@@ -106,4 +107,4 @@
 # **議論はある？**
 # **次に読むべき論文は？**
 - [11] R. Girshick, J. Donahue, T. Darrell, and J. Malik. Rich feature hierarchies for accurate object detection and semantic segmentation. In CVPR, 2014. 1, 2, 5　（R-CNNの論文。two-stageの手法良く分かっていないので）
-- [20] T.-Y. Lin, P. Dollar, R. Girshick, K. He, B. Hariharan, and ´S. Belongie. Feature pyramid networks for object detection. In CVPR, 2017. 1, 2, 4, 5, 6, 8　（Retinanetのアンカー関連のやつ）
+- これより後に出た精度の良いone-stageモデルの論文
