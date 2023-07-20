@@ -3,6 +3,8 @@ Retentive Network: A Successor to Transformer for Large Language Models
 
 Yutao Sun, Li Dong, Shaohan Huang, Shuming Ma, Yuqing Xia, Jilong Xue, Jianyong Wang, Furu Wei
 
+(https://arxiv.org/abs/2307.08621)
+
 Microsoft Research
 Tsinghua University
 の人たち
