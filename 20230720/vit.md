@@ -12,7 +12,7 @@ Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua
 
 ## どんなもの？
 - 自然言語処理タスクでデファクトスタンダードになっているTransformerをコンピュータビジョンに応用した。
-- CNNへの依存は必要なく、画像パッチのシーケンスに直接適用される純粋な変換器が、画像分類タスク(./vit/imageNet, CIFAR-100, VTAB)で(精度、計算量ともに)非常に良い性能を発揮できた
+- CNNへの依存は必要なく、画像パッチのシーケンスに直接適用される純粋な変換器が、画像分類タスク(ImageNet, CIFAR-100, VTAB)で(精度、計算量ともに)非常に良い性能を発揮できた
 
 ## 先行研究と比べて何がすごい？
 - 画像認識へのTransformerの適用。コンピュータビジョンにself Attentionを用いた先行研究とは異なり、画像をパッチのシーケンスとして解釈し、自然言語処理で使用される標準的なTransformerエンコーダによって処理する。
