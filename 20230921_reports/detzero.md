@@ -100,11 +100,13 @@ Faster-RCNN のように点群に対してある枠を与えたときにそれ�
 
 ## 議論はある?
 
+- 訓練に必要なリソースや推論速度は気になる
+
 
 ## 次に読むべき論文
 
-検出のベースになっているもの: Center-based 3D Object Detection and Tracking, https://arxiv.org/abs/2006.11275
-Offboard点群物体検出: Offboard 3D Object Detection from Point Cloud Sequences, https://arxiv.org/abs/2103.05073
-追跡のベースになっているもの: SimpleTrack: Understanding and Rethinking 3D Multi-object Tracking, https://arxiv.org/abs/2111.09621
-追跡のベースになっているもの2: Immortal Tracker: Tracklet Never Dies, https://arxiv.org/abs/2111.13672
-WBF: Weighted boxes fusion: Ensembling boxes from different object detection models, https://arxiv.org/abs/1910.13302
+- 検出のベースになっているもの: Center-based 3D Object Detection and Tracking, https://arxiv.org/abs/2006.11275
+- Offboard点群物体検出: Offboard 3D Object Detection from Point Cloud Sequences, https://arxiv.org/abs/2103.05073
+- 追跡のベースになっているもの: SimpleTrack: Understanding and Rethinking 3D Multi-object Tracking, https://arxiv.org/abs/2111.09621
+- 追跡のベースになっているもの2: Immortal Tracker: Tracklet Never Dies, https://arxiv.org/abs/2111.13672
+- WBF: Weighted boxes fusion: Ensembling boxes from different object detection models, https://arxiv.org/abs/1910.13302
