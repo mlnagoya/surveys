@@ -54,11 +54,12 @@ non-overlappedウィンドウの手法は計算量的には良いが、ウィン
 
 ![Alt text](swin_v1/image-12.png)
 
-
 ![Alt text](swin_v1/image-11.png)
 
 #### Shifted Window に対する効率的なバッチ計算
-- シフトされたウィンドウの中には一部サイズが小さいウィンドウが含まれる
+- シフトされたウィンドウの中には一部サイズが小さいウィンドウが含まれるので不具合がある
+- 小さいウィンドウにpaddingする手もあるが計算量増えてしまう
+- 図4のようにWindowをシフトさせて計算し、はみ出た部分を反対位置に戻すことで問題を解決する(cyclic shift)
 
 ![Alt text](swin_v1/image-10.png)
 
