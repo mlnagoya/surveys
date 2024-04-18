@@ -1,4 +1,4 @@
-# YOLOX: Learning What You Want to Learn Using Programmable Gradient Information
+# YOLO9: Learning What You Want to Learn Using Programmable Gradient Information
 
 https://arxiv.org/abs/2402.13616
 
