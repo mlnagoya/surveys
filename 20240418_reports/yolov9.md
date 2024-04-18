@@ -50,7 +50,8 @@ Chien-Yao Wang, I-Hau Yeh, Hong-Yuan Mark Liao
             - 信頼性の高い勾配を生成して、パラメータ更新を補助する
             - revcolだと推論時間が20%増加してしまうので、訓練時のみ使用する(fig3(b))
         - Multi-level Auxiliary Information
-            - deep supervisionのように複数の予測ブランチで異なるサイズの物体を検出する手法がある。
+            - deep supervisionのように複数の予測ブランチで異なるサイズの物体を検出する手法がある。この場合、ターゲットのサイズ以外の物体の位置は背景とみなすことになる
+            - 提案手法では異なる予測ヘッドからの勾配を統合するネットワークを導入し、この問題に対応
 
 - Generalized ELAN(GELAN)
     - CSPNetとELANを組み合わせて、軽量性、精度、速度を考慮したネットワークを構築
@@ -66,6 +67,15 @@ Chien-Yao Wang, I-Hau Yeh, Hong-Yuan Mark Liao
     - ![alt text](yolov9/image-19.png)
 - SOTAとの比較
     - ![alt text](yolov9/image-9.png)
+        - 既存手法で一番性能が良いのは
+            - lightweightモデル: YOLO MS-S
+            - mediumモデル: YOLO MS
+            - generalモデル: YOLOv7 AF
+            - largeモデル: YOLOv8-X
+        YOLOv9は
+            - light, mediumのYOLO MSと比べて、パラメータ数が10%, 計算量が15%削減されているがAPは0.4~0.6%改善された
+            - generalはYOLOv7 AFと比較してパラメータ数が42%, 計算量が22%削減されて同じAPを達成
+            - largeはYOLOv8-Xと比較してパラメータ数が16%, 計算量が27%削減されてAPが1.7%改善された
     - ![alt text](yolov9/image-10.png)
     - 他の手法と比べて精度も良いしパラメータ数も少ない
 - Abration
