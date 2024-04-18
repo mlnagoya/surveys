@@ -93,7 +93,7 @@ Chien-Yao Wang, I-Hau Yeh, Hong-Yuan Mark Liao
 ## 議論はある？
 
 ## 次に読むべき論文
-- CSPnet: https://arxiv-org.translate.goog/abs/1911.11929?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=ja&_x_tr_pto=sc
+- CSPnet: https://arxiv.org/abs/1911.11929
 - Deep Supervision:
     - https://arxiv.org/abs/1409.5185
     - https://ieeexplore.ieee.org/document/7298594
