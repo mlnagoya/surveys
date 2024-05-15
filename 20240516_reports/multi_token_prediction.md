@@ -1,3 +1,5 @@
+## Better & Faster Large Language Models via Multi-token Prediction
+
 ### どんなもの？
 
 マルチトークン予測を用いることで、大規模言語モデルの性能と効率を向上させる手法について述べている
