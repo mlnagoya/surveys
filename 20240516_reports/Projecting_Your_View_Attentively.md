@@ -13,6 +13,7 @@
 * Jia Pan
 
 福州大学, 上海科技大学, 上海工学研究センター, 華南理工大学, 香港大学
+
 CVPR2021 Paper
 
 # どんなもの？
@@ -31,12 +32,14 @@ CVPR2021 Paper
 # 技術や手法の肝は？
 
 - Cross-view Transformation Module
-前方視ドメインの特徴をトップビュードメインに変換する。以下 2 つのモジュールから構成される
-  - Cycled View Projection
-  - Cross-view Transformer
+  - 前方視ドメインの特徴をトップビュードメインに変換する。以下 2 つのモジュールから構成される
+    - Cycled View Projection
+    - Cross-view Transformer
 - コンテキスト対応識別器
-車両と道路の空間的関係を考慮し、推定された車両マスクとその道路との相関を測定する
+  - 車両と道路の空間的関係を考慮し、推定された車両マスクとその道路との相関を測定する
+
 ![alt text](Projecting_Your_View_Attentively/2024-05-16_16-41-27.png)
+
 ## Encorder
 入力前方視画像は、ResNet をバックボーンネットワークとして採用したエンコーダを通して視覚特徴を抽出
 ## Cross-view Transformation Module
@@ -50,10 +53,11 @@ CVPR2021 Paper
 - しかしそれだけでは前方視の情報を効果的に伝達することが保証されないらしい
 - トップビューの特徴 (X') を前方視のドメインに戻すサイクル自己監視スキームを導入
 - X'' は同じ MLP 構造を介して X' を前方視のドメインにサイクルバックすることで計算される
-![alt text](Projecting_Your_View_Attentively/2024-05-16_18-11-29.png)
-![alt text](Projecting_Your_View_Attentively/2024-05-16_18-11-52.png)
+  - ![alt text](Projecting_Your_View_Attentively/2024-05-16_18-11-29.png)
+  - ![alt text](Projecting_Your_View_Attentively/2024-05-16_18-11-52.png)
+
 - X' と X'' のドメイン一貫性を保証するためにサイクル損失 Lcycle を組み込む
-![alt text](Projecting_Your_View_Attentively/2024-05-16_18-13-12.png)
+  - ![alt text](Projecting_Your_View_Attentively/2024-05-16_18-13-12.png)
 - サイクル構造によって前方視とトップビュー間の接続が強化される
 - Lcycle が最小となる場合に X'' はビュー投影に最も関連する情報を保持する
   - X'' は X' から投影されるため
