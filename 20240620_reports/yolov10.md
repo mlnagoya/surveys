@@ -131,6 +131,8 @@ https://arxiv.org/abs/2405.14458
 - NMS-freeの手法は、特に小さいモデルではNMSありの手法と比べて性能が悪い。例えば、YOLOv10-NとYOLOv10-SではNMSありのモデルの性能はそれぞれ1.0%AP, 0.5%AP高い。今後、ここの差を埋めるための研究が必要。
 
 ## 次に読むべき論文は？
-- TAL(既存のYOLOの割当手法
+- TAL(既存のYOLOの割当手法)
     - <https://arxiv.org/abs/2108.07755>
     - <https://arxiv.org/abs/2211.12860>
+- ランクを冗長性の指標にする話の元ネタ
+    - <https://arxiv.org/abs/2206.06072>
