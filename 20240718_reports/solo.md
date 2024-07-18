@@ -37,11 +37,22 @@ https://arxiv.org/abs/2407.06438
 
 ### 訓練
 
-1. ImageNet21K を使ってラベルを予測する訓練を行う。ラベルはテキストとして予測する
-2. Web-Scale データで追加で訓練し、キャプションを生成させるようにする (Capfusion, CC3M, Websight (HTML コードのデータセット)とそれをレンダリングしたもののペア)
-3. アニーリングする。MiniCPM と同様に限定されたデータセットだけを使って訓練する。ノイズの多い Web データを高品質の混合データで学習させる
+### Pretrain
+
+1. Stage-1: ImageNet21K を使ってラベルを予測する訓練を行う。ラベルはテキストとして予測する
+2. Stage-2: Web-Scale データで追加で訓練し、キャプションを生成させるようにする (Capfusion, CC3M, Websight (HTML コードのデータセット)とそれをレンダリングしたもののペア)
+3. Stage-3: アニーリングする。MiniCPM と同様に限定されたデータセットだけを使って訓練する。ノイズの多い Web データを高品質の混合データで学習させる
 4. ここまでの学習において、テキストの能力を失わないように一定の割合でテキストのみの訓練も行う。
-5. 最後に Instruction Tuning する。
+
+![](solo/pretrain_dataset.png)
+
+#### Instruction Tuning
+
+以下のデータセットを使う
+
+![](solo/fnetune_dataset.png)
+
+※ NVIDIA A100x8 で訓練
 
 ## どうやって有効だと検証した？
 
