@@ -76,3 +76,7 @@ https://arxiv.org/abs/2406.11838
 * 画像生成以外にも連続値を扱う様々な応用が期待される
 
 ## 次に読むべき論文
+- MAGE (Tianhong Li, Huiwen Chang, Shlok Mishra, Han Zhang, Dina Katabi, and Dilip Krishnan. MAGE: Masked generative encoder to unify representation learning and image synthesis. In CVPR, 2023.)
+- DiT (William Peebles and Saining Xie. Scalable diffusion models with Transformers. In ICCV, 2023.)
+- GIVT (Michael Tschannen, Cian Eastwood, and Fabian Mentzer. GIVT: Generative infinite-vocabulary Transformers. arXiv:2312.02116, 2023.)
+
