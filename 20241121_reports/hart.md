@@ -52,7 +52,7 @@ http://arxiv.org/abs/2410.10812
 
 残差トークンの効果
 
-![](./hart/ablation_restoken.png.png)
+![](./hart/ablation_restoken.png)
 
 ### Scalable resolution transformer の効果
 
