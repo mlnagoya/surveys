@@ -7,6 +7,11 @@ https://arxiv.org/abs/2303.14535
 
 ## 先行研究と比べてどこがすごい？
 
+- 異常検知のベンチマークで SOTA を達成しつつさらに軽量
+- さらに論理的異常に対しても検知できる
+  - 論理的異常は画像の意味的な異常。誤った組み合わせ、誤った順番など
+  - 逆は構造的異常。ピクセルのパターンで認識できる異常。傷、汚れなど
+
 ## 技術や手法のキモはどこ？
 
 ### Efficient Patch Descriptors
@@ -50,5 +55,7 @@ https://arxiv.org/abs/2303.14535
 ## 議論はある？
 
 ## 次に読むべき論文は？
-- Paul Bergmann, Michael Fauser, David Sattlegger, and Carsten Steger. Uninformed Students: Student-Teacher Anomaly Detection With Discriminative Latent Embeddings. In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), pages 4182–4191, 2020
-  - Student-Teacher モデル
+- Uninformed Students: Student-Teacher Anomaly Detection with Discriminative Latent Embeddings https://arxiv.org/abs/1911.02357
+  - Student-Teacher モデル。この手法の先行研究
+- PUAD: Frustratingly Simple Method for Robust Anomaly Detection https://arxiv.org/abs/2402.15143v1
+  - MVTec LOCO の最先端手法の1つ。
