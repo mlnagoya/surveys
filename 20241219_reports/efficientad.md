@@ -3,6 +3,7 @@ EfficientAD: Accurate Visual Anomaly Detection at Millisecond-Level Latencies
 https://arxiv.org/abs/2303.14535
 
 ## どんなもの？
+- 画像用異常検知モデルの1つ
 - 蒸留により得られた軽量なモデルを使って特徴抽出を行うことで速度と精度を大きく改善
 
 ## 先行研究と比べてどこがすごい？
