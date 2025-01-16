@@ -116,5 +116,7 @@ LDA Sequenceより優れていることが確認できるが、BERTopicの動的
 ## 私見
 動的トピックモデリングの効果がないのは、最新の言語モデルで評価しているため、古い用語と新しい用語を同等に扱えるためだと思う。
 
+[NGKネタ](https://github.com/n-kats/ngk_2025/blob/main/_report/clustering_summary_openai_4o_embedding_openai_3_large.md)
+
 # 次に読むべき論文は？
 * UMAP・・・重要なのはこっちなのでは？（他はあまり重要でないかも）
