@@ -47,7 +47,7 @@ AAAI2025採択論文
     1. **PATENT MME**をHUPDデータセット+紐づく画像データをWebスクレイピングしてきて、半教師つきで学習させる
     2. **PATENT LLaMA**をHUPDデータセットでLoRA継続学習
     3. **PATENT LLM全体**をPATENTDESC-355Kで学習
-    4. **PATENT MME**をfreezingして、**Projection MLP** と**PATENT LLaMA**を学習
+        - **PATENT MME**をfreezingして、**Projection MLP** と**PATENT LLaMA**を学習
 
 ![](patentLMM_2501.15074/figure3.png)
 
