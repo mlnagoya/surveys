@@ -46,8 +46,8 @@ https://arxiv.org/abs/2409.16225v5
 
 ## 議論はある？
 
+- object はトラッキングをしていないようだけどそれでちゃんと時系列的な情報になるのか？
+- 公式の GitHub のところに例があるが、結構怪しい
+
 ## 次に読むべき論文は？
-- Uninformed Students: Student-Teacher Anomaly Detection with Discriminative Latent Embeddings https://arxiv.org/abs/1911.02357
-  - Student-Teacher モデル。この手法の先行研究
-- PUAD: Frustratingly Simple Method for Robust Anomaly Detection https://arxiv.org/abs/2402.15143v1
-  - MVTec LOCO の最先端手法の1つ。
+- 
