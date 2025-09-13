@@ -1,2 +1,12 @@
+_tmp/
+_cache/
+.history/
+.venv
+.python-version
+
 .DS_Store
 Thumbs.db
+
+.codex/*
+!.codex/**/*example*
+!.codex/**/*example*/**
