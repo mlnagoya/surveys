@@ -169,4 +169,111 @@
 ||アノテーション インスタンスセグメンテーション|@strshp|https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/495_ECCV_2020_paper.php|PhraseClick: Toward Achieving Flexible Interactive Segmentation by Phrase and Click|PhraseClick|
 ||画像分類|@cohama|https://arxiv.org/abs/2007.09558|Resolution Switchable Networks for Runtime Efficient Image Recognition||
 ||3D|@melleo1978|https://arxiv.org/abs/2003.10432v2|Atlas: End-to-End 3D Scene Reconstruction from Posed Images|Atlas|
-
+|30|contrastive_learning 自己教師|@cohama|https://arxiv.org/abs/2008.00261|Distilling Visual Priors from Self-Supervised Learning||
+||3D|@n-kats|https://arxiv.org/abs/2008.09497|Single-Image Depth Prediction Makes Feature Matching Easier||
+|31|物体検出|@usako_tail|https://arxiv.org/abs/1812.05784|PointPillars: Fast Encoders for Object Detection from Point Clouds||
+||強化学習|@n-kats|https://arxiv.org/abs/2007.13732|Learning Lane Graph Representations for Motion Forecasting||
+||強化学習||https://arxiv.org/pdf/2005.05960.pdf|どんなもの？||
+||生成/GAN|@strshp|https://arxiv.org/pdf/2008.07783.pdf|Mesh Guided One-shot Face Reenactment Using Graph Convolutional Networks||
+|32|NN一般|@n-kats|https://arxiv.org/abs/2006.13473|AutoKnow: Self-Driving Knowledge Collection for Products of Thousands of Types||
+||強化学習||https://arxiv.org/pdf/1710.01457.pdf|Learning to Segment Human by Watching YouTube||
+|33|物体検出|@cohama|https://arxiv.org/abs/2010.04159|どんなもの?|DETR|
+||生成/GAN|@n-kats|https://arxiv.org/abs/2010.15040|Training Generative Adversarial Networks by Solving Ordinary Differential Equations||
+|34|物体検出|@n-kats|https://arxiv.org/abs/2101.02702|TrackFormer: Multi-Object Tracking with Transformers|DETR|
+|35|物体検出|@n-kats|https://arxiv.org/abs/2012.09688|PCT: Point Cloud Transformer|DETR|
+|36|再識別 Transformer|@n-kats|https://arxiv.org/abs/2102.04378|TransReID: Transformer-based Object Re-Identification|TransReID|
+|37|生成/GAN|@cohama|https://arxiv.org/abs/2104.04767v1|MobileStyleGAN: A Lightweight Convolutional Neural Network for High-Fidelity Image Synthesis|MobileStyleGAN|
+||3D SLAM|@n-kats|https://arxiv.org/abs/2103.12352|iMAP: Implicit Mapping and Positioning in Real-Time||
+|38|NN一般 Transformer|@cohama|https://arxiv.org/abs/2103.14030v1|Swin Transformer: Hierarchical Vision Transformer using Shifted Windows|Swin Transformer|
+||物体検出|@n-kats|https://arxiv.org/abs/2104.01318|Efficient DETR: Improving End-to-End Object Detector with Dense Prior|DETR|
+|39|contrastive_learning 自己教師 Survey|@ma|https://arxiv.org/abs/2011.00362v3|A SURVEY ON CONTRASTIVE SELF-SUPERVISED LEARNING||
+||物体検出 Transformer|@n-kats|https://arxiv.org/abs/2106.00666|You Only Look at One Sequence: Rethinking Transformer in Vision through Object Detection|YOLOS|
+||生成/GAN フォント Few-shot|@derwind|https://arxiv.org/abs/2104.00887|Multiple Heads are Better than One: Few-shot Font Generation with Multiple Localized Experts||
+|40|アノテーション 3D セグメンテーション|@yuji38kwmt|https://ieeexplore.ieee.org/document/9363898|Annotation Tool and Urban Dataset for 3D Point Cloud Semantic Segmentation|PC-Annotate|
+||セグメンテーション Transformer|@cohama|https://arxiv.org/abs/2107.06278v1|Per-Pixel Classification is Not All You Need for Semantic Segmentation|MaskFormer|
+|46|理論 学習|@n-kats|https://arxiv.org/abs/2201.02177|Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets|Grokking|
+||NN一般 ViT|@cohama|https://arxiv.org/abs/2112.13492v1|Vision Transformer for Small-Size Datasets|ViT|
+||生成/GAN||https://arxiv.org/pdf/2111.01007.pdf|Projected GANs Converge Faster|Projected GAN|
+||ネットワーク 輻輳制御|@yuji38kwmt|https://ieeexplore.ieee.org/abstract/document/8859212|DL-TCP: Deep Learning-Based Transmission Control Protocol for Disaster 5G mmWave Networks||
+|47|3D NeRF|@n-kats|https://arxiv.org/abs/2202.05263|Block-NeRF: Scalable Large Scene Neural View Synthesis|NeRF|
+||NN一般 Transformer|@cohama|https://arxiv.org/abs/2201.09450|UniFormer: Unifying Convolution and Self-attention for Visual Recognition|UniFormer|
+||マルチモーダル||https://tech.fusic.co.jp/posts/2021-12-29-vilt/|ViLT 解説記事||
+|48|生成 画像変換|@derwind|https://nips2017creativity.github.io/doc/ASCII_Art_Synthesis.pdf|ASCII Art Synthesis with Convolutional Networks||
+||物体検出 DETR|@cohama|https://arxiv.org/abs/2203.03605v1|DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection|DETR|
+|49|マルチモーダル|@n-kats|https://arxiv.org/abs/2202.10890|Hierarchical Perceiver||
+||データセット 自動運転|@yuji38kwmt|https://arxiv.org/abs/2112.12610|Pandaset: Advanced Sensor Suite Dataset||
+||学習 高速化 メモリ|@cohama|https://arxiv.org/abs/2203.16755|Stochastic Backpropagation: A Memory Efficient Strategy for Training Video Models|SBP|
+||画像変換 スケッチ|@masahiro6510|https://esslab.jp/~ess/publications/SimoSerraSIGGRAPH2016.pdf|Learning to Simplify Fully Convolutional Networks for Rough Sketch Cleanup||
+|50|点群 表現|@cohama|https://arxiv.org/abs/2205.05740v2|Surface Representation for Point Clouds|RepSurf|
+||サーベイ 自然言語 KB|@n-kats|https://arxiv.org/abs/2204.06031|A Review on Language Models as Knowledge Bases||
+||理論 可視化||https://arxiv.org/abs/1712.09913|Visualizing the Loss Landscape of Neural Nets||
+|51|点群|@cohama|https://arxiv.org/abs/2206.04670v1|PointNeXt: Revisiting PointNet++ with Improved Training and Scaling Strategies|PointNeXt|
+||数式認識 OCR|@n-kats|https://arxiv.org/abs/2203.01601|Syntax-Aware Network for Handwritten Mathematical Expression Recognition|SAN|
+|52|動画 Transformer|@n-kats|https://arxiv.org/abs/2102.05095|Is Space-Time Attention All You Need for Video Understanding? (TimeSformer)|TimeSformer|
+||点群|@cohama|https://arxiv.org/abs/2202.07123|Rethinking Network Design and Local Geometry in Point Cloud: A Simple Residual MLP Framework|PointMLP|
+|53|生成/編集 Diffusion|@n-kats|https://arxiv.org/abs/2208.01626|Prompt-to-Prompt Image Editing with Cross Attention Control|Prompt-to-Prompt|
+||量子化 学習|@cohama|https://arxiv.org/abs/2207.08822v1|Is Integer Arithmetic Enough for Deep Learning Training?|int8|
+|54|量子化 FP8|@cohama|https://arxiv.org/abs/2206.02915|FP8 Formats for Deep Learning|FP8|
+||生成 Diffusion|@n-kats|https://arxiv.org/abs/2112.10752|High-Resolution Image Synthesis with Latent Diffusion Models|Latent Diffusion|
+|55|NN一般 アテンション|@n-kats|https://arxiv.org/abs/2209.15001|Dilated Neighborhood Attention Transformer|DiNA|
+||ViT 高速化|@cohama|https://arxiv.org/abs/2210.09461v1|Token Merging: Your ViT But Faster|ToMe|
+|56|セグメンテーション 統一|@n-kats|https://arxiv.org/abs/2211.06220|OneFormer: One Transformer to Rule Universal Image Segmentation|OneFormer|
+||CNN MetaFormer|@cohama|https://arxiv.org/abs/2211.05778v2|InternImage: Exploring Large-Scale Vision Foundation Models with Deformable Convolutions|InternImage|
+||プルーニング|@yuji38kwmt|https://arxiv.org/abs/1707.06168|Channel Pruning for Accelerating Very Deep Neural Networks||
+|57|トラッキング|@cohama|https://arxiv.org/abs/2211.09791v1|MOTRv2: Bootstrapping End-to-End Multi-Object Tracking by Pretrained Object Detectors|MOTRv2|
+||3D 物体検出 点群|@n-kats|https://arxiv.org/abs/2210.07372|SWFormer: Sparse Window Transformer for 3D Object Detection in Point Clouds|SWFormer|
+|58|BCI グラフ|@n-kats|https://arxiv.org/abs/2105.02786v3|LGGNet: Learning from Local-Global-Graph Representations for Brain-Computer Interface|LGGNet|
+||生成 Diffusion|@cohama|https://arxiv.org/abs/2010.02502|Denoising Diffusion Implicit Models|DDIM|
+||推薦 バイアス|@morinota|https://arxiv.org/pdf/1901.07555.pdf|Managing Popularity Bias in Recommender Systems with Personalized Re-ranking||
+|59|LLM ツール使用|@n-kats|https://arxiv.org/abs/2302.04761|Toolformer: Language Models Can Teach Themselves to Use Tools|Toolformer|
+||推薦 バイアス|@morinota|https://dl.acm.org/doi/fullHtml/10.1145/3523227.3546757|Countering Popularity Bias by Regularizing Score Differences||
+||生成 Diffusion|@cohama|https://arxiv.org/abs/2301.11093v1|Simple Diffusion: End-to-End Diffusion for Image Synthesis|Simple Diffusion|
+|60|動画 ViT|@n-kats|https://arxiv.org/abs/2212.03229|Rethinking Video ViTs: Sparse Video Tubes for Joint Image and Video Learning|TubeViT|
+|41|検索 画像検索|@strshp|https://arxiv.org/pdf/2008.07783.pdf|Compositional Sketch Search||
+||マルチモーダル|@n-kats|https://arxiv.org/abs/2107.14795|Perceiver IO: A General Architecture for Structured Inputs & Outputs|Perceiver|
+||物体検出 半教師あり|@cohama|https://arxiv.org/abs/2106.09018v3|End-to-End Semi-Supervised Object Detection with Soft Teacher||
+||物体検出|@usako_tail|https://arxiv.org/abs/2107.08430|YOLOX: Exceeding YOLO Series in 2021|YOLOX|
+|42|3D NeRF|@n-kats|https://arxiv.org/abs/2103.10380|FastNeRF: High-Fidelity Neural Rendering at 200FPS|NeRF|
+||LLM Code||https://arxiv.org/abs/2107.03374|Evaluating Large Language Models Trained on Code|Codex|
+||金融|@kmdqcom|https://arxiv.org/pdf/2012.07245.pdf|Deep Portfolio Optimization via Distributional Prediction of Residual Factors||
+||高速化 行列|@cohama|https://arxiv.org/abs/2106.10860|Multiplying Matrices Without Multiplying|MADNESS|
+|43|応用 物理 物体検出|@jyoshida_sci|https://doi.org/10.1038/s42254-021-00371-w|New directions in hypernuclear physics||
+||3D レジストレーション|@yuji38kwmt|https://arxiv.org/abs/2104.03501|DeepI2P: Image-to-Point Cloud Registration via Deep Classification||
+||画像分類 学習|@cohama|https://arxiv.org/abs/2110.00476v1|ResNet strikes back: An improved training procedure in timm|ResNet|
+||理論 位置埋め込み|@n-kats|https://arxiv.org/abs/2107.02561|Rethinking Positional Encoding||
+||生成/GAN フォント|@derwind|https://arxiv.org/abs/2005.10510|Few-shot Compositional Font Generation with Dual Memory||
+|44|自己教師 ViT|@cohama|https://arxiv.org/abs/2111.06377v1|Masked Autoencoders Are Scalable Vision Learners|MAE|
+||画像分類 アーキテクチャ||https://arxiv.org/abs/2106.04803v2|CoAtNet: Marrying Convolution and Attention for All Data Sizes|CoAtNet|
+||セグメンテーション 教師なし|@n-kats|https://arxiv.org/abs/2111.06349|Unsupervised Part Discovery from Contrastive Reconstruction||
+|45|ViT 高速化|@cohama|https://arxiv.org/abs/2112.07658v1|AdaViT: Adaptive Tokens for Efficient Vision Transformer|AdaViT|
+||強化学習 ネットワーク|@yuji38kwmt|https://ieeexplore.ieee.org/document/8357943|QTCP: Adaptive Congestion Control with Reinforcement Learning||
+||理論 ロバスト性|@n-kats|https://arxiv.org/abs/2105.12806v3|A Universal Law of Robustness via Isoperimetry||
+||生成/GAN 文字|@derwind|https://github.com/kaonashi-tyc/zi2zi|zi2zi: Master Chinese Calligraphy with Conditional Adversarial Networks|zi2zi|
+|61|LLM 理論|@n-kats|https://arxiv.org/abs/2304.04498|Towards Digital Nature: Bridging the Gap between Turing Machine Objects and Linguistic Objects in LLMMs for Universal Interaction of Object-Oriented Descriptions|LLMM|
+|62|NN一般 活性化||https://arxiv.org/abs/1412.6830|LEARNING ACTIVATION FUNCTIONS TO IMPROVE DEEP NEURAL NETWORKS|APL|
+|63|LLM ツール使用|@n-kats|https://arxiv.org/abs/2305.17126|Large Language Models as Tool Makers|ToolMaker|
+|64|LLM 強化学習 エージェント|@n-kats|https://arxiv.org/abs/2303.11366v3|Reflexion: Language Agents with Verbal Reinforcement Learning|Reflexion|
+|65|自然言語 Transformer|@masahiro6510|https://arxiv.org/abs/1706.03762|Attention Is All You Need|Transformer|
+|66|LLM 推論|@n-kats|https://arxiv.org/abs/2308.09687|Graph of Thoughts: Solving Elaborate Problems with Large Language Models|GoT|
+|67|生成 世界モデル 自動運転|@wakodai|https://arxiv.org/abs/2309.17080|GAIA-1: A Generative World Model for Autonomous Driving|GAIA-1|
+|68|LLM ツール使用 強化学習|@n-kats|https://arxiv.org/abs/2310.12931|Eureka: Human-Level Reward Design via Coding Large Language Models|Eureka|
+|69|LLM 自己学習 評価|@n-kats|https://arxiv.org/abs/2312.06585|Beyond Human Data: Scaling Self-Training for Problem-Solving with Language Models|ReST-EM|
+|70|LLM ベンチマーク 評価|@n-kats|https://arxiv.org/abs/2311.12022|GPQA: A Graduate-Level Google-Proof Q&A Benchmark|GPQA|
+|71|LLM ICL|@n-kats|https://arxiv.org/abs/2402.04248|Can Mamba Learn How to Learn? A Comparative Study on In-Context Learning Tasks|Mamba|
+|72|LLM 評価 倫理|@n-kats|https://arxiv.org/abs/2403.11152|Evaluation Ethics of LLMs in Legal Domain|LLM Ethics|
+|73|マルチモーダル 評価 LVLM|@n-kats|https://arxiv.org/abs/2403.20330|Are We on the Right Way for Evaluating Large Vision-Language Models?|MMStar|
+|74|マルチモーダル VLM|@n-kats|https://arxiv.org/abs/2405.02246|What matters when building vision-language models?|Idefics2|
+|75|物体検出 YOLO|@masahiro6510|https://arxiv.org/abs/2405.14458|YOLOv10: Real-Time End-to-End Object Detection|YOLOv10|
+|76|LLM RAG|@n-kats|https://arxiv.org/abs/2404.16130|From Local to Global: A Graph RAG Approach to Query-Focused Summarization|GraphRAG|
+|77|LLM 評価 推論|@n-kats|https://arxiv.org/abs/2401.06416|Mission: Impossible Language Models|ImpossibleLM|
+|78|マルチモーダル 統一|@cohama|http://arxiv.org/abs/2408.12528|Show-o: One Single Transformer to Unify Multimodal Understanding and Generation|Show-o|
+|79|セグメンテーション 教師なし|@n-kats|https://arxiv.org/abs/2406.20081|Segment Anything without Supervision|UnSAM|
+|80|LLM 構造化推論 自動化|@n-kats|https://arxiv.org/abs/2411.03562|Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level|AgentK|
+|81|LLM 計画 ゲーム|@n-kats|https://arxiv.org/abs/2412.12119|Mastering Board Games by External and Internal Planning with Language Models|MAV|
+|82|自然言語 トピックモデル|@n-kats|https://arxiv.org/abs/2203.05794|BERTopic: Neural topic modeling with a class-based TF-IDF procedure|BERTopic|
+|83|LLM 推論 強化学習|@n-kats|https://arxiv.org/abs/2501.12948|DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning|DeepSeek-R1|
+|84|LLM メモリ 対話|@n-kats|https://arxiv.org/abs/2503.08026|In Prospect and Retrospect: Reflective Memory Management for Long-term Personalized Dialogue Agents|RMM|
+|85|ロボティクス マルチモーダル|@n-kats|https://arxiv.org/abs/2503.20020|Gemini Robotics: Bringing AI into the Physical World|Gemini Robotics|
+|86|LLM RAG マルチモーダル|@n-kats|https://arxiv.org/abs/2504.20734|UniversalRAG: Retrieval-Augmented Generation over Multiple Corpora with Diverse Modalities and Granularities|UniversalRAG|
+|87|LLM 推論 評価|@n-kats|https://arxiv.org/abs/2506.06941|The Illusion of Thinking: Understanding the Strengths and Limitations of Reasoning Models via the Lens of Problem Complexity|Illusion of Thinking|
+|88|LLM 科学 マルチエージェント|@n-kats|https://arxiv.org/abs/2507.04053|TopoMAS: Large Language Model Driven Topological Materials Multiagent System|TopoMAS|
