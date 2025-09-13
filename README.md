@@ -14,6 +14,11 @@
 
 の観点で行います。
 
+## Codex での自動化
+* 指示するだけ: `https://arxiv.org/abs/<arXivID> をまとめて`
+* Codex が実施: 開催日取得 → 論文取得・PDF確認 → 要約作成 → `YYYYMMDD_reports/<topic>_<arXivID>.md` と `./<topic>_<arXivID>/` を配置
+* 初回のみCodexから名前が聞かれる（`_cache/user.md` にメモ）。
+
 ### 参考
 
 + [高速で論文がバリバリ読める落合先生のフォーマットがいい感じだったのでメモ - 書架とラフレンツェ](http://lafrenze.hatenablog.com/entry/2015/08/04/120205)
