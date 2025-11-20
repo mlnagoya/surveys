@@ -66,7 +66,7 @@ C. 人間と自身のAI
 
 ウィルコクソンの符号順位検定（施策の前後などを比較して、有意差がありそうかを調べることができる）で検証。
 
-![](./reflecting_with_ai_2511.13046/pilot_study)
+![](./reflecting_with_ai_2511.13046/pilot_study.png)
 
 感情変化や精神負荷が人間もAIもあまり変わらないという結果だった。
 
@@ -86,7 +86,7 @@ C. 人間と自身のAI
 
 ### サンプルアーキテクチャ
 
-![](./[](/20251120_reports/reflecting_with_ai_2511.13046/architecture.png)
+![](/20251120_reports/reflecting_with_ai_2511.13046/architecture.png)
 
 * 音声入力、音声＋動画出力
   * Google Cloud Text-to-Speech API、React Speech Recognition
