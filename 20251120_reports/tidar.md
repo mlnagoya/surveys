@@ -1,4 +1,4 @@
-# Detect Anything via Next Point Prediction
+# TiDAR: Think in Diffusion, Talk in Autoregression
 
 Jingyu Liu, Xin Dong, Zhifan Ye, Rishabh Mehta, Yonggan Fu, Vartika Singh, Jan Kautz, Ce Zhang, Pavlo Molchanov
 
