@@ -51,6 +51,14 @@ https://arxiv.org/abs/2512.13689
 
 ## どうやって有効だと検証した？
 
+### 点群セグメンテーションの結果
+
+![](litept/pcd_seg.png)
+
+### 点群物体検出の結果
+
+![](litept/pcd_det.png)
+
 ### 浅い層に Conv、深い層に Attention の効果
 
 すべてのブロックに Convolution と Attention を含めたモデルを準備して、
@@ -65,14 +73,20 @@ https://arxiv.org/abs/2512.13689
 
 ![](././litept/hand_over.png)
 
+### Point RoPE の効果
 
+![](./litept/point_rope.md)
 
 ## 議論はある？
+
+- 提案手法は新規性をアピールしているものの、画像の分野では同様のアーキテクチャはすでに提案されている (e.g. CvT, CoAtNet)
+- Point RoPE が本当に有効化は謎。単なる RoPE と比べての比較実験がない
 
 
 ## 次に読むべき論文は？
 
-- Block diffusion: https://arxiv.org/abs/2503.09573
-  - 拡散モデルを使った LLM の先行研究
-- Fast inference from transformers via speculative decoding. In International Conference on Machine Learning, pages 19274–19286. PMLR, 2023.
-  - 投機的デコーディングの先行研究
+- PointTransformer v3: https://arxiv.org/abs/2312.10035
+  - 点群を Transformer で扱うための先行研究
+- CoAtNet: https://arxiv.org/abs/2106.04803v2
+  - 画像分野における Convolution と Attention のハイブリッドアーキテクチャ
+  - 過去に本研究会でも紹介されている (https://github.com/mlnagoya/surveys/blob/master/20211118_reports/arxiv_2106.04803v2/readme.md)
