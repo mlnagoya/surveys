@@ -41,6 +41,10 @@ https://arxiv.org/abs/2512.03262v1
 
 ![](is_vibe_coding_safe/curation_pipeline.png)
 
+実際のタスクの例
+
+![](is_vibe_coding_safe/example_task.png)
+
 
 ## どうやって有効だと検証した？
 
