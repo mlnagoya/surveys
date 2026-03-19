@@ -5,6 +5,8 @@ https://arxiv.org/abs/2602.15030
 # 著者
 - Kaiyu Yue, Menglin Jia, Ji Hou, Tom Goldstein
 
+Meta と University of Maryland
+
 # どんなもの？
 - 画像生成を、diffusion の長い反復を使わずに autoencoder だけで少ステップ生成しようという論文。
 - Encoder が自然画像を球面上へほぼ一様に写し、Decoder が球面上のランダム点から画像を復元する Sphere Encoder を提案。
