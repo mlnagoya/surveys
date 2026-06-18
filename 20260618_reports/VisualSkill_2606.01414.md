@@ -16,7 +16,7 @@ AIのドメイン知識を与えるために、テキスト形式でスキルの
 
 この論文では、テキストだけでスキルを表現するのではなく、画像も使うべきだ（ビジュアルスキル）と主張し、実際に精度改善に寄与したことを実験で示した。
 
-また、ビジュアルスキルを自動で作るツールのAutoVisualSkill（(https://github.com/Little-Fridge/AutoVisualSkill)[https://github.com/Little-Fridge/AutoVisualSkill]）を紹介している。
+また、ビジュアルスキルを自動で作るツールのAutoVisualSkill（[https://github.com/Little-Fridge/AutoVisualSkill](https://github.com/Little-Fridge/AutoVisualSkill)）を紹介している。
 
 # 先行研究と比べてどこがすごい？
 LLM活用の新しいパラダイムとして、ビジュアルスキルを提案。その効果を実験で示し、どのような場合にそれが必要なのかを整理している。
@@ -132,5 +132,4 @@ AutoVisualSkill自体をちゃんと評価しているわけではない。
 
 
 # 次に読むべき論文は？
-* GRAPE: https://arxiv.org/abs/2512.07805
-* Hecke代数（一般化しようとする話をチャッピーにしていて、出てきた）
+* 
