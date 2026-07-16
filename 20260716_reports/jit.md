@@ -29,7 +29,7 @@ $z_t=t x+(1-t)\epsilon$
 
 と表す。
 
-$t=0$ では noise、$t=1$ では clean image になる。
+$t=0$ では noise、 $t=1$ では clean image になる。
 
 velocity はノイズを時間で微分した $v_t=dz_t/dt$。
 
@@ -39,7 +39,7 @@ velocity を使って ODE solver で状態を反復更新するのが Flow Match
 ## Prediction space と Loss space
 
 - 数式的には $x$, $\epsilon$, $v$ は相互に変換可能であり、どれを予測しても数式上は同じ生成過程を使える。
-- 同様に損失関数も $x$-loss、$\epsilon$-loss、$v$-loss のどれを使っても同じ。
+- 同様に損失関数も $x$-loss, $\epsilon$-loss, $v$-loss のどれを使っても同じ。
 - 9 通りの組み合わせがある。
 - 一つを予測すれば他の二つは変換できるが、変換に伴う時刻依存の重みが異なるので、9 通りは学習上は等価ではない。
 
