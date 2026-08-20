@@ -114,7 +114,7 @@ ref. [「欧州（EU）AI規制法」の解説―概要と適用タイムライ�
 rainbolt氏は0.1秒で場所を推測する強豪  GeoGuessr プレイヤー。
 動画では氏が置かれた場所から何を手がかりに場所を推測するかの説明がされている。
 
-https://www.youtube.com/watch?v=4s1_1brpp3Q
+[![rainbolt氏の解説動画](https://img.youtube.com/vi/4s1_1brpp3Q/0.jpg)](https://www.youtube.com/watch?v=4s1_1brpp3Q)
 
 ## 評価指標
 - Haversine Distance (球面距離)、GeoScore = 5000·exp(-d/1492.7) (GeoGuessr 式)、
