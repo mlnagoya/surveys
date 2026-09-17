@@ -46,6 +46,20 @@ https://arxiv.org/abs/2609.01343
 
 # どうやって有効だと検証した？
 
+## SMELT レシピ
+
+- まずは 200M モデルで最適なモデルの構造 (loop 位置や回数) を探索
+
+![](smelt/loop_span.png)
+
+
+![](smelt/depth.png)
+
+
+![](smelt/loop_count.png)
+
+## Scaling law
+
 - 100M・200M・600M・1.6B active parameter と、0%・約85%・約95%・約97% sparsity の4×4 grid で比較
 - sparsity は総パラメータ数に対する、1token あたりの計算量の割合
 
